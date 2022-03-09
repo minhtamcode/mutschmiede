@@ -31,7 +31,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/* font-size: 100%; */
 	/* font: inherit; */
 	vertical-align: baseline;
     font-family: "Raleway";
@@ -328,8 +328,12 @@ main .site-main #main-content{
     top: 150em;
 }
 
-#main-content .coaches .slider-coach{
+#main-content .coaches .slider-nav-1{
     top: 410px !important;
+}
+
+#main-content .coaches .slider-nav-1 .slick-list{
+    height: 500px;
 }
 
 #main-content .coaches .slider-nav{
@@ -350,6 +354,10 @@ main .site-main #main-content{
     margin-bottom: 26px;
 }
 
+.box-action{
+    text-align: center;
+}
+
 .box p{
     font-size: 16px !important;
     text-align: center;
@@ -357,7 +365,12 @@ main .site-main #main-content{
     color: black;
 }
 
-#main-content .coaches .slider-nav .box{
+.box a, .box-action a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#main-content .coaches  .box{
     background-color: #EFEFEF;
     margin: auto 6px;
     display: flex;
@@ -365,28 +378,28 @@ main .site-main #main-content{
     align-items: center;
 }
 
-#main-content .coaches .slider-nav .box span{
+#main-content .coaches  .box span{
     font-size: 20px !important;
     margin-bottom: 30px;
 }
 
 
-#main-content .coaches .slider-nav .box-action a{
+#main-content .coaches  .box-action a{
     font-size: 30px !important;
 }
 
-#main-content .coaches .slider-nav .box .content,#main-content .coaches .slider-nav .box-action .content{
+#main-content .coaches .box .content,#main-content .coaches .box-action .content{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-#main-content .coaches .slider-nav .box-action  .content img{
+#main-content .coaches  .box-action  .content img{
     margin-bottom: 26px;
 }
 
-#main-content .coaches .slider-nav .box-action{
+#main-content .coaches .box-action{
     height: 399px;
     width: 399px !important;
     border-radius: 100%;
@@ -397,9 +410,54 @@ main .site-main #main-content{
     align-items: center;
 }
 
+#main-content .coaches .slider-nav-1 .box-action a {
+    color: #fff;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 30px;
+}
+
+#main-content .coaches .slider-nav-1 .box-action p,#main-content .coaches .slider-nav-1 .box-action h2{
+    margin-bottom: 10px;
+}
+
+#main-content .coaches .slider-nav-1 .box-action button {
+    background-color: #000;
+    border: none;
+    width: 260px;
+    height: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+#main-content .coaches .slider-nav-1 .box-action , #main-content .coaches .slider-nav-1 .box{
+    height: 374px;
+    width: 374px !important;
+    border: 12px #78B476 solid;
+    position: relative;
+}
+
+#main-content .coaches .slider-nav-1 .lang-coach{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: -105px;
+}
+
+#main-content .coaches .slider-nav-1 .lang-coach img{
+    margin: 0 12px;
+}
+
+
 #main-content .coaches .custom-slick-navigator{
     position: relative;
     top: -172px;
+}
+
+#main-content .coaches .custom-slick-navigator-1{
+    position: relative;
+    top: 55px;
 }
 
 #main-content .coaches .custom-slick-navigator .custom-slick-arrow-left{
@@ -410,10 +468,24 @@ main .site-main #main-content{
     background-color: transparent;
 }
 
+#main-content .coaches .custom-slick-navigator-1 .custom-slick-arrow-left-1{
+    position: absolute;
+    left: 78px;
+    border: none;
+    background-color: transparent;
+}
+
 #main-content .coaches .custom-slick-navigator .custom-slick-arrow-right{
     position: absolute;
     right: 78px;
     bottom: -140px;
+    border: none;
+    background-color: transparent;
+}
+
+#main-content .coaches .custom-slick-navigator-1 .custom-slick-arrow-right-1{
+    position: absolute;
+    right: 93px;
     border: none;
     background-color: transparent;
 }
@@ -709,7 +781,8 @@ footer{
 }
 
 .site-main-face2face .form .manage-customer .content-customer{
-    padding: 24px 20px 25px 17px;
+    padding: 24px 20px 15px 17px;
+    border-right: 1px solid #FBC7B2;
 }
 
 .site-main-face2face .form .manage-customer .content-customer table{
@@ -724,6 +797,7 @@ footer{
 .site-main-face2face .form .manage-customer .content-customer table td{
     padding: 10px 0px;
     border: none !important;
+    padding-top: 0;
 }
 
 .site-main-face2face .form .manage-customer .content-customer table tr{
@@ -744,7 +818,7 @@ footer{
 table{
     background-color: #fff;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 tr{
@@ -800,7 +874,7 @@ tbody tr:hover{
 .site-main-face2face  ::-webkit-scrollbar-track,.site-main-generate ::-webkit-scrollbar-track {
     /* box-shadow: inset 0 0 5px grey;  */
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 6px 15px 15px 0px;
   }
    
   /* Handle */

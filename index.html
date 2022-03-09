@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/merged-stylesheets.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/registrationbadg.css"/>
+
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/css/bootstrap-modal.css"/>
+
+    
 
   </head>
   <body>
@@ -32,10 +33,9 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <img
-              class="navbar-brand"
-              src="./assets/images/mutschmiede logo.svg"
-            />
+            <a href="/">
+              <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg"/>
+            </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling-->
           <div
@@ -84,7 +84,7 @@
                     >
                   </li>
                   <li id="country-eng">
-                    <a href="?language=ch"
+                    <a href="?language=en"
                       ><img
                         src="assets/images/languages/ENG.png"
                         width="28.31"
@@ -94,7 +94,7 @@
                     >
                   </li>
                   <li id="country-esp">
-                    <a href="?language=cz"
+                    <a href="?language=es"
                       ><img
                         src="assets/images/languages/SPAIN.png"
                         width="28.31"
@@ -156,6 +156,7 @@
       </div>
       <!-- Gemeinsam zur besten Lösung -->
 
+      
       <!-- Wie die mutschmiede funktioniert -->
       <div class="funktioniert">
         <div class="funktioniert-content">
@@ -225,13 +226,13 @@
                       <p>Loslassen für den 
                           Neuanfang. Wege zur 
                           Neuorientierung nach 
-                          einer Partnerschaft…<a style="font-weight: bold; text-decoration: underline;">mehr</a></p>
+                          einer Partnerschaft…<a>mehr</a></p>
                   </div> 
               </div>
               <div class="box-action">
                   <div class="content">
                       <img src="/assets/images/Group 29.png">
-                      <a style="font-weight: bold; text-decoration: underline;">auswählen</a>
+                      <a>auswählen</a>
                   </div> 
               </div>
               <div class="box">
@@ -240,22 +241,30 @@
                       <p>Wir helfen über die 
                           schwierige Zeit des 
                           Verlustes und der 
-                          Trauer hinweg…<a style="font-weight: bold; text-decoration: underline;">mehr</a></p>
+                          Trauer hinweg…<a>mehr</a></p>
                   </div> 
               </div>    
               <div class="box">
-                <img src="/assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+                <div class="content">
+                    <span>Covid-19</span>
+                    <img src="/assets/images/Group 23.png" width="125">
+                    <p>Inzidenzzahlen, Fallzahlen
+                        Krankheitsmerkmale während 
+                        oder nach einer Covid-19-
+                        Erkrankung werden…</p>
+                </div>                 
               </div>
               <div class="box">
-                <img src="/assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+                  <div class="content">
+                      <span>Trennung</span>
+                      <img src="/assets/images/Group 25.png">
+                      <p>Loslassen für den 
+                          Neuanfang. Wege zur 
+                          Neuorientierung nach 
+                          einer Partnerschaft…<a>mehr</a></p>
+                  </div> 
               </div>
-              <div class="box">
-                <img src="/assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
-              </div>
-              <div class="box-action">
-                 dsg 
-              </div>
-          </div>
+            </div>
           </div>
           
 
@@ -281,6 +290,87 @@
             <p>Verfügbare<br />Coaches</p>
           </div>
         </div>
+        <div class="container-fluid">
+          <div class="slider slider-nav-1">
+            <div class="box">
+              <img src="/assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+              <div class="lang-coach">
+                <img src="/assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                <img src="/assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+              </div>
+            </div>
+            <div class="box">
+              <img src="/assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+              <div class="lang-coach">
+                <img src="/assets/images/languages/coach/Asset 6.png" width="71.26" height="71.26">
+              </div>
+            </div>
+            <div class="box">
+              <img src="/assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
+              <div class="lang-coach">
+                <img src="/assets/images/languages/coach/Asset 6.png" width="71.26" height="71.26">
+                <img src="/assets/images/languages/coach/Asset 8.png" width="71.26" height="71.26">
+              </div>
+            </div>
+            <div class="box-action">
+               <div class="content">
+                    <img src="/assets/images/Group 211.png">
+                    <h2>Brigitte<br>Neuhauser</h2>
+                    <p>Pielzhausen, Deutschland</p>
+                    <a>Mehr Informationen</a>
+                    <button>Auswählen</button>
+               </div>
+               <div class="lang-coach">
+                <img src="/assets/images/languages/coach/Asset 8.png" width="71.26" height="71.26">
+                <img src="/assets/images/languages/coach/Asset 11.png" width="71.26" height="71.26">
+              </div>
+            </div>
+            <div class="box">
+              <img src="/assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+              <div class="lang-coach">
+                <img src="/assets/images/languages/coach/Asset 8.png" width="71.26" height="71.26">
+                <img src="/assets/images/languages/coach/Asset 11.png" width="71.26" height="71.26">
+              </div>
+            </div>
+            <div class="box">
+              <img src="/assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+              <div class="lang-coach">
+                <img src="/assets/images/languages/coach/Asset 8.png" width="71.26" height="71.26">
+              </div>
+            </div>
+            <div class="box">
+              <img src="/assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
+              <div class="lang-coach">
+                <img src="/assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+              </div>
+            </div>
+            <div class="box-action">
+              <div class="content">
+                <img src="/assets/images/Group 211.png">
+                <h2>Brigitte<br>Neuhauser</h2>
+                <p>Pielzhausen, Deutschland</p>
+                <a>Mehr Informationen</a>
+                <button>Auswählen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-slick-navigator-1">
+          <button
+            class="custom-slick-arrow custom-slick-arrow-left-1"
+            type="button"
+          >
+            <img src="/assets/images/Group 117.png" />
+          </button>
+          <button
+            class="custom-slick-arrow custom-slick-arrow-right-1"
+            type="button"
+          >
+            <img src="/assets/images/Group 118.png" />
+          </button>
+        </div>
+
+
 
       </div>
       <!-- Coaches -->
@@ -339,6 +429,7 @@
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.js"></script>
     <script type="text/javascript">
       $(document).ready(function (e) {
         // var sliderfor = $(".slider-for").slick({
@@ -353,27 +444,42 @@
         var slidernav = $(".slider-nav").slick({
           infinite: true,
           navigator:true,
-          items : 3,
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 1.5,
           dots: false,
           arrows: false,
-
-          
-
           // appendDots: $(".custom-slick-dots"),
         });
 
-        $('.dropdown-toggle').click(function(e){   
-              $('.dropdown-menu').slideToggle();
-              e.preventDefault();
+        var slidernav = $(".slider-nav-1").slick({
+          infinite: true,
+          navigator:true,
+          slidesToShow: 3,
+          slidesToScroll: 1.5,
+          dots: false,
+          arrows: false,
+          // appendDots: $(".custom-slick-dots"),
         });
+
 
         $(".custom-slick-arrow-left").on("click", function () {
           $(".slider-nav").slick("slickPrev");
         });
         $(".custom-slick-arrow-right").on("click", function () {
           $(".slider-nav").slick("slickNext");
+        });
+
+
+        $(".custom-slick-arrow-left-1").on("click", function () {
+          $(".slider-nav-1").slick("slickPrev");
+        });
+        $(".custom-slick-arrow-right-1").on("click", function () {
+          $(".slider-nav-1").slick("slickNext");
+        });
+
+        $('.dropdown-toggle').click(function(e){   
+              $('.dropdown-menu').slideToggle();
+              e.preventDefault();
         });
       });
       AOS.init({
