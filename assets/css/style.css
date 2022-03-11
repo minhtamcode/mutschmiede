@@ -57,6 +57,11 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
+a{
+    cursor: pointer;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -935,4 +940,124 @@ tbody tr:hover{
 .site-main-gutscheincodes .form-input.action{
     flex-direction: row;
     margin-top: -50px;
+}
+
+
+.site-main-coaches .form{
+    display: block;
+}
+
+.site-main-coaches .content{
+    padding: 47px 0px 88px 0px !important;
+}
+
+
+.site-main-coaches .form{
+    display: block;
+}
+
+.site-main-coaches .form .coach-box{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #FBC7B2;
+    margin-bottom: 89px;
+}
+
+.site-main-coaches .form .coach-box .coach{
+    display: flex;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-img{
+    width: 552px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 48px;
+    border-right: #FBC7B2 1px solid;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-img .action{
+    margin-bottom: 43px;
+    width: 205px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+
+.site-main-coaches .form .coach-box .coach .coach-img .img{
+    margin-bottom: 82px;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-img .link{
+    margin-bottom: 20px;
+    padding: 15px 0px;
+    border-radius: 100px;
+    width: 306px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.site-main-coaches .form .coach-box .coach .coach-img .link.freischalten{
+    background-color: #A6BEA5;
+    color: white;
+    text-transform: uppercase;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-img .link.anderungsanweisung{
+    background-color: #FBC7B2;
+    color: white;
+    text-transform: uppercase;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-img .link.pin-mail{
+    background-color: #000;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.site-main-coaches .form .coach-box .coach .coach-infor{
+    width: 812px;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor .name{
+    padding: 58px 40px 57px 20px;
+    border-bottom: #FBC7B2 1px solid;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor .infor{
+    padding: 20px 146px 0px 20px;
+    border-bottom: #FBC7B2 1px solid;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor p{
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor ul{
+    margin-bottom: 30px;
+    list-style: inside;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor ul li{
+    line-height: 25px;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor .description{
+    padding: 21px 146px 18px 20px;
 }
