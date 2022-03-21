@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container-fluid">
+      <nav class="navbar">
+          <!-- Brand and toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+            <button
+              class="navbar-toggle collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#mutschmiede-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="./">
+              <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg"/>
+            </a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling-->
+          <div
+            id="mutschmiede-nav"
+            class=" navbar-right"
+          >
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="./">Problemfelder</a>
+              </li>
+              <li><a href="./">Exptertinnen</a></li>
+              <li class="dropdown">
+                <a
+                  class="dropdown-lang"
+                  href="/#"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  id="country-switcher-current"
+                >
+                  <img
+                    src="./assets/images/languages/AUSTRIA.png"
+                    width="28.31"
+                    height="17.04"
+                    style="margin-right: 5px;"
+                  />AT</a
+                >
+                <ul class="dropdown-menu-lang" id="country-switcher">
+                  <!-- <li id="country-at">
+                    <a href="?language=at"
+                      ><img
+                        src="./assets/images/languages/AUSTRIA.png "
+                        width="28.31"
+                        height="17.04"
+                        
+                      />
+                      AT</a
+                    >
+                  </li> -->
+                  <li id="country-de">
+                    <a href="?language=de"
+                      ><img
+                        src="./assets/images/languages/DE.png"
+                        width="28.31"
+                        height="17.04"
+                      />
+                      DE</a
+                    >
+                  </li>
+                  <li id="country-eng">
+                    <a href="?language=en"
+                      ><img
+                        src="./assets/images/languages/ENG.png"
+                        width="28.31"
+                        height="17.04"
+                      />
+                      ENG</a
+                    >
+                  </li>
+                  <li id="country-esp">
+                    <a href="?language=es"
+                      ><img
+                        src="./assets/images/languages/SPAIN.png"
+                        width="28.31"
+                        height="17.04"
+                      />
+                      ESP</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="user-login">
+                <a href="./login.html"
+                  ><img src="./assets/images/user_login.png" style="margin-right: 5px;"/>login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="site-main-expertinnen" id="main-content">
+        <div class="img-full">
+            <img src="./assets/images/Karte-customized-map.png" >
+        </div>
+        <div class="title">
+            <div class="text">
+                <h1>Unsere Expertinnen und Experten</h1>
+            </div>
+        </div>
+        <!-- Main Content -->
+            <div class="container-fluid">
+                <div class="tabControl">
+                        <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-1" role="tab">Alle</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-2" role="tab">Österreich</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-3" role="tab">Deutschland</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-4" role="tab">Schweiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-4" role="tab">Italien</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-4" role="tab">Tschechien</a>
+                            </li>
+                        </ul>
+                        </div>
+                <div class="content">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="row">
+                                <div class="box onl">
+                                    <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+                                    <div class="name">
+                                        <h2>Daniela Pöttinger</h2>
+                                        <p>Wien, Österreich</p>
+                                    </div>
+                                    <div class="lang-coach">
+                                        <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                        <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <img src="./assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+                                    <div class="name">
+                                        <h2>Daniela Pöttinger</h2>
+                                        <p>Wien, Österreich</p>
+                                    </div>
+                                    <div class="lang-coach">
+                                        <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                        <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                    </div>
+                                </div>
+
+                                <div class="box onl">
+                                    <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
+                                    <div class="name">
+                                        <h2>Daniela Pöttinger</h2>
+                                        <p>Wien, Österreich</p>
+                                    </div>
+                                    <div class="lang-coach">
+                                        <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                        <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                    </div>
+                                </div>
+
+                                <div class="box-action onl">
+                                    <div class="content">
+                                        <img src="./assets/images/Group 211.png">
+                                        <h2>Brigitte<br>Neuhauser</h2>
+                                        <p>Pielzhausen, Deutschland</p>
+                                        <a>Mehr Informationen</a>
+                                        <button>Auswählen</button>
+                                    </div>
+                                    <div class="name">
+                                        <h2>Daniela Pöttinger</h2>
+                                        <p>Wien, Österreich</p>
+                                    </div>
+                                    <div class="lang-coach">
+                                        <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                        <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                              <div class="box onl">
+                                  <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+                                  <div class="name">
+                                      <h2>Daniela Pöttinger</h2>
+                                      <p>Wien, Österreich</p>
+                                  </div>
+                                  <div class="lang-coach">
+                                      <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                      <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                  </div>
+                              </div>
+
+                              <div class="box">
+                                  <img src="./assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+                                  <div class="name">
+                                      <h2>Daniela Pöttinger</h2>
+                                      <p>Wien, Österreich</p>
+                                  </div>
+                                  <div class="lang-coach">
+                                      <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                      <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                  </div>
+                              </div>
+
+                              <div class="box onl">
+                                  <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
+                                  <div class="name">
+                                      <h2>Daniela Pöttinger</h2>
+                                      <p>Wien, Österreich</p>
+                                  </div>
+                                  <div class="lang-coach">
+                                      <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                      <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                  </div>
+                              </div>
+
+                              <div class="box-action onl">
+                                  <div class="content">
+                                      <img src="./assets/images/Group 211.png">
+                                      <h2>Brigitte<br>Neuhauser</h2>
+                                      <p>Pielzhausen, Deutschland</p>
+                                      <a>Mehr Informationen</a>
+                                      <button>Auswählen</button>
+                                  </div>
+                                  <div class="name">
+                                      <h2>Daniela Pöttinger</h2>
+                                      <p>Wien, Österreich</p>
+                                  </div>
+                                  <div class="lang-coach">
+                                      <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                      <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="box onl">
+                                <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <img src="./assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box onl">
+                                <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box-action onl">
+                                <div class="content">
+                                    <img src="./assets/images/Group 211.png">
+                                    <h2>Brigitte<br>Neuhauser</h2>
+                                    <p>Pielzhausen, Deutschland</p>
+                                    <a>Mehr Informationen</a>
+                                    <button>Auswählen</button>
+                                </div>
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                          <div class="row">
+                            <div class="box onl">
+                                <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <img src="./assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box onl">
+                                <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box-action onl">
+                                <div class="content">
+                                    <img src="./assets/images/Group 211.png">
+                                    <h2>Brigitte<br>Neuhauser</h2>
+                                    <p>Pielzhausen, Deutschland</p>
+                                    <a>Mehr Informationen</a>
+                                    <button>Auswählen</button>
+                                </div>
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-contact-tab">
+                          <div class="row">
+                            <div class="box onl">
+                                <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <img src="./assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box onl">
+                                <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box-action onl">
+                                <div class="content">
+                                    <img src="./assets/images/Group 211.png">
+                                    <h2>Brigitte<br>Neuhauser</h2>
+                                    <p>Pielzhausen, Deutschland</p>
+                                    <a>Mehr Informationen</a>
+                                    <button>Auswählen</button>
+                                </div>
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-contact-tab">
+                          <div class="row">
+                            <div class="box onl">
+                                <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <img src="./assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box onl">
+                                <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+
+                            <div class="box-action onl">
+                                <div class="content">
+                                    <img src="./assets/images/Group 211.png">
+                                    <h2>Brigitte<br>Neuhauser</h2>
+                                    <p>Pielzhausen, Deutschland</p>
+                                    <a>Mehr Informationen</a>
+                                    <button>Auswählen</button>
+                                </div>
+                                <div class="name">
+                                    <h2>Daniela Pöttinger</h2>
+                                    <p>Wien, Österreich</p>
+                                </div>
+                                <div class="lang-coach">
+                                    <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                    <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="box onl">
+                              <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
+                              <div class="name">
+                                  <h2>Daniela Pöttinger</h2>
+                                  <p>Wien, Österreich</p>
+                              </div>
+                              <div class="lang-coach">
+                                  <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                  <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                              </div>
+                          </div>
+
+                          <div class="box">
+                              <img src="./assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
+                              <div class="name">
+                                  <h2>Daniela Pöttinger</h2>
+                                  <p>Wien, Österreich</p>
+                              </div>
+                              <div class="lang-coach">
+                                  <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                  <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                              </div>
+                          </div>
+
+                          <div class="box onl">
+                              <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
+                              <div class="name">
+                                  <h2>Daniela Pöttinger</h2>
+                                  <p>Wien, Österreich</p>
+                              </div>
+                              <div class="lang-coach">
+                                  <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                  <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                              </div>
+                          </div>
+
+                          <div class="box-action onl">
+                              <div class="content">
+                                  <img src="./assets/images/Group 211.png">
+                                  <h2>Brigitte<br>Neuhauser</h2>
+                                  <p>Pielzhausen, Deutschland</p>
+                                  <a>Mehr Informationen</a>
+                                  <button>Auswählen</button>
+                              </div>
+                              <div class="name">
+                                  <h2>Daniela Pöttinger</h2>
+                                  <p>Wien, Österreich</p>
+                              </div>
+                              <div class="lang-coach">
+                                  <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
+                                  <img src="./assets/images/languages/coach/Asset 12.png" width="71.26" height="71.26">
+                              </div>
+                          </div>
+                      </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+              <!-- Bootstrap -->
+          <div class="funktioniert-die bg-light-gray">
+            <div class="container-fluid ">
+              <h1>So funktioniert die Mutschmiede</h1>
+              <div class="row">
+                <div class="col">
+                  <h4>Problem erkennen</h4>
+                  <p>Die mutschmiede ist ein Netzwerk international 
+                    tätiger ExpertInnen, die Beratung in den Bereichen 
+                    privater und beruflicher Belastungen anbieten. 
+                    Ziel ist es, gemeinsam mit den KundInnen Lösungen 
+                    zu finden und dadurch die Lebensqualität zu steigern. 
+                    Telefonische Beratungsleistungen der mutschmiedInnen 
+                    sind vollkommen anonym und können bei Bedarf in 
+                    den Praxen der ExpertInnen fortgesetzt werden.</p>
+                    <div class="btn-box">
+                      <a href="./user.html" style="color: white; text-transform: uppercase;">
+                        <div class="btn">
+                          Problemfelder
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="col">
+                  <h4>Experten auswählen</h4>
+                  <p>Die mutschmiede ist ein Netzwerk international 
+                    tätiger ExpertInnen, die Beratung in den Bereichen 
+                    privater und beruflicher Belastungen anbieten. 
+                    Ziel ist es, gemeinsam mit den KundInnen Lösungen 
+                    zu finden und dadurch die Lebensqualität zu steigern. 
+                    Telefonische Beratungsleistungen der mutschmiedInnen 
+                    sind vollkommen anonym und können bei Bedarf in 
+                    den Praxen der ExpertInnen fortgesetzt werden.</p>
+                    <div class="btn-box">
+                      <a href="./user.html" style="color: white; text-transform: uppercase;">
+                        <div class="btn">
+                          Problemfelder
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="col">
+                  <h4>Kontakt aufnehmen</h4>
+                  <p>Die mutschmiede ist ein Netzwerk international 
+                    tätiger ExpertInnen, die Beratung in den Bereichen 
+                    privater und beruflicher Belastungen anbieten. 
+                    Ziel ist es, gemeinsam mit den KundInnen Lösungen 
+                    zu finden und dadurch die Lebensqualität zu steigern. 
+                    Telefonische Beratungsleistungen der mutschmiedInnen 
+                    sind vollkommen anonym und können bei Bedarf in 
+                    den Praxen der ExpertInnen fortgesetzt werden.</p>
+                    <div class="btn-box">
+                      <a href="./user.html" style="color: white; text-transform: uppercase;">
+                        <div class="btn">
+                          <div class="btn-problem">
+                            Service Hotline
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <div class="main-footer">
+          <div class="contact">
+            <ul>
+              <a href="./impressum.html"><li>Impressum</li></a>
+              <a href="./agb.html"><li>AGB</li></a>
+            </ul>
+          </div>
+          <div class="logo">
+            fi
+          </div>
+        </div>
+    </div>
+    </footer>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function (e) {
+   
+
+        $('.dropdown-lang').click(function(e){   
+              $('.dropdown-menu-lang').slideToggle();
+              e.preventDefault();
+        });
+      });
+      AOS.init({
+        duration: 1200,
+        })
+</script>
+  </body>
+</html>

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
@@ -30,23 +31,23 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="/">
+            <a href="./">
               <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg"/>
             </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling-->
           <div
             id="mutschmiede-nav"
-            class="collapse navbar-collapse navbar-right"
+            class=" navbar-right"
           >
             <ul class="nav navbar-nav">
               <li>
-                <a href="/">Problemfelder</a>
+                <a href="./">Problemfelder</a>
               </li>
-              <li><a href="/exptertinnen.php">Exptertinnen</a></li>
+              <li><a href="./">Exptertinnen</a></li>
               <li class="dropdown">
                 <a
-                  class="dropdown-toggle"
+                  class="dropdown-lang"
                   href="/#"
                   data-toggle="dropdown"
                   role="button"
@@ -61,7 +62,7 @@
                     style="margin-right: 5px;"
                   />AT</a
                 >
-                <ul class="dropdown-menu" id="country-switcher">
+                <ul class="dropdown-menu-lang" id="country-switcher">
                   <!-- <li id="country-at">
                     <a href="?language=at"
                       ><img
@@ -76,7 +77,7 @@
                   <li id="country-de">
                     <a href="?language=de"
                       ><img
-                        src="assets/images/languages/DE.png"
+                        src="./assets/images/languages/DE.png"
                         width="28.31"
                         height="17.04"
                       />
@@ -86,7 +87,7 @@
                   <li id="country-eng">
                     <a href="?language=en"
                       ><img
-                        src="assets/images/languages/ENG.png"
+                        src="./assets/images/languages/ENG.png"
                         width="28.31"
                         height="17.04"
                       />
@@ -96,7 +97,7 @@
                   <li id="country-esp">
                     <a href="?language=es"
                       ><img
-                        src="assets/images/languages/SPAIN.png"
+                        src="./assets/images/languages/SPAIN.png"
                         width="28.31"
                         height="17.04"
                       />
@@ -106,8 +107,8 @@
                 </ul>
               </li>
               <li class="user-login">
-                <a href="/login.html"
-                  ><img src="assets/images/user_login.png" style="margin-right: 5px;"/>login</a
+                <a href="./login.html"
+                  ><img src="./assets/images/user_login.png" style="margin-right: 5px;"/>login</a
                 >
               </li>
             </ul>
@@ -191,7 +192,7 @@
         <div class="title-1">
           <h1>2</h1>
           <div class="subtitle-1">
-            <p>Verfügbare<br />Coaches</p>
+            <p>Expert*in<br>finden</p>
           </div>
         </div>
           <!-- <div class="slider slider-for">
@@ -208,7 +209,7 @@
             </div>
           </div> -->
           <div class="container-fluid">
-            <div class="slider slider-nav-1" style="top: 115px !important;">
+            <div class="slider slider-nav-1" style="top: 175px !important;">
               <div class="box">
                 <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
                 <div class="lang-coach">
@@ -241,21 +242,22 @@
                   <img src="./assets/images/languages/coach/Asset 8.png" width="71.26" height="71.26">
                   <img src="./assets/images/languages/coach/Asset 11.png" width="71.26" height="71.26">
                 </div>
-              </div>
-              <div class="box">
-                <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
-                <div class="lang-coach">
-                  <img src="./assets/images/languages/coach/Asset 8.png" width="71.26" height="71.26">
-                  <img src="./assets/images/languages/coach/Asset 11.png" width="71.26" height="71.26">
+              </div> 
+              <a href="#coachModal" data-toggle="modal">
+                <div class="box onl">
+                    <img src="./assets/images/ben-parker-ym--mSBZ0ro-unsplash.png">
+                  <div class="lang-coach">
+                    <img src="./assets/images/languages/coach/Asset 8.png" width="71.26" height="71.26">
+                  </div>
                 </div>
-              </div>
+              </a>
               <div class="box">
                 <img src="./assets/images/jurica-koletic-7YVZYZeITc8-unsplash.png">
                 <div class="lang-coach">
                   <img src="./assets/images/languages/coach/Asset 8.png" width="71.26" height="71.26">
                 </div>
               </div>
-              <div class="box">
+              <div class="box onl">
                 <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
                 <div class="lang-coach">
                   <img src="./assets/images/languages/coach/Asset 5.png" width="71.26" height="71.26">
@@ -274,7 +276,7 @@
           </div>
           
 
-          <div class="custom-slick-navigator" style="top: -271px;">
+          <div class="custom-slick-navigator" style="top: -190px;">
             <button
               class="custom-slick-arrow custom-slick-arrow-left"
               type="button"
@@ -322,14 +324,98 @@
         </div>
         
         <!-- Coming soon -->
+
+
+              <!-- Modal HTML -->
+
+            <!-- Modal -->
+            <div class="modal coach fade" id="coachModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <div>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="./assets/images/Group 41.svg">
+                      </button>
+                    </div>
+                    <div>
+                      <span>Schliessen</span>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <div class="content">
+                      <div class="box onl">
+                        <img src="./assets/images/ben-parker-ym--mSBZ0ro-unsplash.png">
+                      </div>
+                      <h1>Brigitte Neuhauser</h1>
+                      <h2>Pliezhausen, Deutschland</h2>
+                      <div class="contact">
+                        <div>
+                          <img src="./assets/images/Group 44.png">
+                        </div>
+                        <div>
+                          DW: 5015
+                        </div>
+                        <div>
+                          <img src="./assets/images/Group 45.png">
+                        </div>
+                        <div>
+                          <img src="./assets/images/Group 48.png">
+                        </div>
+                        <div>
+                          <img src="./assets/images/Group 256.png">
+                        </div>
+                      </div>
+                      <p><strong>Willkommen bei der Mutschmiede!</strong></p>
+                      <p>Als Coach bin ich &uuml;berzeugt, dass Sie alles, was Sie f&uuml;r das Erreichen Ihrer Ziele ben&ouml;tigen bereits in sich tragen. Deshalb sehe&nbsp;</p>
+                      <p>ich es als meine Aufgabe, Sie bei Ihrer Weiterentwicklung zu begleiten und mit Ihnen gemeinsam Ihre Tr&auml;ume - W&uuml;nsche und&nbsp;</p>
+                      <p>Visionen als erreichbare Ziele zu gestalten. In meinen Coachings konzentrieren wir uns auf Ihre St&auml;rken und F&auml;higkeiten - wir&nbsp;</p>
+                      <p>entwickeln gemeinsam Ihre neuen Sicht- und Handlungsweisen. Mit mir gemeinsam st&auml;rken Sie Ihr Selbstbild und r&auml;umen&nbsp;</p>
+                      <p>damit Hindernisse aus Ihrem Weg. Damit finden Sie Klarheit und daraus resultiert Ihr Erfolg und Ihr neues Lebensgef&uuml;hl.</p>
+                      <p><br></p>
+                      <p>Ich arbeite mit Ihnen l&ouml;sungsorientiert, methoden&uuml;bergreifend, individuell und pers&ouml;nlichkeitsbezogen</p>
+                      <p><br></p>
+                      <p><strong>Meine Schwerpunkte:</strong></p>
+                      <p>&bull; Selbstmanagement</p>
+                      <p>&bull; Frauen in der F&uuml;hrungsrolle</p>
+                      <p>&bull; Vertriebstraining (Einzeln und Gruppe)</p>
+                      <p>&bull; wertsch&auml;tzende, zielgerichtete Kommunikation</p>
+                      <p>&bull; Zeitmanagement</p>
+                      <p>&bull; Pers&ouml;nlichkeitsentwicklung</p>
+                      <p>&bull; Ver&auml;nderungsmanagement</p>
+                      <p>&bull; Teamentwicklung</p>
+                      <p>&nbsp; &nbsp;</p>
+                      <p>&bdquo;Sei eine erstklassige Ausgabe Deiner selbst - keine zweitklassige von jemandem anderen.&ldquo; Judy Garland</p>
+                      <p><br></p>
+                      <p>&bdquo;Gro&szlig;e Ver&auml;nderungen in unserem Leben k&ouml;nnen eine zweite Chance sein.&ldquo; Harrison Ford</p>
+                      <p><br></p>
+                      <p>&bdquo;Die Qualit&auml;t unserer Ziele bestimmt die Qualit&auml;t unserer Zukunft.&ldquo; &nbsp;Unbekannt</p>
+                      <p><br></p>
+                      <p>&bdquo;Unsere W&uuml;nsche sind die Vorboten der F&auml;higkeiten, die in uns liegen.&ldquo; Goethe</p>
+                      <p><br></p>
+                      <p>Sie Du selbst, alle anderen gibt es schon</p>
+                      <p><br></p>
+                      <p><br></p>
+                      <a href="./expertinnen.html"><h3 class="light-orange" style="text-decoration: underline; font-weight: bold;">&Uuml;ber mich</h3></a>
+                      <p><br></p>
+                      <p>&Uuml;ber 10 Jahre Erfahrung im Bereich Kommunikation und Pers&ouml;nlichkeit in den&nbsp;</p>
+                      <p>Bereichen Health-Care, im Finanzsektor mit Schwerpunkt Vertrieb sowie im&nbsp;</p>
+                      <p>Business Development im Bereich Manufacturing,&nbsp;</p>
+                    </div>              
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal HTML -->
     </main>
     <footer class="site-footer">
       <div class="container-fluid">
         <div class="main-footer">
           <div class="contact">
             <ul>
-              <li>Impressum</li>
-              <li>AGB</li>
+              <a href="./impressum.html"><li>Impressum</li></a>
+              <a href="./agb.html"><li>AGB</li></a>
             </ul>
           </div>
           <div class="logo">
@@ -339,7 +425,8 @@
     </div>
     </footer>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script type="text/javascript">
@@ -356,17 +443,16 @@
         var slidernav = $(".slider-nav-1").slick({
           infinite: true,
           navigator:true,
-          items : 3,
-          slidesToShow: 3,
-          slidesToScroll: 0.75,
+          slidesToShow: 1,
+          slidesToScroll: 0.25,
           dots: false,
           arrows: false,
           variableWidth: false,
           // appendDots: $(".custom-slick-dots"),
         });
 
-        $('.dropdown-toggle').click(function(e){   
-              $('.dropdown-menu').slideToggle();
+        $('.dropdown-lang').click(function(e){   
+              $('.dropdown-menu-lang').slideToggle();
               e.preventDefault();
         });
 
