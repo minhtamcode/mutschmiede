@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Handbuch</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/css/bootstrap-modal.min.css" />
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/custom.css" />
 </head>
@@ -20,63 +18,102 @@
 <body>
     <header class="site-header">
         <div class="container-fluid">
-            <nav class="navbar">
-                <!-- Brand and toggle get grouped for better mobile display-->
-                <div class="navbar-header">
-                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#mutschmiede-nav" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-                    <a href="/">
-                        <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg" />
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling-->
-                <div id="mutschmiede-nav" class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/">Problemfelder</a>
-                        </li>
-                        <li><a href="/exptertinnen.php">Exptertinnen</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
-                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" style="margin-right: 5px;" />AT</a>
-                            <ul class="dropdown-menu" id="country-switcher">
-                                <!-- <li id="country-at">
-                    <a href="?language=at"
-                      ><img
-                        src="./assets/images/languages/AUSTRIA.png "
-                        width="28.31"
-                        height="17.04"
-                        
-                      />
-                      AT</a
-                    >
-                  </li> -->
-                                <li id="country-de">
-                                    <a href="?language=de"><img src="assets/images/languages/DE.png" width="28.31" height="17.04" /> DE
-                                    </a>
-                                </li>
-                                <li id="country-eng">
-                                    <a href="?language=en"><img src="assets/images/languages/ENG.png" width="28.31" height="17.04" /> ENG
-                                    </a>
-                                </li>
-                                <li id="country-esp">
-                                    <a href="?language=es"><img src="assets/images/languages/SPAIN.png" width="28.31" height="17.04" /> ESP
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="user-login">
-                            <a href="/login.html"><img src="assets/images/user_login.png" style="margin-right: 5px;" />login</a>
-                        </li>
-                    </ul>
-                </div>
-        </div>
+        <nav class="navbar">
+            <!-- Brand and toggle get grouped for better mobile display-->
+            <div class="navbar-header">
+              <button
+                class="navbar-toggle collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#mutschmiede-nav"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="./">
+                <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg"/>
+              </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling-->
+            <div
+              id="mutschmiede-nav"
+              class="navbar-right"
+            >
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="./">Problemfelder</a>
+                </li>
+                <li><a href="./">Exptertinnen</a></li>
+                <li class="dropdown">
+                  <a
+                    class="dropdown-lang"
+                    href="/#"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    id="country-switcher-current">
+                    <img
+                      src="./assets/images/languages/AUSTRIA.png"
+                      width="28.31"
+                      height="17.04"
+                      style="margin-right: 5px;" />AT</a>
+                  <ul class="dropdown-menu-lang" id="country-switcher">
+                    <!-- <li id="country-at">
+                      <a href="?language=at"
+                        ><img
+                          src="./assets/images/languages/AUSTRIA.png "
+                          width="28.31"
+                          height="17.04"
+                          
+                        />
+                        AT</a
+                      >
+                    </li> -->
+                    <li id="country-de">
+                      <a href="?language=de"
+                        ><img
+                          src="./assets/images/languages/DE.png"
+                          width="28.31"
+                          height="17.04"
+                        />
+                        DE</a
+                      >
+                    </li>
+                    <li id="country-eng">
+                      <a href="?language=en"
+                        ><img
+                          src="./assets/images/languages/ENG.png"
+                          width="28.31"
+                          height="17.04"
+                        />
+                        ENG</a
+                      >
+                    </li>
+                    <li id="country-esp">
+                      <a href="?language=es"
+                        ><img
+                          src="./assets/images/languages/SPAIN.png"
+                          width="28.31"
+                          height="17.04"
+                        />
+                        ESP</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="user-login">
+                  <a href="./login.html"
+                    ><img src="./assets/images/user_login.png" style="margin-right: 5px;"/>login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <main class="site-main ddbuch-content" id="main-content">
         <div class="ddbuch-banner-top">
             <img src="./assets/images/ddbuch-banner-top.png" width="100%" />
@@ -88,7 +125,7 @@
             <div class="ddbuch-container">
                 <div class="ddbuch-wrap-left bg-white">
                     <div class="dd-wl-img text-center">
-                        <img src="./assets/images/book.png" width="" />
+                        <img src="./assets/images/Group 163.png" width="" />
                     </div>
 
                     <div class="tab-wrapper">
@@ -341,10 +378,9 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
         $(document).ready(function(e) {
@@ -415,6 +451,11 @@
                 $(this).parent().parent().find(".tab-section-content").slideToggle(1000);
             });
             $('.tabs-nav a:first').trigger('click'); // Default
+
+            $('.dropdown-lang').click(function(e){   
+              $('.dropdown-menu-lang').slideToggle();
+              e.preventDefault();
+            });
         });
         AOS.init({
             duration: 1200,
