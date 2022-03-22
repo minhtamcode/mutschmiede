@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Handbuch</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" />
@@ -17,65 +17,7 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container-fluid">
-            <nav class="navbar">
-                <!-- Brand and toggle get grouped for better mobile display-->
-                <div class="navbar-header">
-                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#mutschmiede-nav" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                    <a href="./">
-                        <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg" />
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling-->
-                <div id="mutschmiede-nav" class=" navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="./">Problemfelder</a>
-                        </li>
-                        <li><a href="./">Exptertinnen</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
-                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" style="margin-right: 5px;" />AT</a>
-                            <ul class="dropdown-menu-lang" id="country-switcher">
-                                <!-- <li id="country-at">
-                      <a href="?language=at"
-                        ><img
-                          src="./assets/images/languages/AUSTRIA.png "
-                          width="28.31"
-                          height="17.04"
-                          
-                        />
-                        AT</a
-                      >
-                    </li> -->
-                                <li id="country-de">
-                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31" height="17.04" /> DE
-                                    </a>
-                                </li>
-                                <li id="country-eng">
-                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31" height="17.04" /> ENG
-                                    </a>
-                                </li>
-                                <li id="country-esp">
-                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31" height="17.04" /> ESP
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="user-login">
-                            <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" />login</a>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-        </nav>
-    </header>
+
     <main class="site-main ddbuch-content profile-main" id="main-content">
         <div class="profile-banenr-top">
             <h1>Profil bearbeiten</h1>
@@ -84,7 +26,7 @@
             <div class="profile-content">
                 <div class="profile-content-top">
                     <div class="profile-ct-left">
-                        <h3>Mein mutschmiede Berater Profil </h3>
+                        <h3 class="d-none d-sm-block">Mein mutschmiede Berater Profil </h3>
                         <p class="line-bottom">Basisprofil</p>
                         <div class="group-all">
                             <label class="group-label">Name</label>
@@ -116,7 +58,7 @@
                         <p class="line-bottom">Texte</p>
                         <div class="group-all editparent">
                             <label class="group-label">Adresse & Hausnr.</label>
-                            <textarea class="textarea group-input" placeholder="Enter text ..." spellcheck="false" style="width: 100%; min-height: 260px;line-height:19px">
+                            <textarea class="textarea group-input editor-wysihtml5" placeholder="Enter text ..." spellcheck="false" style="width: 100%; min-height: 260px;line-height:19px">
                                 <p>„Du bist was Du isst“ Dieser Satz hat mich früh geprägt und mich nicht mehr losgelassen. 
                                 Immer logischer finde ich ihn und erlebe in meinem beruflichen Alltag täglich sehr viele 
                                 schöne Beispiele dazu.</p>
@@ -133,6 +75,7 @@
 
                     </div>
                     <div class="profile-ct-right">
+                        <p class="title-top d-block d-sm-none">Mein mutschmiede Berater Profil</p>
                         <a href="#" class="profile-sumit">Profil aktualisieren</a>
                         <p class="line-bottom">Aktuelles Profilbild </p>
                         <div class="profile-ctr-img">
@@ -155,13 +98,18 @@
                                 <p>zuschneiden und dann speichern können.</p>
                             </div>
                         </div>
-
+                        <div class="profile-specifications-bottom col-right d-block d-sm-none">
+                            <div class="profile-sb-flex">
+                                <img src="./assets/images/icon-desktop.svg" />
+                                <p>Ihnen zugewiesene PIN</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="profile-content-center">
                     <div class="group-all editparent col-left">
                         <label class="group-label">Adresse & Hausnr.</label>
-                        <textarea class="textarea group-input" placeholder="Enter text ..." spellcheck="false" style="width: 100%; min-height: 260px;line-height:19px">
+                        <textarea class="textarea group-input editor-wysihtml5" placeholder="Enter text ..." spellcheck="false" style="width: 100%; min-height: 260px;line-height:19px">
                             <p>„Du bist was Du isst“ Dieser Satz hat mich früh geprägt und mich nicht mehr losgelassen. 
                             Immer logischer finde ich ihn und erlebe in meinem beruflichen Alltag täglich sehr viele 
                             schöne Beispiele dazu.</p>
@@ -175,83 +123,161 @@
                             körperliche Gesundheit sowie Stressprävention Schwerpunkt in meinen Coachings.</p>
                         </textarea>
                     </div>
-                    <div class="profile-specifications-bottom col-right">
-                        <img src="./assets/images/icon-desktop.svg" />
-                        <p>Ihnen zugewiesene PIN</p>
+                    <div class="profile-specifications-bottom col-right d-none d-sm-block">
+                        <div class="profile-sb-flex">
+                            <img src="./assets/images/icon-desktop.svg" />
+                            <p>Ihnen zugewiesene PIN</p>
+                        </div>
                     </div>
                 </div>
                 <div class="profile-content-bottom">
                     <p class="line-bottom">Meine Themengebiete</p>
-                    <div class="profile-cb-icon">
-                        <div class="item-icon">
-                            <img src="./assets/images/stress-icon.svg" />
-                            <p>Stress</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/familie-icon.svg" />
-                            <p>Familie</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/beziehung-icon.svg" />
-                            <p>Beziehung</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/konflikt-icon.svg" />
-                            <p>Konflikt</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/persönlichkeit-icon.svg" />
-                            <p>Persönlichkeit</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/angst-icon.svg" />
-                            <p>Angst</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/unterstützung-icon.svg" />
-                            <p>Unterstützung</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/sucht-icon.svg" />
-                            <p>Sucht</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/geldsorgen-icon.svg" />
-                            <p>Geldsorgen</p>
+                    <div class="profile-cb-icon d-none d-sm-block">
+                        <div class="profile-cb-icon-desktop">
+                            <div class="item-icon">
+                                <img src="./assets/images/stress-icon.svg" />
+                                <p>Stress</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/familie-icon.svg" />
+                                <p>Familie</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/beziehung-icon.svg" />
+                                <p>Beziehung</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/konflikt-icon.svg" />
+                                <p>Konflikt</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/persönlichkeit-icon.svg" />
+                                <p>Persönlichkeit</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/angst-icon.svg" />
+                                <p>Angst</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/unterstützung-icon.svg" />
+                                <p>Unterstützung</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/sucht-icon.svg" />
+                                <p>Sucht</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/geldsorgen-icon.svg" />
+                                <p>Geldsorgen</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="profile-cb-icon">
-                        <div class="item-icon">
-                            <img src="./assets/images/trennung-icon.svg" />
-                            <p>Trennung</p>
+                    <div class="profile-cb-icon d-none d-sm-block">
+                        <div class="profile-cb-icon-desktop">
+                            <div class="item-icon">
+                                <img src="./assets/images/trennung-icon.svg" />
+                                <p>Trennung</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/mobbing-icon.svg" />
+                                <p>Mobbing</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/trauer-icon.svg" />
+                                <p>Trauer</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/schule-studium-icon.svg" />
+                                <p>Sexualität</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/schule-studium-icon.svg" />
+                                <p>Schule & Studium</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/unternehmens-icon.svg" />
+                                <p>Unternehmens-beratung</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/pflege-icon.svg" />
+                                <p>Pflege</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/covid-19-icon.svg" />
+                                <p>Covid-19</p>
+                            </div>
                         </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/mobbing-icon.svg" />
-                            <p>Mobbing</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/trauer-icon.svg" />
-                            <p>Trauer</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/schule-studium-icon.svg" />
-                            <p>Sexualität</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/schule-studium-icon.svg" />
-                            <p>Schule & Studium</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/unternehmens-icon.svg" />
-                            <p>Unternehmens-beratung</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/pflege-icon.svg" />
-                            <p>Pflege</p>
-                        </div>
-                        <div class="item-icon">
-                            <img src="./assets/images/covid-19-icon.svg" />
-                            <p>Covid-19</p>
+                    </div>
+                    <div class="profile-cb-icon d-block d-sm-none">
+                        <div class="profile-cb-icon-mobile">
+                            <div class="item-icon">
+                                <img src="./assets/images/stress-icon.svg" />
+                                <p>Stress</p>
+                            </div>
+                            <div class="item-icon mr-0">
+                                <img src="./assets/images/familie-icon.svg" />
+                                <p>Familie</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/beziehung-icon.svg" />
+                                <p>Beziehung</p>
+                            </div>
+                            <div class="item-icon mr-0">
+                                <img src="./assets/images/konflikt-icon.svg" />
+                                <p>Konflikt</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/persönlichkeit-icon.svg" />
+                                <p>Persönlichkeit</p>
+                            </div>
+                            <div class="item-icon mr-0">
+                                <img src="./assets/images/angst-icon.svg" />
+                                <p>Angst</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/unterstützung-icon.svg" />
+                                <p>Unterstützung</p>
+                            </div>
+                            <div class="item-icon mr-0">
+                                <img src="./assets/images/sucht-icon.svg" />
+                                <p>Sucht</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/geldsorgen-icon.svg" />
+                                <p>Geldsorgen</p>
+                            </div>
+                            <div class="item-icon mr-0">
+                                <img src="./assets/images/trennung-icon.svg" />
+                                <p>Trennung</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/mobbing-icon.svg" />
+                                <p>Mobbing</p>
+                            </div>
+                            <div class="item-icon mr-0">
+                                <img src="./assets/images/trauer-icon.svg" />
+                                <p>Trauer</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/schule-studium-icon.svg" />
+                                <p>Sexualität</p>
+                            </div>
+                            <div class="item-icon mr-0">
+                                <img src="./assets/images/schule-studium-icon.svg" />
+                                <p>Schule & Studium</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/unternehmens-icon.svg" />
+                                <p>Unternehmens-beratung</p>
+                            </div>
+                            <div class="item-icon mr-0">
+                                <img src="./assets/images/pflege-icon.svg" />
+                                <p>Pflege</p>
+                            </div>
+                            <div class="item-icon">
+                                <img src="./assets/images/covid-19-icon.svg" />
+                                <p>Covid-19</p>
+                            </div>
                         </div>
                     </div>
                     <div class="profile-cb-button">
@@ -262,21 +288,7 @@
             </div>
         </div>
     </main>
-    <footer class="site-footer">
-        <div class="container-fluid">
-            <div class="main-footer">
-                <div class="contact">
-                    <ul>
-                        <li>Impressum</li>
-                        <li>AGB</li>
-                    </ul>
-                </div>
-                <div class="logo">
-                    fi
-                </div>
-            </div>
-        </div>
-    </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -286,12 +298,42 @@
     <script src="./assets/js/bootstrap-wysihtml5.js"></script>
 
     <script type="application/javascript">
-        $('.textarea').wysihtml5({
+        jQuery('.textarea').wysihtml5({
 
             "font-styles": false,
             "image": false,
             "link": false,
 
+        });
+
+        jQuery(document).ready(function() {
+            // jQuery(window).load(function() {
+            // 	console.log("a");
+            // })
+            var viewport_meta = document.getElementById('viewport-meta');
+            var viewport_content = jQuery("meta[name='viewport']").attr("content");
+            console.log(viewport_content);
+            // Define our viewport meta values
+            var viewports = {
+
+                landscape: 'width=736, initial-scale=0.7, minimum-scale=0.7, maximum-scale=0.7, user-scalable=no'
+            };
+
+            // Change the viewport value based on screen.width
+            var viewport_set = function() {
+                if (window.screen.width < 1024 && window.screen.width > 576)
+                    viewport_meta.setAttribute('content', viewports.landscape);
+                else
+                    viewport_meta.setAttribute('content', viewports.default);
+            }
+
+            // Set the correct viewport value on page load
+            viewport_set();
+
+            // Set the correct viewport after device orientation change or resize
+            window.onresize = function() {
+                viewport_set();
+            }
         });
     </script>
 </body>
