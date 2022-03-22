@@ -11,7 +11,11 @@
 }
 
 .bg-white {
-    background-color: #fff;
+    background-color: #fff !important;
+}
+
+.bg-black {
+    background-color: #000!important;
 }
 
 .ddbuch-content .ddbuch-title h1 {
@@ -303,10 +307,52 @@
 .profile-content-top .profile-ct-left h3 {
     margin-bottom: 40px;
     font-size: 30px;
+    line-height: 35px;
 }
 
 .profile-content-top .profile-ct-right {
-    width: 483px;
+    width: 399px;
+    margin-left: 84px;
+}
+
+.profile-ct-right .profile-sumit {
+    background-color: #A6BEA5;
+    border-radius: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+    margin-bottom: 29px;
+}
+
+.profile-ct-right .profile-ctr-img img {
+    width: 100%;
+    height: 399px;
+    border-radius: 100% !important;
+    margin-bottom: 41px;
+}
+
+.profile-ct-right .line-bottom {
+    margin-bottom: 30px;
+}
+
+.mr-bottom-51 {
+    margin-bottom: 51px !important;
+}
+
+.profile-specifications {
+    margin-top: 50px;
+}
+
+.profile-specifications .profile-s-bottom {
+    margin-top: 15px;
+}
+
+.profile-specifications .profile-s-bottom span {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 
