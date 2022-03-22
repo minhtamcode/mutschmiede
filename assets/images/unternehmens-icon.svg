@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="103" viewBox="0 0 103 103">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_196" data-name="Rectangle 196" width="56.498" height="43.024" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_195" data-name="Group 195" transform="translate(24.75 29.976)">
+    <circle id="Ellipse_33" data-name="Ellipse 33" cx="51.5" cy="51.5" r="51.5" transform="translate(-24.75 -29.976)" fill="#efefef"/>
+    <g id="Group_194" data-name="Group 194" clip-path="url(#clip-path)">
+      <path id="Path_158" data-name="Path 158" d="M43,0A13.5,13.5,0,1,1,29.5,13.5,13.5,13.5,0,0,1,43,0" fill="#fbc7b2"/>
+      <path id="Path_159" data-name="Path 159" d="M51.815,41.024H2V9.274a1,1,0,0,0-2,0v33.75H51.815a1,1,0,1,0,0-2" fill="#161615"/>
+      <path id="Path_160" data-name="Path 160" d="M21.769,19.74l9.113,9.113L45.527,14.207v2.057h2V10.736H42v2H44.17L30.882,26.025l-9.113-9.113L3.447,35.234l1.414,1.414Z" fill="#161615"/>
+      <rect id="Rectangle_187" data-name="Rectangle 187" width="2" height="3.108" transform="translate(6.973 36.452)" fill="#161615"/>
+      <rect id="Rectangle_188" data-name="Rectangle 188" width="2" height="6.909" transform="translate(11.571 32.651)" fill="#161615"/>
+      <rect id="Rectangle_189" data-name="Rectangle 189" width="2" height="11.601" transform="translate(16.17 27.96)" fill="#161615"/>
+      <rect id="Rectangle_190" data-name="Rectangle 190" width="2" height="15.583" transform="translate(20.769 23.977)" fill="#161615"/>
+      <rect id="Rectangle_191" data-name="Rectangle 191" width="2" height="11.601" transform="translate(25.368 27.96)" fill="#161615"/>
+      <rect id="Rectangle_192" data-name="Rectangle 192" width="2" height="8.604" transform="translate(29.967 30.956)" fill="#161615"/>
+      <rect id="Rectangle_193" data-name="Rectangle 193" width="2" height="11.601" transform="translate(34.565 27.96)" fill="#161615"/>
+      <rect id="Rectangle_194" data-name="Rectangle 194" width="2" height="15.583" transform="translate(39.164 23.977)" fill="#161615"/>
+      <rect id="Rectangle_195" data-name="Rectangle 195" width="2" height="20.584" transform="translate(43.763 18.976)" fill="#161615"/>
+    </g>
+  </g>
+</svg>
