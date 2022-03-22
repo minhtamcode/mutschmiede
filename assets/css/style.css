@@ -149,17 +149,17 @@ header .navbar{
     border-radius: 4px;
 }
 
-.navbar-right ul{
+.navbar-collapse ul{
     display: flex;
     flex-direction: row !important;
 }
 
-.navbar-right ul li {
+.navbar-collapse ul li {
     margin-left: 40px;
     margin-bottom: 10px;
 }
 
-.navbar-right ul li.dropdown .dropdown-lang::after{
+.navbar-collapse ul li.dropdown .dropdown-lang::after{
     content: "\f107";
     color: #000;
     font-family:"Font Awesome 5 Pro";
@@ -168,15 +168,15 @@ header .navbar{
     vertical-align: 0 !important;
 }
 
-.navbar-right ul li.user-login{
+.navbar-collapse ul li.user-login{
     width: 200px;
 }
 
-.navbar-right ul li.user-login a{
+.navbar-collapse ul li.user-login a{
     float: right;
 }
 
-.navbar-right ul li a{
+.navbar-collapse ul li a{
     font-size: 20px;
     color: #000;
     text-transform: uppercase;
@@ -214,7 +214,7 @@ header .navbar{
 }
 
 
-.navbar-right ul .dropdown-menu-lang{
+.navbar-collapse ul .dropdown-menu-lang{
     display: none;
     position: absolute;
     left: -40px;
