@@ -6,6 +6,12 @@
     font-family: 'Raleway-bold';
     src: url('../fonts/raleway/Raleway-Bold.ttf');
 }
+
+@font-face {
+    font-family: 'Raleway-medium';
+    src: url('../fonts/raleway/Raleway-Medium.ttf');
+}
+
 @font-face {
     font-family: 'Raleway-semibold';
     src: url('../fonts/raleway/Raleway-SemiBold.ttf');
@@ -376,6 +382,7 @@ main .site-main #main-content{
     line-height: 205px;
     font-weight: 500;
     color: #FBC7B2;
+    font-family: 'Raleway-medium';
 }
 
 #main-content .coaches .title-coachs{
@@ -452,9 +459,9 @@ main .site-main #main-content{
 }
 
 
-.box-action a{
+/* .box-action a{
     font-size: 30px !important;
-}
+} */
 
 .box .content,.box-action .content{
     display: flex;
@@ -485,9 +492,13 @@ main .site-main #main-content{
 
 .box-action a {
     color: #fff;
-    font-size: 16px !important;
     font-weight: 600 !important;
+    font-size: 30px;
     margin-bottom: 30px;
+}
+
+.slider-nav-1 .box-action a{
+    font-size: 16px;
 }
 
 #main-content .coaches .slider-nav-1 .box-action p,#main-content .coaches .slider-nav-1 .box-action h2{
@@ -571,6 +582,7 @@ main .site-main #main-content{
     line-height: 205px;
     font-weight: bold;
     color: #FBC7B2;
+    font-family: 'Raleway-bold';
 }
 
 .section-coming-soon{
@@ -586,7 +598,8 @@ main .site-main #main-content{
 #main-content .coaches .subtitle-1,#main-content .coaches .subtitle-2{
     position: absolute;
     top: 85px;
-    left: 90px;
+    left: 97px;
+    font-family: 'Raleway-semibold';
 }
 
 #main-content .coaches .subtitle-1 p,#main-content .coaches .subtitle-coachs p,#main-content .coaches .subtitle-2 p{
