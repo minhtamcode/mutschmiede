@@ -238,6 +238,7 @@ main .site-main #main-content{
 
 #main-content .gemeinsam{
     background-color: #EFEFEF;
+    position: relative;
 }
 
 #main-content .image-gemeinsam{
@@ -250,7 +251,7 @@ main .site-main #main-content{
     width: 100%;
     background-color: #fff;
     position: absolute;
-    top: 37rem;
+    top: 30em;
     z-index: 1;
 }
 
@@ -276,8 +277,9 @@ main .site-main #main-content{
     background-color: #fff;
     position: absolute;
     left: 830px;
-    top: 315px;
+    top: 245px;
     z-index: 3;
+    max-width: 100%;
     /* padding: 91px 100px 114px 101px; */
 }
 
