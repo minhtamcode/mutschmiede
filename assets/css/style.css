@@ -149,17 +149,17 @@ header .navbar{
     border-radius: 4px;
 }
 
-.navbar-collapse ul{
+.navbar-right ul{
     display: flex;
     flex-direction: row !important;
 }
 
-.navbar-collapse ul li {
+.navbar-right ul li {
     margin-left: 40px;
     margin-bottom: 10px;
 }
 
-.navbar-collapse ul li.dropdown .dropdown-lang::after{
+.navbar-right ul li.dropdown .dropdown-lang::after{
     content: "\f107";
     color: #000;
     font-family:"Font Awesome 5 Pro";
@@ -168,15 +168,15 @@ header .navbar{
     vertical-align: 0 !important;
 }
 
-.navbar-collapse ul li.user-login{
+/* .navbar-right ul li.user-login{
     width: 200px;
-}
+} */
 
-.navbar-collapse ul li.user-login a{
+.navbar-right ul li.user-login a{
     float: right;
 }
 
-.navbar-collapse ul li a{
+.navbar-right ul li a{
     font-size: 20px;
     color: #000;
     text-transform: uppercase;
@@ -214,7 +214,7 @@ header .navbar{
 }
 
 
-.navbar-collapse ul .dropdown-menu-lang{
+.navbar-right ul .dropdown-menu-lang{
     display: none;
     position: absolute;
     left: -40px;
@@ -238,6 +238,8 @@ main .site-main #main-content{
 
 #main-content .gemeinsam{
     background-color: #EFEFEF;
+    position: relative;
+    height: 820px;
 }
 
 #main-content .image-gemeinsam{
@@ -250,7 +252,7 @@ main .site-main #main-content{
     width: 100%;
     background-color: #fff;
     position: absolute;
-    top: 37rem;
+    top: 30em;
     z-index: 1;
 }
 
@@ -271,13 +273,14 @@ main .site-main #main-content{
 
 
 #main-content .content-gemeinsam-box{
+    background-color: #fff;
+    position: relative;
+    left: 830px;
+    bottom: 650px;
+    z-index: 3;
+    max-width: 100%;
     height: 489px;
     width: 889px;
-    background-color: #fff;
-    position: absolute;
-    left: 830px;
-    top: 315px;
-    z-index: 3;
     /* padding: 91px 100px 114px 101px; */
 }
 
@@ -323,7 +326,7 @@ main .site-main #main-content{
 }
 
 #main-content .funktioniert .funktioniert-content{
-    max-width: 1070px;
+    width: 1070px;
 }
 
 #main-content .funktioniert .funktioniert-content .text{
@@ -341,10 +344,10 @@ main .site-main #main-content{
     line-height: 25px;
 }
 
-#main-content .funktioniert .funktioniert-image{
-    position: absolute;
+#main-content .funktioniert .funktioniert-image {
+    position: relative;
     right: 0;
-    top: 1093px;
+    top: 75px;
     /* z-index: 1; */
 }
 
@@ -362,15 +365,15 @@ main .site-main #main-content{
 }
 
 #main-content .coaches{
-    height: 1692px;
+    height: 820px;
     background-color: #fff;
     /* position: relative; */
 }
 
-#main-content .coaches .title-1 , #main-content .coaches .title-2{
-    position: absolute;
-    top: 104em;
-    left: 42px;
+#main-content .coaches .title-1, #main-content .coaches .title-2 {
+    position: relative;
+    top: -3em;
+    margin-left: 42px;
 }
 
 #main-content .coaches .section{
@@ -385,22 +388,22 @@ main .site-main #main-content{
     font-family: 'Raleway-medium';
 }
 
-#main-content .coaches .title-coachs{
-    position: absolute;
-    left: 42px;
-    top: 148em;
+#main-content .coaches .title-coachs {
+    position: relative;
+    margin-left: 42px;
+    top: 8em;
 }
 
-#main-content .coaches .slider-nav-1{
-    top: 385px !important;
+#main-content .coaches .slider-nav-1 {
+    bottom: -40px !important;
 }
 
 #main-content .coaches .slider-nav-1 .slick-list{
     height: 510px;
 }
 
-#main-content .coaches .slider-nav{
-    top: 130px !important;
+#main-content .coaches .slider-nav {
+    top: -70px !important;
 }
 
 .box{
@@ -537,15 +540,16 @@ main .site-main #main-content{
 }
 
 
-#main-content .coaches .custom-slick-navigator{
+#main-content .coaches .custom-slick-navigator {
     position: relative;
-    top: -130px;
+    bottom: 335px;
 }
 
-#main-content .coaches .custom-slick-navigator-1{
+#main-content .coaches .custom-slick-navigator-1 {
     position: relative;
-    top: 30px;
+    bottom: 315px;
 }
+
 
 #main-content .coaches .custom-slick-navigator .custom-slick-arrow-left{
     position: absolute;
@@ -609,16 +613,17 @@ main .site-main #main-content{
 
 
 #main-content .coming-soon{
-    height: 690px;
+    /* height: 690px; */
     background-color: #EFEFEF;
     display: flex;
     justify-content: flex-end;
 }
 
-#main-content .image-coming-soon{
-    position: absolute;
-    bottom: 0;
+#main-content .image-coming-soon {
+    position: relative;
+    top: 700px;
 }
+
 
 #main-content .coming-soon .content{
     max-width: 1070px;
@@ -1325,4 +1330,93 @@ a.slick-slide{
     width: 643px;
     justify-content: space-between;
     margin-bottom: 46px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media  (max-width: 576px) { 
+    .navbar-right ul li {
+        margin-left: 15px;
+        margin-bottom: 0;
+    }
+
+    .navbar-right ul li ul li{
+        margin-bottom: 10px;
+    }
+
+    .navbar-right ul .dropdown-menu-lang {
+        left: -15px;
+    }
+
+    .navbar-right ul li.dropdown .dropdown-lang::after{
+        content: "";
+    }
+
+    #main-content .gemeinsam img{
+        height: 480px;
+    }
+
+    #main-content .content-gemeinsam-box {
+        left: 10%;
+        width: 80%;
+        height: fit-content;
+        top: -11em;
+        position: relative;
+    }
+
+    #main-content .content-gemeinsam-box .text-box{
+        padding: 40px;
+        text-align: center;
+    }
+    .btn-box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content-gemeinsam-box .btn-box .btn{
+        margin-top: 10px;
+    }
+
+    #main-content .content-gemeinsam{
+        position: relative;
+        top: -37em;
+    }
+
+    #main-content .coaches .title-coachs{
+        display: none;
+    }
+
+    #main-content .funktioniert {
+        position: relative;
+        padding-top: 121px;
+    }
+
+    #main-content .funktioniert .funktioniert-image {
+        top: -33em;
+        /* z-index: 1; */
+    }
+
+    #main-content .funktioniert .funktioniert-content .text {
+        padding: 30px 66px 115px 66px;
+    }
+
+    #main-content .coaches .title-1, #main-content .coaches .title-2 {
+        top: 141em;
+        left: 180px;
+    }
+
+    #main-content .image-coming-soon {
+        position: relative;
+        top: 0;
+    }
+
+    #main-content  .section-coming-soon {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+ }
+
+.navbar-right ul.d-md-flex li button{
+    border: none;
+    background: transparent;
 }
