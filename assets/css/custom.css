@@ -67,6 +67,17 @@
     font-size: 30px;
     font-family: 'Raleway-semibold';
     margin-bottom: 18px;
+    color: #000;
+    cursor: pointer;
+}
+
+.tab-wrapper h3 a {
+    color: #000;
+}
+
+.tab-wrapper i.fa {
+    font-size: 16px;
+    margin-left: 10px;
 }
 
 .tabs-nav li a {
@@ -180,6 +191,10 @@
     margin-top: 21px;
 }
 
+.tab-section .tab-button a {
+    color: #000;
+}
+
 .tab-section .tab-button .button-druken {
     width: 306px;
     padding: 15px 0;
@@ -209,8 +224,22 @@
     display: block !important;
 }
 
-.tab-active .drop-menu {
+.tabs-nav .drop-menu {
     margin-bottom: 25px;
+    display: none;
+}
+
+.tab-content-active {
+    display: block !important;
+}
+
+.fa-up:before {
+    content: "\f077";
+}
+
+.fa-down:before,
+.fa-down-active::before {
+    content: "\f078";
 }
 
 
@@ -552,6 +581,76 @@
     }
     .profile-content-bottom .profile-cb-icon .item-icon:last-child {
         margin-right: 15px;
+    }
+    .ddbuch-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    .ddbuch-wrap {
+        padding-left: 17px;
+        padding-right: 16px;
+    }
+    .tab-wrapper h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .ddbuch-wrap-left .tab-wrapper {
+        padding: 0 56px 51px 19px;
+    }
+    .ddbuch-wrap .ddbuch-wrap-left {
+        margin-bottom: 30px;
+    }
+    .ddbuch-wrap .ddbuch-wrap-left,
+    .ddbuch-wrap .ddbuch-wrap-right {
+        max-width: 100%;
+    }
+    .tab-content-show .tab-wrap-top {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        padding: 20px 15px 20px 19px;
+    }
+    .tab-section .tab-section-icon {
+        padding: 20px 15px 20px 19px;
+    }
+    .tab-section .tab-section-content {
+        padding: 20px 15px 20px 19px;
+    }
+    .ddbuch-navigation {
+        margin: 45px auto;
+    }
+    .tab-section .tab-button {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: stretch;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 45px;
+        margin-top: 20px;
+    }
+    .tab-button .button-oben {
+        margin-bottom: 20px;
+        color: #000;
+    }
+    .tab-wrap-top-icon {
+        margin-top: 22px;
+    }
+    .tab-content-show .tab-wrap-top h3 {
+        font-size: 20px;
+    }
+    .tab-wrap-top-icon a:first-child {
+        margin-left: unset;
+        margin-top: 22px;
     }
 }
 
