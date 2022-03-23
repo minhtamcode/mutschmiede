@@ -297,6 +297,7 @@
 
 .profile-content-top {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -367,7 +368,7 @@
     text-decoration: underline;
 }
 
-.profile-specifications-bottom {
+.profile-specifications-bottom .profile-sb-flex {
     text-align: center;
     height: 260px;
     border: 1px solid #FBC7B2;
@@ -396,7 +397,7 @@
     margin-top: 50px;
 }
 
-.profile-content-bottom .profile-cb-icon {
+.profile-content-bottom .profile-cb-icon .profile-cb-icon-desktop {
     margin-top: 64px;
     display: flex;
     flex-direction: row;
@@ -452,5 +453,113 @@
     display: block;
 }
 
+@media (max-width: 576px) {
+    .hide-mobile {
+        display: none;
+    }
+    .profile-main .profile-wrap .profile-content {
+        width: 100%;
+        padding: 37px 20px 45px 20px;
+    }
+    .profile-ct-right .title-top {
+        padding: 0 76px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: 'Raleway-semibold';
+    }
+    .profile-main .profile-wrap {
+        padding: 54px 15px;
+    }
+    .profile-content-top {
+        flex-direction: column-reverse;
+    }
+    .profile-content-top .profile-ct-right,
+    .col-right,
+    .profile-content-top .profile-ct-left,
+    .col-left {
+        width: 100%;
+        margin-left: unset;
+    }
+    .profile-ct-right .profile-sumit {
+        margin-bottom: 53px;
+    }
+    .profile-ct-right .profile-sumit.bg-black {
+        margin-bottom: 40px;
+    }
+    .profile-ct-right .profile-ctr-img img {
+        width: 234px;
+        height: 234px;
+        display: block;
+        margin: 0 auto 26px auto;
+    }
+    .profile-ct-right .line-bottom {
+        margin-bottom: 40px;
+    }
+    .profile-specifications-bottom {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .profile-ct-left .group-line {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .wysihtml5-toolbar {
+        text-align: center;
+        margin-bottom: 10px !important;
+    }
+    ul.wysihtml5-toolbar>li {
+        float: unset !important;
+        margin: 0 0 10px 0 !important;
+    }
+    .editor-wysihtml5 {
+        height: 546px !important;
+    }
+    .wysihtml5-sandbox {
+        padding: 24px 23px 28px 20px;
+    }
+    .profile-cb-button {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 50px;
+    }
+    .profile-cb-button .profile-sumit {
+        width: 100%;
+    }
+    .profile-cb-button .profile-sumit.bg-black {
+        margin-top: 20px;
+    }
+    .profile-content-bottom .profile-cb-icon {
+        display: unset;
+        flex-direction: unset;
+        flex-wrap: unset;
+        justify-content: unset;
+        align-items: unset;
+        align-content: unset;
+    }
+    .profile-content-bottom .profile-cb-icon-mobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        margin-left: 53px;
+    }
+    .profile-content-bottom .profile-cb-icon .item-icon {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .profile-content-bottom .profile-cb-icon .item-icon:last-child {
+        margin-right: 15px;
+    }
+}
 
-/* profile-main */
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1180px) {}
+
+
+/* profile-main
