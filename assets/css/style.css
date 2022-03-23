@@ -591,6 +591,7 @@ main .site-main #main-content{
 
 .section-coming-soon{
     position: relative;
+    z-index: -1;
 }
 
 #main-content .coaches .subtitle-coachs{
