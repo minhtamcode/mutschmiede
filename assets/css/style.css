@@ -238,8 +238,7 @@ main .site-main #main-content{
 
 #main-content .gemeinsam{
     background-color: #EFEFEF;
-    position: relative;
-    height: 820px;
+    height: 897px;
 }
 
 #main-content .image-gemeinsam{
@@ -252,7 +251,7 @@ main .site-main #main-content{
     width: 100%;
     background-color: #fff;
     position: absolute;
-    top: 30em;
+    top: 40em;
     z-index: 1;
 }
 
