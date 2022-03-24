@@ -115,6 +115,7 @@
 
 .ddbuch-navigation ul li a {
     color: #000;
+    font-family: 'Raleway-semibold';
 }
 
 .ddbuch-wrap-left .tab-wrapper {
@@ -482,6 +483,69 @@
     display: block;
 }
 
+.site-main-coaches .container {
+    padding: 0 !important;
+    margin: auto !important;
+}
+
+.site-main-coaches .container .form {
+    width: 100% !important;
+}
+
+.site-main-coaches .form .header-table {
+    margin-bottom: 20px;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-img {
+    padding-top: 67px;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-img .link a {
+    font-family: 'Raleway-medium';
+}
+
+.site-main-coaches .header-table ul li a {
+    color: #000;
+}
+
+.site-main-coaches .action a,
+.site-main-coaches .delete a {
+    font-family: 'Raleway-medium';
+    color: #000;
+}
+
+.site-main-coaches .link a {
+    font-family: 'Raleway-medium';
+    color: #fff;
+}
+
+.header-table ul {
+    justify-content: flex-end;
+}
+
+.header-table ul li:last-child {
+    margin-right: 0;
+}
+
+.site-main-coaches .form .box-name-button a {
+    text-transform: uppercase;
+    padding: 2px 13px;
+    margin-left: 10px;
+    color: #000;
+}
+
+.bg-silver {
+    background-color: #EFEFEF;
+}
+
+.bg-pink {
+    background-color: #FBC7B2;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor .name {
+    padding: 58px 20px;
+}
+
 @media (max-width: 576px) {
     .hide-mobile {
         display: none;
@@ -651,6 +715,91 @@
     .tab-wrap-top-icon a:first-child {
         margin-left: unset;
         margin-top: 22px;
+    }
+    .site-main-coaches .form .coach-box .coach {
+        flex-direction: column;
+    }
+    .site-main-coaches .form .coach-box .coach .coach-infor,
+    .site-main-coaches .form .coach-box .coach .coach-img {
+        width: 100%;
+    }
+    .site-main-coaches .form .coach-box .coach .coach-img {
+        border-bottom: 1px solid #FBC7B2;
+        padding-bottom: 24px;
+        padding-top: 32px;
+    }
+    .site-main-coaches .title .text h1 {
+        font-size: 25px;
+    }
+    .site-main-coaches .form .header-table {
+        font-family: 'Raleway-medium';
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .site-main-coaches .header-table .search {
+        width: 100%;
+    }
+    .site-main-coaches .header-table .search ul {
+        display: block;
+    }
+    .site-main-coaches .header-table .search ul li {
+        float: left;
+    }
+    .site-main-coaches .header-table .search ul li:first-child {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .form-coach#main-content .content {
+        padding: 20px 16px 0 17px !important;
+    }
+    .site-main-coaches .form .coach-box:last-of-type() {
+        margin-bottom: unset !important;
+    }
+    .site-main-coaches .form .coach-box {
+        margin-bottom: 45px;
+    }
+    .site-main-coaches .ddbuch-navigation {
+        margin: 0;
+        padding-bottom: 44px;
+    }
+    .site-main-coaches .form .coach-box .coach .coach-infor .description {
+        padding: 25px 27px 40px 19px;
+    }
+    .site-main-coaches .form .coach-box .coach .coach-infor .infor {
+        padding: 25px 35px 30px 19px;
+    }
+    .site-main-coaches .form .coach-box .coach .coach-infor p {
+        margin: 0;
+        font-family: 'Raleway-medium';
+    }
+    .site-main-coaches .form .coach-box .coach .coach-infor ul li {
+        font-family: 'Raleway-medium';
+    }
+    .site-main-coaches .coach-infor .infor-line-box {
+        margin-bottom: 30px;
+    }
+    .site-main-coaches .form .coach-box .coach .coach-img .img {
+        width: 234px;
+        height: 234px;
+        margin: 0 auto 20px auto;
+        margin-top: 30px;
+    }
+    .site-main-coaches .form .coach-box .coach .coach-img .action {
+        margin-bottom: 0;
+    }
+    .header-table ul {
+        justify-content: flex-start;
+    }
+    .site-main-coaches .coach-img .name h1 {
+        font-size: 20px !important;
+        font-family: 'Raleway-semibold';
+        margin-bottom: 40px;
+    }
+    .site-main-coaches .form .box-name-button a {
+        font-size: 14px;
+    }
+    .site-main-coaches .form .box-name-button {
+        margin-top: 10px;
     }
 }
 

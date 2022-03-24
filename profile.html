@@ -24,7 +24,7 @@
         </div>
         <div class="profile-wrap">
             <div class="profile-content">
-                <div class="profile-content-top">
+                <div class="profile-content-top" data-aos="fade-up">
                     <div class="profile-ct-left">
                         <h3 class="d-none d-sm-block">Mein mutschmiede Berater Profil </h3>
                         <p class="line-bottom">Basisprofil</p>
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="profile-content-center">
+                <div class="profile-content-center" data-aos="fade-up">
                     <div class="group-all editparent col-left">
                         <label class="group-label">Adresse & Hausnr.</label>
                         <textarea class="textarea group-input editor-wysihtml5" placeholder="Enter text ..." spellcheck="false" style="width: 100%; min-height: 260px;line-height:19px">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="profile-content-bottom">
+                <div class="profile-content-bottom" data-aos="fade-up">
                     <p class="line-bottom">Meine Themengebiete</p>
                     <div class="profile-cb-icon d-none d-sm-block">
                         <div class="profile-cb-icon-desktop">
@@ -298,6 +298,9 @@
     <script src="./assets/js/bootstrap-wysihtml5.js"></script>
 
     <script type="application/javascript">
+        AOS.init({
+            duration: 1200,
+        })
         jQuery('.textarea').wysihtml5({
             "font-styles": false,
             "image": false,

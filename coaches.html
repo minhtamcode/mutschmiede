@@ -1,65 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Document</title>
 
-       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/editor.css" />
+</head>
+
+<body>
     <header class="site-header">
-      <div class="container-fluid">
-      <nav class="navbar">
-          <!-- Brand and toggle get grouped for better mobile display-->
-          <div class="navbar-header">
-            <a href="./">
-              <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg"/>
-            </a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling-->
-          <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#mutschmiede-nav"
-              aria-expanded="false"
-            >
+        <div class="container-fluid">
+            <nav class="navbar">
+                <!-- Brand and toggle get grouped for better mobile display-->
+                <div class="navbar-header">
+                    <a href="./">
+                        <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg" />
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mutschmiede-nav" aria-expanded="false">
             <img src="./assets/images/Group 290.svg">
             </button>
-          <div
-            id="mutschmiede-nav"
-            class="collapse navbar-collapse"
-          >
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="./">Problemfelder</a>
-              </li>
-              <li><a href="./">Exptertinnen</a></li>
-              <li class="dropdown">
-                <a
-                  class="dropdown-lang"
-                  href="/#"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  id="country-switcher-current"
-                >
-                  <img
-                    src="./assets/images/languages/AUSTRIA.png "
-                    width="28.31"
-                    height="17.04"
-                    style="margin-right: 5px;"
-                  />AT</a
-                >
-                <ul class="dropdown-menu-lang" id="country-switcher">
-                  <!-- <li id="country-at">
+                <div id="mutschmiede-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="./">Problemfelder</a>
+                        </li>
+                        <li><a href="./">Exptertinnen</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
+                                <img src="./assets/images/languages/AUSTRIA.png " width="28.31" height="17.04" style="margin-right: 5px;" />AT</a>
+                            <ul class="dropdown-menu-lang" id="country-switcher">
+                                <!-- <li id="country-at">
                     <a href="?language=at"
                       ><img
                         src="./assets/images/languages/AUSTRIA.png "
@@ -70,302 +51,345 @@
                       AT</a
                     >
                   </li> -->
-                  <li id="country-de">
-                    <a href="?language=de"
-                      ><img
-                        src="./assets/images/languages/DE.png"
-                        width="28.31"
-                        height="17.04"
-                      />
-                      DE</a
-                    >
-                  </li>
-                  <li id="country-eng">
-                    <a href="?language=en"
-                      ><img
-                        src="./assets/images/languages/ENG.png"
-                        width="28.31"
-                        height="17.04"
-                      />
-                      ENG</a
-                    >
-                  </li>
-                  <li id="country-esp">
-                    <a href="?language=es"
-                      ><img
-                        src="./assets/images/languages/SPAIN.png"
-                        width="28.31"
-                        height="17.04"
-                      />
-                      ESP</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="user-login">
-                <a href="#" style="text-decoration: underline;">
-                  <img src="./assets/images/user_login.png" style="margin-right: 5px;"/>Sabine Strauss
-                </a>
-              </li>
-              <div class="menu-user">
-                <ul>
-                  <li>
-                    <a><img src="./assets/images/Group 167.png">Face-2-Face Coaching</a>
-                  </li>
-                  <li>
-                    <a><img src="./assets/images/Group 169.png">Kundennummern Generieren</a>
-                  </li>
-                  <li>
-                    <a><img src="./assets/images/Group 171.png">Guthabenüberwachung</a>
-                  </li>
-                  <li>
-                    <a><img src="./assets/images/Group 173.png">Coaches Freischalten</a>
-                  </li>
-                  <li>
-                    <a><img src="./assets/images/Group 175.png">Handbuch</a>
-                  </li>
-                  <li>
-                    <a><img src="./assets/images/Group 177.png">Logout</a>
-                  </li>
-                </ul>
-              </div>
-            </ul>
-          </div>
+                                <li id="country-de">
+                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31" height="17.04" /> DE
+                                    </a>
+                                </li>
+                                <li id="country-eng">
+                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31" height="17.04" /> ENG
+                                    </a>
+                                </li>
+                                <li id="country-esp">
+                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31" height="17.04" /> ESP
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="user-login">
+                            <a href="#" style="text-decoration: underline;">
+                                <img src="./assets/images/user_login.png" style="margin-right: 5px;" />Sabine Strauss
+                            </a>
+                        </li>
+                        <div class="menu-user">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./assets/images/Group 167.png">Face-2-Face Coaching</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./assets/images/Group 169.png">Kundennummern Generieren</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./assets/images/Group 171.png">Guthabenüberwachung</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./assets/images/Group 173.png">Coaches Freischalten</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./assets/images/Group 175.png">Handbuch</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./assets/images/Group 177.png">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
         </div>
-      </nav>
+        </nav>
     </header>
     <main class="site-main-coaches form-coach" id="main-content">
         <div class="title">
-          <div class="text">
-              <h1>Inaktive Coaches</h1>
-          </div>
+            <div class="text">
+                <h1>Inaktive Coaches</h1>
+            </div>
         </div>
         <div class="content">
             <div class="container">
-              <div class="form">
-                <div class="header-table">
-                  <div></div>
-                  <div class="search">
-                      <ul>
-                        <li>Sortieren nach</li>
-                        <li><a>Name</a></li>
-                        <li><a>Datum</a></li>
-                        <li><a>Aktiv</a></li>
-                        <li><a>Inaktiv</a></li>
-                      </ul>
-                  </div>
-                </div>
-                <div class="coach-box">
-                  <div class="coach">
-                    <div class="coach-img">
-                      <div class="action">
-                        <div class="status"><a><img src="./assets/images/Group 293.png"> Inaktiv</a></div>
-                        <div class="delete"><a><img src="./assets/images/Group 291.png"> Löschen</a></div>
-                      </div>
-                      <div class="img">
-                        <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png" width="399" height="399">
-                      </div>
-                      <div class="link freischalten">
-                        <a>Freischalten</a>
-                      </div>
-                      <div class="link anderungsanweisung">
-                        <a>Änderungsanweisung</a>
-                      </div>
-                      <div class="link pin-mail">
-                        <a>Pin Mail Erneut senden</a>
-                      </div>
+                <div class="form">
+                    <div class="header-table">
+                        <div></div>
+                        <div class="search">
+                            <ul>
+                                <li><a href="#">Sortieren nach</a></li>
+                                <li><a href="#">Name</a></li>
+                                <li><a href="#">Datum</a></li>
+                                <li><a href="#">Aktiv</a></li>
+                                <li><a href="#">Inaktiv</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="coach-infor">
-                      <div class="name">
-                        <h1>Alex Bannes</h1>
-                      </div>
-                      <div class="infor">
-                        <h3>Telefon</h3>
-                        <p>040 - 431 83 785</p>
-                        <h3>Adresse</h3>
-                        <p>Jütländer Allee 50a, DE-22527 Hamburg</p>
-                        <h3>Ausbildung</h3>
-                        <p></p>
-                        <h3>Biografie</h3>
-                        <ul>
-                          <li>Herzcoach  - Trainer und Coach für Persönlichkeitsentfaltung seit 2007</li>
-                          <li>Heilpraktiker für Psychotherapie</li>
-                          <li>Aus- und Weiterbildungen in Persönlichkeitstraining, NLP, Hypnose, EMDR, 
-                            Body2Brain, Humortherapie u.a.
-                          </li>
-                          <li>Jahrzehntelange Selbsterfahrung und Begleitung von Menschen</li>
-                          <li>Lieblingsthemen:  Ein positives Selbstbild, Sinn im Leben, den eigenen Weg 
-                            finden, Lebensfreude und Glück
-                          </li>
-                        </ul>
-                        <p>Ich freue mich auf Ihren Anruf!</p>
-                      </div>
-                      <div class="description">
-                        <h3>Telefon</h3>
-                        <p>Willkommen in der Mutschmiede!<br>
-                          Mein Ansatz im Telefoncoaching ist das lösungsorientierte Gespräch. Mit meiner 
-                          ganzen Erfahrung stehe ich Ihnen hier zur Verfügung. Wenn Sie möchten, begleite 
-                          ich Sie telefonisch bei fast allen Themen im Gespräch in Richtung Lösung,. 
-                          Ich freue mich auf Ihren Anruf!</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="coach-box">
-                  <div class="coach">
-                    <div class="coach-img">
-                      <div class="action">
-                        <div class="status"><a><img src="./assets/images/Group 293.png"> Inaktiv</a></div>
-                        <div class="delete"><a><img src="./assets/images/Group 291.png"> Löschen</a></div>
-                      </div>
-                      <div class="img">
-                        <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png" width="399" height="399">
-                      </div>
-                      <div class="link freischalten">
-                        <a>Freischalten</a>
-                      </div>
-                      <div class="link anderungsanweisung">
-                        <a>Änderungsanweisung</a>
-                      </div>
-                      <div class="link pin-mail">
-                        <a>Pin Mail Erneut senden</a>
-                      </div>
+                    <div class="coach-box">
+                        <div class="coach">
+                            <div class="coach-img">
+                                <div class="action">
+                                    <div class="status">
+                                        <a href="#"><img src="./assets/images/Group 293.png"> Inaktiv</a>
+                                    </div>
+                                    <div class="delete">
+                                        <a href="#"><img src="./assets/images/Group 291.png"> Löschen</a>
+                                    </div>
+                                </div>
+                                <div class="box-name-button">
+                                    <a href="#" class="name-button bg-silver">Neuregistrierung</a>
+                                    <a href="#" class="name-button bg-pink">Business</a>
+                                </div>
+                                <div class="img">
+                                    <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png" width="" height="">
+                                </div>
+                                <div class="name d-block d-sm-none">
+                                    <h1>Alex Bannes</h1>
+                                </div>
+                                <div class="link freischalten">
+                                    <a href="#">Freischalten</a>
+                                </div>
+                                <div class="link anderungsanweisung">
+                                    <a href="#">Änderungsanweisung</a>
+                                </div>
+                                <div class="link pin-mail">
+                                    <a href="#">Pin Mail Erneut senden</a>
+                                </div>
+                            </div>
+                            <div class="coach-infor">
+                                <div class="name d-none d-sm-flex justify-content-between align-items-center">
+                                    <h1>Alex Bannes</h1>
+                                    <div class="box-name-button">
+                                        <a href="#" class="name-button bg-silver">Neuregistrierung</a>
+                                        <a href="#" class="name-button bg-pink">Business</a>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="infor-line-box">
+                                        <h3>Telefon</h3>
+                                        <p>040 - 431 83 785</p>
+                                    </div>
+                                    <div class="infor-line-box">
+                                        <h3>Adresse</h3>
+                                        <p>Jütländer Allee 50a, DE-22527 Hamburg</p>
+                                    </div>
+                                    <div class="infor-line-box">
+                                        <h3>Ausbildung</h3>
+                                        <p></p>
+                                    </div>
+                                    <h3>Biografie</h3>
+                                    <ul>
+                                        <li>Herzcoach - Trainer und Coach für Persönlichkeitsentfaltung seit 2007</li>
+                                        <li>Heilpraktiker für Psychotherapie</li>
+                                        <li>Aus- und Weiterbildungen in Persönlichkeitstraining, NLP, Hypnose, EMDR, Body2Brain, Humortherapie u.a.
+                                        </li>
+                                        <li>Jahrzehntelange Selbsterfahrung und Begleitung von Menschen</li>
+                                        <li>Lieblingsthemen: Ein positives Selbstbild, Sinn im Leben, den eigenen Weg finden, Lebensfreude und Glück
+                                        </li>
+                                    </ul>
+                                    <p>Ich freue mich auf Ihren Anruf!</p>
+                                </div>
+                                <div class="description">
+                                    <h3>Telefon</h3>
+                                    <p>Willkommen in der Mutschmiede!<br> Mein Ansatz im Telefoncoaching ist das lösungsorientierte Gespräch. Mit meiner ganzen Erfahrung stehe ich Ihnen hier zur Verfügung. Wenn Sie möchten, begleite ich Sie telefonisch bei
+                                        fast allen Themen im Gespräch in Richtung Lösung,. Ich freue mich auf Ihren Anruf!</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="coach-infor">
-                      <div class="name">
-                        <h1>Alex Bannes</h1>
-                      </div>
-                      <div class="infor">
-                        <h3>Telefon</h3>
-                        <p>040 - 431 83 785</p>
-                        <h3>Adresse</h3>
-                        <p>Jütländer Allee 50a, DE-22527 Hamburg</p>
-                        <h3>Ausbildung</h3>
-                        <p></p>
-                        <h3>Biografie</h3>
-                        <ul>
-                          <li>Herzcoach  - Trainer und Coach für Persönlichkeitsentfaltung seit 2007</li>
-                          <li>Heilpraktiker für Psychotherapie</li>
-                          <li>Aus- und Weiterbildungen in Persönlichkeitstraining, NLP, Hypnose, EMDR, 
-                            Body2Brain, Humortherapie u.a.
-                          </li>
-                          <li>Jahrzehntelange Selbsterfahrung und Begleitung von Menschen</li>
-                          <li>Lieblingsthemen:  Ein positives Selbstbild, Sinn im Leben, den eigenen Weg 
-                            finden, Lebensfreude und Glück
-                          </li>
-                        </ul>
-                        <p>Ich freue mich auf Ihren Anruf!</p>
-                      </div>
-                      <div class="description">
-                        <h3>Telefon</h3>
-                        <p>Willkommen in der Mutschmiede!<br>
-                          Mein Ansatz im Telefoncoaching ist das lösungsorientierte Gespräch. Mit meiner 
-                          ganzen Erfahrung stehe ich Ihnen hier zur Verfügung. Wenn Sie möchten, begleite 
-                          ich Sie telefonisch bei fast allen Themen im Gespräch in Richtung Lösung,. 
-                          Ich freue mich auf Ihren Anruf!</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="coach-box">
-                  <div class="coach">
-                    <div class="coach-img">
-                      <div class="action">
-                        <div class="status"><a><img src="./assets/images/Group 293.png"> Inaktiv</a></div>
-                        <div class="delete"><a><img src="./assets/images/Group 291.png"> Löschen</a></div>
-                      </div>
-                      <div class="img">
-                        <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png" width="399" height="399">
-                      </div>
-                      <div class="link freischalten">
-                        <a>Freischalten</a>
-                      </div>
-                      <div class="link anderungsanweisung">
-                        <a>Änderungsanweisung</a>
-                      </div>
-                      <div class="link pin-mail">
-                        <a>Pin Mail Erneut senden</a>
-                      </div>
+                    <div class="coach-box">
+                        <div class="coach">
+                            <div class="coach-img">
+                                <div class="action">
+                                    <div class="status">
+                                        <a href="#"><img src="./assets/images/Group 293.png"> Inaktiv</a>
+                                    </div>
+                                    <div class="delete">
+                                        <a href="#"><img src="./assets/images/Group 291.png"> Löschen</a>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png" width="" height="">
+                                </div>
+                                <div class="name d-block d-sm-none">
+                                    <h1>Alex Bannes</h1>
+                                </div>
+                                <div class="link freischalten">
+                                    <a href="#">Freischalten</a>
+                                </div>
+                                <div class="link anderungsanweisung">
+                                    <a href="#">Änderungsanweisung</a>
+                                </div>
+                                <div class="link pin-mail">
+                                    <a href="#">Pin Mail Erneut senden</a>
+                                </div>
+                            </div>
+                            <div class="coach-infor">
+                                <div class="name d-none d-sm-block">
+                                    <h1>Alex Bannes</h1>
+                                </div>
+                                <div class="infor">
+                                    <div class="infor-line-box">
+                                        <h3>Telefon</h3>
+                                        <p>040 - 431 83 785</p>
+                                    </div>
+                                    <div class="infor-line-box">
+                                        <h3>Adresse</h3>
+                                        <p>Jütländer Allee 50a, DE-22527 Hamburg</p>
+                                    </div>
+                                    <div class="infor-line-box">
+                                        <h3>Ausbildung</h3>
+                                        <p></p>
+                                    </div>
+                                    <h3>Biografie</h3>
+                                    <ul>
+                                        <li>Herzcoach - Trainer und Coach für Persönlichkeitsentfaltung seit 2007</li>
+                                        <li>Heilpraktiker für Psychotherapie</li>
+                                        <li>Aus- und Weiterbildungen in Persönlichkeitstraining, NLP, Hypnose, EMDR, Body2Brain, Humortherapie u.a.
+                                        </li>
+                                        <li>Jahrzehntelange Selbsterfahrung und Begleitung von Menschen</li>
+                                        <li>Lieblingsthemen: Ein positives Selbstbild, Sinn im Leben, den eigenen Weg finden, Lebensfreude und Glück
+                                        </li>
+                                    </ul>
+                                    <p>Ich freue mich auf Ihren Anruf!</p>
+                                </div>
+                                <div class="description">
+                                    <h3>Telefon</h3>
+                                    <p>Willkommen in der Mutschmiede!<br> Mein Ansatz im Telefoncoaching ist das lösungsorientierte Gespräch. Mit meiner ganzen Erfahrung stehe ich Ihnen hier zur Verfügung. Wenn Sie möchten, begleite ich Sie telefonisch bei
+                                        fast allen Themen im Gespräch in Richtung Lösung,. Ich freue mich auf Ihren Anruf!</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="coach-infor">
-                      <div class="name">
-                        <h1>Alex Bannes</h1>
-                      </div>
-                      <div class="infor">
-                        <h3>Telefon</h3>
-                        <p>040 - 431 83 785</p>
-                        <h3>Adresse</h3>
-                        <p>Jütländer Allee 50a, DE-22527 Hamburg</p>
-                        <h3>Ausbildung</h3>
-                        <p></p>
-                        <h3>Biografie</h3>
-                        <ul>
-                          <li>Herzcoach  - Trainer und Coach für Persönlichkeitsentfaltung seit 2007</li>
-                          <li>Heilpraktiker für Psychotherapie</li>
-                          <li>Aus- und Weiterbildungen in Persönlichkeitstraining, NLP, Hypnose, EMDR, 
-                            Body2Brain, Humortherapie u.a.
-                          </li>
-                          <li>Jahrzehntelange Selbsterfahrung und Begleitung von Menschen</li>
-                          <li>Lieblingsthemen:  Ein positives Selbstbild, Sinn im Leben, den eigenen Weg 
-                            finden, Lebensfreude und Glück
-                          </li>
-                        </ul>
-                        <p>Ich freue mich auf Ihren Anruf!</p>
-                      </div>
-                      <div class="description">
-                        <h3>Telefon</h3>
-                        <p>Willkommen in der Mutschmiede!<br>
-                          Mein Ansatz im Telefoncoaching ist das lösungsorientierte Gespräch. Mit meiner 
-                          ganzen Erfahrung stehe ich Ihnen hier zur Verfügung. Wenn Sie möchten, begleite 
-                          ich Sie telefonisch bei fast allen Themen im Gespräch in Richtung Lösung,. 
-                          Ich freue mich auf Ihren Anruf!</p>
-                      </div>
+
+                    <div class="coach-box">
+                        <div class="coach">
+                            <div class="coach-img">
+                                <div class="action">
+                                    <div class="status">
+                                        <a href="#"><img src="./assets/images/Group 293.png"> Inaktiv</a>
+                                    </div>
+                                    <div class="delete">
+                                        <a href="#"><img src="./assets/images/Group 291.png"> Löschen</a>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png" width="" height="">
+                                </div>
+                                <div class="name d-block d-sm-none">
+                                    <h1>Alex Bannes</h1>
+                                </div>
+                                <div class="link freischalten">
+                                    <a href="#">Freischalten</a>
+                                </div>
+                                <div class="link anderungsanweisung">
+                                    <a href="#">Änderungsanweisung</a>
+                                </div>
+                                <div class="link pin-mail">
+                                    <a href="#">Pin Mail Erneut senden</a>
+                                </div>
+                            </div>
+                            <div class="coach-infor">
+                                <div class="name d-none d-sm-block">
+                                    <h1>Alex Bannes</h1>
+                                </div>
+                                <div class="infor">
+                                    <div class="infor-line-box">
+                                        <h3>Telefon</h3>
+                                        <p>040 - 431 83 785</p>
+                                    </div>
+                                    <div class="infor-line-box">
+                                        <h3>Adresse</h3>
+                                        <p>Jütländer Allee 50a, DE-22527 Hamburg</p>
+                                    </div>
+                                    <div class="infor-line-box">
+                                        <h3>Ausbildung</h3>
+                                        <p></p>
+                                    </div>
+                                    <h3>Biografie</h3>
+                                    <ul>
+                                        <li>Herzcoach - Trainer und Coach für Persönlichkeitsentfaltung seit 2007</li>
+                                        <li>Heilpraktiker für Psychotherapie</li>
+                                        <li>Aus- und Weiterbildungen in Persönlichkeitstraining, NLP, Hypnose, EMDR, Body2Brain, Humortherapie u.a.
+                                        </li>
+                                        <li>Jahrzehntelange Selbsterfahrung und Begleitung von Menschen</li>
+                                        <li>Lieblingsthemen: Ein positives Selbstbild, Sinn im Leben, den eigenen Weg finden, Lebensfreude und Glück
+                                        </li>
+                                    </ul>
+                                    <p>Ich freue mich auf Ihren Anruf!</p>
+                                </div>
+                                <div class="description">
+                                    <h3>Telefon</h3>
+                                    <p>Willkommen in der Mutschmiede!<br> Mein Ansatz im Telefoncoaching ist das lösungsorientierte Gespräch. Mit meiner ganzen Erfahrung stehe ich Ihnen hier zur Verfügung. Wenn Sie möchten, begleite ich Sie telefonisch bei
+                                        fast allen Themen im Gespräch in Richtung Lösung,. Ich freue mich auf Ihren Anruf!</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
                 </div>
-              </div>
+                <div class="ddbuch-navigation">
+                    <ul>
+                        <li><a href="#Seite">Seite</a></li>
+                        <li><a href="#1">1</a></li>
+                        <li><a href="#2">2</a></li>
+                        <li><a href="#3">3</a></li>
+                        <li><a href="#4">4</a></li>
+                        <li><a href="#5">5</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        
+
     </main>
     <footer class="site-footer">
-      <div class="container-fluid">
-        <div class="main-footer">
-          <div class="contact">
-            <ul>
-              <a href="./impressum.html"><li>Impressum</li></a>
-              <a href="./agb.html"><li>AGB</li></a>
-            </ul>
-          </div>
-          <div class="logo">
-            fi
-          </div>
+        <div class="container-fluid">
+            <div class="main-footer">
+                <div class="contact">
+                    <ul>
+                        <a href="./impressum.html">
+                            <li>Impressum</li>
+                        </a>
+                        <a href="./agb.html">
+                            <li>AGB</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="logo">
+                    fi
+                </div>
+            </div>
         </div>
-    </div>
     </footer>
-        <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <script type="text/javascript">
-      $(document).ready(function (e) {
+        $(document).ready(function(e) {
 
-        $('.dropdown-lang').click(function(e){   
-              $('.dropdown-menu-lang').slideToggle();
-              e.preventDefault();
-        });
+            $('.dropdown-lang').click(function(e) {
+                $('.dropdown-menu-lang').slideToggle();
+                e.preventDefault();
+            });
 
-        $('.user-login').click(function(e){   
-              $('.menu-user').slideToggle();
-              e.preventDefault();
+            $('.user-login').click(function(e) {
+                $('.menu-user').slideToggle();
+                e.preventDefault();
+            });
         });
-      });
-      AOS.init({
-        duration: 1200,
+        AOS.init({
+            duration: 1200,
         })
-</script>
-  </body>
+        var viewport = $('meta[name="viewport"]');
+        window.onresize = function() {
+            if (window.screen.width <= 1024 && window.screen.width >= 576) {
+                viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
+            } else {
+                viewport.attr("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
+            }
+        }
+
+        window.addEventListener("message", function(event) {
+            console.log(event);
+        }, false);
+    </script>
+</body>
+
 </html>
