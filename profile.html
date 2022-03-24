@@ -299,42 +299,24 @@
 
     <script type="application/javascript">
         jQuery('.textarea').wysihtml5({
-
             "font-styles": false,
             "image": false,
             "link": false,
 
         });
 
-        jQuery(document).ready(function() {
-            // jQuery(window).load(function() {
-            // 	console.log("a");
-            // })
-            var viewport_meta = document.getElementById('viewport-meta');
-            var viewport_content = jQuery("meta[name='viewport']").attr("content");
-            console.log(viewport_content);
-            // Define our viewport meta values
-            var viewports = {
-
-                landscape: 'width=736, initial-scale=0.7, minimum-scale=0.7, maximum-scale=0.7, user-scalable=no'
-            };
-
-            // Change the viewport value based on screen.width
-            var viewport_set = function() {
-                if (window.screen.width < 1024 && window.screen.width > 576)
-                    viewport_meta.setAttribute('content', viewports.landscape);
-                else
-                    viewport_meta.setAttribute('content', viewports.default);
+        var viewport = $('meta[name="viewport"]');
+        window.onresize = function() {
+            if (window.screen.width <= 1024 && window.screen.width >= 576) {
+                viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
+            } else {
+                viewport.attr("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
             }
+        }
 
-            // Set the correct viewport value on page load
-            viewport_set();
-
-            // Set the correct viewport after device orientation change or resize
-            window.onresize = function() {
-                viewport_set();
-            }
-        });
+        window.addEventListener("message", function(event) {
+            console.log(event);
+        }, false);
     </script>
 </body>
 

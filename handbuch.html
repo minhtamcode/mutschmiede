@@ -2,121 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Handbuch</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
     <link rel="stylesheet" type="text/css" href="./assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/editor.css" />
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container-fluid">
-        <nav class="navbar">
-            <!-- Brand and toggle get grouped for better mobile display-->
-            <div class="navbar-header">
-              <button
-                class="navbar-toggle collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#mutschmiede-nav"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a href="./">
-                <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg"/>
-              </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling-->
-            <div
-              id="mutschmiede-nav"
-              class="collapse navbar-collapse"
-            >
-              <ul class="nav navbar-nav">
-                <li>
-                  <a href="./">Problemfelder</a>
-                </li>
-                <li><a href="./">Exptertinnen</a></li>
-                <li class="dropdown">
-                  <a
-                    class="dropdown-lang"
-                    href="/#"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    id="country-switcher-current">
-                    <img
-                      src="./assets/images/languages/AUSTRIA.png"
-                      width="28.31"
-                      height="17.04"
-                      style="margin-right: 5px;" />AT</a>
-                  <ul class="dropdown-menu-lang" id="country-switcher">
-                    <!-- <li id="country-at">
-                      <a href="?language=at"
-                        ><img
-                          src="./assets/images/languages/AUSTRIA.png "
-                          width="28.31"
-                          height="17.04"
-                          
-                        />
-                        AT</a
-                      >
-                    </li> -->
-                    <li id="country-de">
-                      <a href="?language=de"
-                        ><img
-                          src="./assets/images/languages/DE.png"
-                          width="28.31"
-                          height="17.04"
-                        />
-                        DE</a
-                      >
-                    </li>
-                    <li id="country-eng">
-                      <a href="?language=en"
-                        ><img
-                          src="./assets/images/languages/ENG.png"
-                          width="28.31"
-                          height="17.04"
-                        />
-                        ENG</a
-                      >
-                    </li>
-                    <li id="country-esp">
-                      <a href="?language=es"
-                        ><img
-                          src="./assets/images/languages/SPAIN.png"
-                          width="28.31"
-                          height="17.04"
-                        />
-                        ESP</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="user-login">
-                  <a href="./login.html"
-                    ><img src="./assets/images/user_login.png" style="margin-right: 5px;"/>login</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+
     <main class="site-main ddbuch-content" id="main-content">
-        <div class="ddbuch-banner-top">
+        <div class="ddbuch-banner-top d-none d-sm-block">
             <img src="./assets/images/ddbuch-banner-top.png" width="100%" />
+        </div>
+        <div class="ddbuch-banner-top d-block d-sm-none">
+            <img src="./assets/images/bernd-klutsch-NTgngJ8m-uU-unsplash.png" width="100%" />
         </div>
         <div class="ddbuch-title">
             <h1 class="font-size-40 text-center">Handbuch</h1>
@@ -129,10 +36,10 @@
                     </div>
 
                     <div class="tab-wrapper">
-                        <h3>Index</h3>
+                        <h3 class="tw-toggle-index">Index<i class="fa fa-up"></i></h3>
                         <ul class="tabs-nav">
                             <li class="">
-                                <a class="click-tab" href="#tab-1" rel="nofollow">Kapitel 1 - Einleitung<i class="hidden-icon active-icon fa fa-chevron-down"></i></a>
+                                <a class="click-tab" data-id="tab-1" rel="nofollow">Kapitel 1 - Einleitung</a>
                                 <ul class="drop-menu drop-active">
                                     <li><a>1.1. Präliminarien</a></li>
                                     <li><a>1.2. Darstellung des Franchise-System-Aufbaus</a></li>
@@ -141,7 +48,7 @@
                                 </ul>
                             </li>
                             <li class="tab-active">
-                                <a class="click-tab" href="#tab-2" rel="nofollow">Kapitel 2 - Standort<i class="hidden-icon fa fa-chevron-down"></i></a>
+                                <a class="click-tab" data-id="tab-2" rel="nofollow">Kapitel 2 - Standort</a>
                                 <ul class="drop-menu">
                                     <li><a>1.1. Präliminarien</a></li>
                                     <li><a>1.2. Darstellung des Franchise-System-Aufbaus</a></li>
@@ -150,7 +57,7 @@
                                 </ul>
                             </li>
                             <li class="tab-active">
-                                <a class="click-tab" href="#tab-3" rel="nofollow">Kapitel 2 - Standort<i class="hidden-icon fa fa-chevron-down"></i></a>
+                                <a class="click-tab" data-id="tab-3" rel="nofollow">Kapitel 2 - Standort</a>
                                 <ul class="drop-menu">
                                     <li><a>1.1. Präliminarien</a></li>
                                     <li><a>1.2. Darstellung des Franchise-System-Aufbaus</a></li>
@@ -163,7 +70,7 @@
                 </div>
                 <div class="ddbuch-wrap-right">
                     <div class="tab-content tabs-stage bg-white">
-                        <div id="tab-1" class="tab-content-show" style="display: none;">
+                        <div id="tab-1" class="tab-content-show tab-content-active" style="display: none;">
                             <div class="tab-wrap-top">
                                 <h3>Kapitel 1 - Einleitung</h3>
                                 <div class="tab-wrap-top-icon">
@@ -250,7 +157,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="tab-2" class="tab-content-show" style="display: block;">
+                        <div id="tab-2" class="tab-content-show" style="display: none;">
                             <div class="tab-wrap-top">
                                 <h3>Kapitel 2</h3>
                                 <div class="tab-wrap-top-icon">
@@ -298,7 +205,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="tab-3" class="tab-content-show" style="display: block;">
+                        <div id="tab-3" class="tab-content-show" style="display: none;">
                             <div class="tab-wrap-top">
                                 <h3>Kapitel 3</h3>
                                 <div class="tab-wrap-top-icon">
@@ -363,103 +270,80 @@
             </div>
         </div>
     </main>
-    <footer class="site-footer">
-        <div class="container-fluid">
-            <div class="main-footer">
-                <div class="contact">
-                    <ul>
-                        <li>Impressum</li>
-                        <li>AGB</li>
-                    </ul>
-                </div>
-                <div class="logo">
-                    fi
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/editor.js"></script>
+    <script src="./assets/js/wysihtml5-0.3.0.js"></script>
+    <script src="./assets/js/bootstrap-wysihtml5.js"></script>
     <script type="text/javascript">
         $(document).ready(function(e) {
-            var slidernav = $(".slider-nav").slick({
-                infinite: true,
-                navigator: true,
-                slidesToShow: 3,
-                slidesToScroll: 0.75,
-                dots: false,
-                arrows: false,
-                // appendDots: $(".custom-slick-dots"),
+            AOS.init({
+                duration: 1200,
             });
 
-            var slidernav = $(".slider-nav-1").slick({
-                infinite: true,
-                navigator: true,
-                slidesToShow: 3,
-                slidesToScroll: 0.75,
-                dots: false,
-                arrows: false,
-                // appendDots: $(".custom-slick-dots"),
+            (function($) {
+                $.fn.clickToggle = function(func1, func2) {
+                    var funcs = [func1, func2];
+                    this.data('toggleclicked', 0);
+                    this.click(function() {
+                        var data = $(this).data();
+                        var tc = data.toggleclicked;
+                        $.proxy(funcs[tc], this)();
+                        data.toggleclicked = (tc + 1) % 2;
+                    });
+                    return this;
+                };
+            }(jQuery));
+
+            $('.button-oben').clickToggle(function() {
+                $(this).parent().parent().find(".tab-section-content").slideToggle(500);
+            }, function() {
+                $(this).parent().parent().find(".tab-section-content").slideToggle(500);
+            });
+            $('.tabs-nav .click-tab').clickToggle(function() {
+                $(this).append('<i class="fa fa-down"></i>');
+                var id_tab = $(this).attr("data-id");
+                $(".tab-content .tab-content-show").removeClass("tab-content-active");
+                $(".tab-content #" + id_tab).addClass("tab-content-active");
+                $(this).parent().find(".drop-menu").removeClass("drop-active");
+                $(this).parent().find(".drop-menu").show(500);
+            }, function() {
+                $(this).find(".fa").remove();
+                var id_tab = $(this).attr("data-id");
+                $(".tab-content .tab-content-show").removeClass("tab-content-active");
+                $(".tab-content #" + id_tab).addClass("tab-content-active");
+                $(this).parent().find(".drop-menu").hide(500);
+            });
+            $('.tw-toggle-index').clickToggle(function() {
+                $(this).parent().parent().find("ul.tabs-nav").hide(500);
+            }, function() {
+                $(this).parent().parent().find("ul.tabs-nav").show(500);
             });
 
-
-            $("a").click(function() {
-                $("#myModal").modal();
-            });
-
-
-
-            $(".custom-slick-arrow-left").on("click", function() {
-                $(".slider-nav").slick("slickPrev");
-            });
-            $(".custom-slick-arrow-right").on("click", function() {
-                $(".slider-nav").slick("slickNext");
-            });
-
-
-            $(".custom-slick-arrow-left-1").on("click", function() {
-                $(".slider-nav-1").slick("slickPrev");
-            });
-            $(".custom-slick-arrow-right-1").on("click", function() {
-                $(".slider-nav-1").slick("slickNext");
-            });
-
-            $('.dropdown-toggle').click(function(e) {
-                $('.dropdown-menu').slideToggle();
-                e.preventDefault();
-            });
-
-
-            $('.tabs-nav a.click-tab').on('click', function(event) {
-                event.preventDefault();
-
-                $('.hidden-icon').removeClass('active-icon');
-                $(this).parent().find('.hidden-icon').addClass('active-icon');
-
-                $('.drop-menu').removeClass('drop-active');
-                $(this).parent().find('.drop-menu').addClass('drop-active');
-
-                $('.tab-active').removeClass('tab-active');
-                $(this).parent().addClass('tab-active');
-
-                $('.tabs-stage .tab-content-show').hide();
-                $($(this).attr('href')).show();
-            });
-            $('.button-oben').on('click', function(event) {
-                $(this).parent().parent().find(".tab-section-content").slideToggle(1000);
-            });
             $('.tabs-nav a:first').trigger('click'); // Default
 
-            $('.dropdown-lang').click(function(e){   
-              $('.dropdown-menu-lang').slideToggle();
-              e.preventDefault();
+            $(".tw-toggle-index").on("click", function() {
+                $(this).find(".fa-up").toggleClass("fa-down");
             });
+
         });
-        AOS.init({
-            duration: 1200,
-        })
+
+
+        var viewport = $('meta[name="viewport"]');
+        window.onresize = function() {
+            if (window.screen.width <= 1024 && window.screen.width >= 576) {
+                viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
+            } else {
+                viewport.attr("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
+            }
+        }
+
+        window.addEventListener("message", function(event) {
+            console.log(event);
+        }, false);
     </script>
 </body>
 
