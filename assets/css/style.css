@@ -182,6 +182,48 @@ header .navbar{
     text-transform: uppercase;
 }
 
+.menu-user-mobile{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 284px;
+    display: none;
+    z-index: 5;
+}
+
+
+.menu-user-mobile ul {
+    display: block;
+    padding-bottom: 95px;
+    padding-top: 95px;
+    padding-left: 36.5px;
+    padding-right: 36.5px;
+    background-color: #FBC7B2;
+}
+
+.menu-user-mobile ul li{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin: 0;
+    border-bottom: 1px solid #EFEFEF ;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.menu-user-mobile ul li:last-child{
+    border-bottom: none ;
+}
+
+.menu-user-mobile ul li a:hover{
+    text-decoration: none !important;
+}
+
+.menu-user-mobile ul li a img{
+    margin-right: 10px;
+}
+
+
 .menu-user{
     position: absolute;
     top: 120px;

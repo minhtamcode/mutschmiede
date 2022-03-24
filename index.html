@@ -117,25 +117,13 @@
                     height="17.04"
                     style="margin-right: 5px;" /></a>
                 <ul class="dropdown-menu-lang" id="country-switcher">
-                  <!-- <li id="country-at">
-                    <a href="?language=at"
-                      ><img
-                        src="./assets/images/languages/AUSTRIA.png "
-                        width="28.31"
-                        height="17.04"
-                        
-                      />
-                      AT</a
-                    >
-                  </li> -->
                   <li id="country-de">
                     <a href="?language=de"
                       ><img
                         src="./assets/images/languages/DE.png"
                         width="28.31"
                         height="17.04"
-                      />
-                      DE</a
+                      /></a
                     >
                   </li>
                   <li id="country-eng">
@@ -144,8 +132,7 @@
                         src="./assets/images/languages/ENG.png"
                         width="28.31"
                         height="17.04"
-                      />
-                      ENG</a
+                      /></a
                     >
                   </li>
                   <li id="country-esp">
@@ -154,15 +141,13 @@
                         src="./assets/images/languages/SPAIN.png"
                         width="28.31"
                         height="17.04"
-                      />
-                      ESP</a
+                      /></a
                     >
                   </li>
                 </ul>
               </li>
               <li class="user-login">
-                <a href="./login.html"
-                  ><img src="./assets/images/user_login.png" style="margin-right: 5px;"/></a>
+                <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;"/></a>
               </li>
               <li>
                 <button class="btn-collapse" type="button" data-toggle="collapse" data-target="" aria-expanded="false">
@@ -170,6 +155,25 @@
                 </button>
               </li>
             </ul>
+            <div class="menu-user-mobile">
+              <ul>
+                <li>
+                  <a>Problemfelder</a>
+                </li>
+                <li>
+                  <a>Expertinnen</a>
+                </li>
+                <li>
+                  <a><img src="./assets/images/user_login.png" style="margin-right: 5px;"/>Login</a>
+                </li>
+                <li>
+                  <a><img src="./assets/images/Group 173.png">Linkedin</a>
+                </li>
+                <li>
+                  <a><img src="./assets/images/Group 175.png">Facebook</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -727,6 +731,11 @@
 
         $('.dropdown-lang').click(function(e){   
               $('.dropdown-menu-lang').slideToggle();
+              e.preventDefault();
+        });
+
+        $('.btn-collapse').click(function(e){   
+              $('.menu-user-mobile').slideToggle();
               e.preventDefault();
         });
       });
