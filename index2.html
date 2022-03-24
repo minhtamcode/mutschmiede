@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/editor.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+
 
   </head>
   <body>
@@ -206,7 +210,7 @@
             </div>
           </div> -->
           <div class="container-fluid">
-            <div class="slider slider-nav-1" style="top: 175px !important;">
+            <div class="slider slider-nav-1" style="top: -55px !important;">
               <div class="box">
                 <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
                 <div class="lang-coach">
@@ -273,7 +277,7 @@
           </div>
           
 
-          <div class="custom-slick-navigator" style="top: -190px;">
+          <div class="custom-slick-navigator" style="bottom: 425px; z-index: 1;">
             <button
               class="custom-slick-arrow custom-slick-arrow-left"
               type="button"
@@ -290,37 +294,36 @@
       </div>
       <!-- Coaches -->
 
-        <!-- Coming soon -->
-        <div class="coming">
-            <div class="image-coming-soon" style="top: -247px;">
-            <img src="./assets/images/Mutschmiede-App-Vorschau.png" />
-            </div>
-            <div class="coming-soon">
-            <div class="content">
-                <div class="text" data-aos="fade-up">
-                <h1>Coming soon: mutschmiede App</h1>
-                <p>
-                    Das mutschmiede System ist darauf ausgelegt, Sie so schnell und
-                    einfach wie möglich mit einem unserer Experten zu verbinden. Im
-                    ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme und
-                    Ängste zu konkretisieren. Basierend auf Ihren Antworten, können
-                    wir für Sie geeignete Coaches auswählen. Sie können sich vorab
-                    Informationen über die verschiedenen Berater*innen durchlesen und
-                    mit ihnen via Telefon oder Mail in Kontakt treten. Wir freuen uns
-                    über Ihre Anfragen und stehen Ihnen auch gerne jederzeit unter
-                    folgender Support-Nummer zur Verfügung: +43 664 227 58 17
-                </p>
-                <div class="btn-box">
-                    <div class="btn">
-                    <div class="btn-download">Download</div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
+      <!-- Coming soon -->
+      <div class="section-coming-soon">
+        <div class="image-coming-soon">
+          <img src="./assets/images/Mutschmiede-App-Vorschau.png" />
         </div>
-        
-        <!-- Coming soon -->
+        <div class="coming-soon">
+          <div class="content">
+            <div class="text" data-aos="fade-up">
+              <h1>Coming soon: mutschmiede App</h1>
+              <p>
+                Das mutschmiede System ist darauf ausgelegt, Sie so schnell und
+                einfach wie möglich mit einem unserer Experten zu verbinden. Im
+                ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme und
+                Ängste zu konkretisieren. Basierend auf Ihren Antworten, können
+                wir für Sie geeignete Coaches auswählen. Sie können sich vorab
+                Informationen über die verschiedenen Berater*innen durchlesen und
+                mit ihnen via Telefon oder Mail in Kontakt treten. Wir freuen uns
+                über Ihre Anfragen und stehen Ihnen auch gerne jederzeit unter
+                folgender Support-Nummer zur Verfügung: +43 664 227 58 17
+              </p>
+              <div class="btn-box">
+                <div class="btn">
+                  <div class="btn-download">Download</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Coming soon -->
 
 
               <!-- Modal HTML -->
@@ -445,6 +448,34 @@
           dots: false,
           arrows: false,
           variableWidth: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 0.25,
+                infinite: true,
+                
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 0.25,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 0.25,
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
           // appendDots: $(".custom-slick-dots"),
         });
 

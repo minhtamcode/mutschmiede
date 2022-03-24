@@ -272,6 +272,83 @@ header .navbar {
     font-size: 20px;
     color: #000;
     text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.menu-user-mobile{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 284px;
+    display: none;
+    z-index: 5;
+}
+
+
+.menu-user-mobile ul {
+    display: block;
+    padding-bottom: 95px;
+    padding-top: 95px;
+    padding-left: 36.5px;
+    padding-right: 36.5px;
+    background-color: #FBC7B2;
+}
+
+.menu-user-mobile ul li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    border-bottom: 1px solid #EFEFEF ;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.menu-user-mobile ul li.login-mobile span::after {
+    content: "\f107";
+    color: #000;
+    font-family: "Font Awesome 5 Pro";
+    margin-left: 5px;
+    border: none !important;
+    vertical-align: 0 !important;
+}
+
+.menu-user-mobile ul li:last-child{
+    border-bottom: none ;
+}
+
+.menu-user-mobile ul li a:hover{
+    text-decoration: none !important;
+}
+
+.menu-user-mobile ul li a img{
+    margin-right: 10px;
+}
+
+.menu-login-mobile{
+    width: 100%;
+    height: 284px;
+    display: none;
+}
+
+
+.menu-login-mobile ul {
+    display: block;
+    padding-left: 36.5px;
+    padding-right: 36.5px;
+    background-color: #FBC7B2;
+    padding-top: 0!important;
+    padding-bottom: 0 !important;
+}
+
+.menu-login-mobile ul li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    border-bottom: 1px solid #EFEFEF ;
+    text-align: center;
+    margin: 0 !important;
 }
 
 .menu-user {
@@ -328,6 +405,7 @@ main .site-main #main-content {
 
 #main-content .gemeinsam {
     background-color: #EFEFEF;
+<<<<<<< HEAD
     height: 897px;
 }
 
@@ -337,12 +415,20 @@ main .site-main #main-content {
 }
 
 #main-content .content-gemeinsam {
+=======
+    position: relative;
+}
+
+
+#main-content .content-gemeinsam{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     height: 425px;
-    width: 100%;
+    width: 47%;
     background-color: #fff;
     position: absolute;
-    top: 40em;
-    z-index: 1;
+    z-index: 0;
+    bottom: 3px;
+    right: 0;
 }
 
 #main-content .content-gemeinsam ul {
@@ -362,9 +448,9 @@ main .site-main #main-content {
 
 #main-content .content-gemeinsam-box {
     background-color: #fff;
-    position: relative;
-    left: 830px;
-    bottom: 650px;
+    position: absolute;
+    right: 12%;
+    top: 20%;
     z-index: 3;
     max-width: 100%;
     height: 489px;
@@ -407,6 +493,7 @@ main .site-main #main-content {
     text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 #main-content .funktioniert {
     height: 777px;
     display: flex;
@@ -416,10 +503,20 @@ main .site-main #main-content {
 
 #main-content .funktioniert .funktioniert-content {
     width: 1070px;
+=======
+#main-content .funktioniert{
+    position: relative;
+    
+}
+
+#main-content .funktioniert .funktioniert-content{
+    background-color: #EFEFEF;
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
 }
 
 #main-content .funktioniert .funktioniert-content .text {
     padding: 190px 107px 190px 140px;
+    width: 1070px;
 }
 
 #main-content .funktioniert .funktioniert-content .text h1 {
@@ -434,9 +531,9 @@ main .site-main #main-content {
 }
 
 #main-content .funktioniert .funktioniert-image {
-    position: relative;
+    position: absolute;
     right: 0;
-    top: 75px;
+    top: 53px;
     /* z-index: 1; */
 }
 
@@ -453,6 +550,7 @@ main .site-main #main-content {
     text-align: center;
 }
 
+<<<<<<< HEAD
 #main-content .coaches {
     height: 820px;
     background-color: #fff;
@@ -464,6 +562,13 @@ main .site-main #main-content {
     position: relative;
     top: -3em;
     margin-left: 42px;
+=======
+
+#main-content .funktioniert .title-1, #main-content .funktioniert .title-2 {
+    position: absolute;
+    top: 655px;
+    left: 42px;
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
 }
 
 #main-content .coaches .section {
@@ -471,8 +576,12 @@ main .site-main #main-content {
     ;
 }
 
+<<<<<<< HEAD
 #main-content .coaches .title-1 h1,
 #main-content .coaches .title-2 h1 {
+=======
+#main-content .funktioniert .title-1 h1,#main-content .funktioniert .title-2 h1{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     font-size: 407px;
     line-height: 205px;
     font-weight: 500;
@@ -480,25 +589,36 @@ main .site-main #main-content {
     font-family: 'Raleway-medium';
 }
 
-#main-content .coaches .title-coachs {
+#main-content .coaches{
+    background-color: #fff;
     position: relative;
+    margin-top: 124px;
+}
+
+#main-content .coaches .title-coachs {
     margin-left: 42px;
-    top: 8em;
 }
 
-#main-content .coaches .slider-nav-1 {
-    bottom: -40px !important;
-}
-
+<<<<<<< HEAD
 #main-content .coaches .slider-nav-1 .slick-list {
     height: 510px;
 }
+=======
+/* #main-content .coaches{
+    margin-top: 281px;
+} */
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
 
-#main-content .coaches .slider-nav {
-    top: -70px !important;
+#main-content .coaches .slider-nav-1{
+   margin-top: -77px;
 }
 
+<<<<<<< HEAD
 .box {
+=======
+
+.box{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     height: 399px;
     width: 399px !important;
     border-radius: 100%;
@@ -542,7 +662,11 @@ main .site-main #main-content {
     color: #000;
 }
 
+<<<<<<< HEAD
 #main-content .coaches .box {
+=======
+#main-content .coaches  .box,#main-content .funktioniert  .box{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     background-color: #EFEFEF;
     margin: auto 5px;
     display: flex;
@@ -550,7 +674,11 @@ main .site-main #main-content {
     align-items: center;
 }
 
+<<<<<<< HEAD
 #main-content .coaches .box span {
+=======
+#main-content .coaches  .box span,#main-content .funktioniert  .box span{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     font-size: 20px !important;
     margin-bottom: 30px;
 }
@@ -583,9 +711,18 @@ main .site-main #main-content {
     align-items: center;
 }
 
+<<<<<<< HEAD
 #main-content .coaches .slider-nav-1 .box-action,
 #main-content .coaches .slider-nav .box-action {
+=======
+#main-content .funktioniert .slider-nav-1 .box-action,#main-content .funktioniert .slider-nav .box-action{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     margin: auto 5px;
+}
+
+.container-fluid.slider-nav{
+    margin-top: 137px;
+    z-index: 1;
 }
 
 .box-action a {
@@ -636,20 +773,31 @@ main .site-main #main-content {
     margin: 0 12px;
 }
 
+<<<<<<< HEAD
 #main-content .coaches .custom-slick-navigator {
+=======
+
+#main-content .funktioniert .custom-slick-navigator {
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     position: relative;
-    bottom: 335px;
+    bottom: 245px;
+    z-index: 1;
+
 }
 
 #main-content .coaches .custom-slick-navigator-1 {
     position: relative;
-    bottom: 315px;
+    bottom: 255px;
 }
 
+<<<<<<< HEAD
 #main-content .coaches .custom-slick-navigator .custom-slick-arrow-left {
+=======
+
+#main-content .funktioniert .custom-slick-navigator .custom-slick-arrow-left{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     position: absolute;
     left: 82px;
-    bottom: -113px;
     border: none;
     background-color: transparent;
 }
@@ -661,10 +809,13 @@ main .site-main #main-content {
     background-color: transparent;
 }
 
+<<<<<<< HEAD
 #main-content .coaches .custom-slick-navigator .custom-slick-arrow-right {
+=======
+#main-content .funktioniert .custom-slick-navigator .custom-slick-arrow-right{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     position: absolute;
     right: 82px;
-    bottom: -113px;
     border: none;
     background-color: transparent;
 }
@@ -686,7 +837,8 @@ main .site-main #main-content {
 
 .section-coming-soon {
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
+    margin-top: 385px;
 }
 
 #main-content .coaches .subtitle-coachs {
@@ -695,17 +847,25 @@ main .site-main #main-content {
     left: 90px;
 }
 
+<<<<<<< HEAD
 #main-content .coaches .subtitle-1,
 #main-content .coaches .subtitle-2 {
+=======
+#main-content .funktioniert .subtitle-1,#main-content .coaches .subtitle-2{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     position: absolute;
-    top: 85px;
-    left: 97px;
+    top: 719px;
+    left: 140px;
     font-family: 'Raleway-semibold';
 }
 
+<<<<<<< HEAD
 #main-content .coaches .subtitle-1 p,
 #main-content .coaches .subtitle-coachs p,
 #main-content .coaches .subtitle-2 p {
+=======
+#main-content .funktioniert .subtitle-1 p,#main-content .coaches .subtitle-coachs p,#main-content .funktioniert .subtitle-2 p{
+>>>>>>> ea6e31f092f2d714ea31841a82a1e5450e80cedb
     font-size: 40px;
     line-height: 47px;
 }
@@ -718,8 +878,8 @@ main .site-main #main-content {
 }
 
 #main-content .image-coming-soon {
-    position: relative;
-    top: 700px;
+    position: absolute;
+    bottom: -2px;
 }
 
 #main-content .coming-soon .content {

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <style>
+        header {
+            background-color: #000;
+        }
+        
+        .bottom {
+            position: relative;
+            margin-top: 247px;
+        }
+        
+        .bottom img {
+            position: absolute;
+            left: -102px;
+            bottom: 0;
+        }
+        
+        .line {
+            width: 100%;
+            background-color: #EFEFEF;
+        }
+        
+        .text {
+            width: 950px;
+            padding-left: 102px;
+            padding-top: 191px;
+            padding-bottom: 191px;
+        }
+        
+        .text h1 {
+            font-size: 40px;
+            font-family: 'Raleway-semibold';
+            margin-bottom: 30px;
+        }
+        
+        .text p {
+            font-size: 16px;
+            font-family: 'Raleway-medium';
+            margin-bottom: 40px;
+        }
+        
+        .text a {
+            font-size: 16px;
+            font-family: 'Raleway-medium';
+            width: 306px;
+            background-color: #FBC7B2;
+        }
+        
+        .wrap {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            align-content: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <!-- Brand and toggle get grouped for better mobile display-->
+                <div class="navbar-header">
+                    <a href="./">
+                        <img class="navbar-brand" src="./assets/images/mutschmiede logo.svg" />
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling-->
+                <div id="mutschmiede-nav" class="navbar-right">
+                    <ul class="nav navbar-nav d-none d-md-none d-lg-flex">
+                        <li>
+                            <a href="./">Problemfelder</a>
+                        </li>
+                        <li><a href="./">Exptertinnen</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
+                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" style="margin-right: 5px;" />AT</a>
+                            <ul class="dropdown-menu-lang" id="country-switcher">
+                                <!-- <li id="country-at">
+                    <a href="?language=at"
+                      ><img
+                        src="./assets/images/languages/AUSTRIA.png "
+                        width="28.31"
+                        height="17.04"
+                        
+                      />
+                      AT</a
+                    >
+                  </li> -->
+                                <li id="country-de">
+                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31" height="17.04" /> DE
+                                    </a>
+                                </li>
+                                <li id="country-eng">
+                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31" height="17.04" /> ENG
+                                    </a>
+                                </li>
+                                <li id="country-esp">
+                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31" height="17.04" /> ESP
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="user-login">
+                            <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" />login</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav d-md-flex d-lg-none">
+                        <li class="d-none">
+                            <a href="./">Problemfelder</a>
+                        </li>
+                        <li class="d-none"><a href="./">Exptertinnen</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
+                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" style="margin-right: 5px;" /></a>
+                            <ul class="dropdown-menu-lang" id="country-switcher">
+                                <!-- <li id="country-at">
+                    <a href="?language=at"
+                      ><img
+                        src="./assets/images/languages/AUSTRIA.png "
+                        width="28.31"
+                        height="17.04"
+                        
+                      />
+                      AT</a
+                    >
+                  </li> -->
+                                <li id="country-de">
+                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31" height="17.04" /> DE
+                                    </a>
+                                </li>
+                                <li id="country-eng">
+                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31" height="17.04" /> ENG
+                                    </a>
+                                </li>
+                                <li id="country-esp">
+                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31" height="17.04" /> ESP
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="user-login">
+                            <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" /></a>
+                        </li>
+                        <li>
+                            <button class="btn-collapse" type="button" data-toggle="collapse" data-target="" aria-expanded="false">
+                  <img src="./assets/images/Group 290.svg">
+                </button>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+    </header>
+    <main class="site-main" id="main-content">
+        <div class="container-fluid">
+            <h1>Coming soon: mutschmiede App</h1>
+                        <p>Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme und Ängste zu konkretisieren. Basierend
+                            auf Ihren Antworten, können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten. Wir freuen uns
+                            über Ihre Anfragen und stehen Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung: +43 664 227 58 17</p>
+                        <a class="download">Download</a>
+        </div>
+        <div class="bottom" style="width:100%">
+            <img src="./assets/images/Mutschmiede-App-Vorschau.png" />
+            <div class="line">
+                <div class="container-fluid wrap">
+                    <div class=" text ">
+                        <h1>Coming soon: mutschmiede App</h1>
+                        <p>Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme und Ängste zu konkretisieren. Basierend
+                            auf Ihren Antworten, können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten. Wir freuen uns
+                            über Ihre Anfragen und stehen Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung: +43 664 227 58 17</p>
+                        <a class="download">Download</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer ">
+        <div class="container-fluid ">
+            <div class="main-footer ">
+                <div class="contact ">
+                    <ul>
+                        <a href="./impressum.html ">
+                            <li>Impressum</li>
+                        </a>
+                        <a href="./agb.html ">
+                            <li>AGB</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="logo ">
+                    fi
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery-3.6.0.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script type="text/javascript ">
+        $(document).ready(function(e) {
+
+            var viewport = $('meta[name="viewport"]');
+            window.onresize = function() {
+                if (window.screen.width <= 1024 && window.screen.width >= 576) {
+                    viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
+                } else {
+                    viewport.attr("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
+                }
+            }
+
+            window.addEventListener("message", function(event) {
+                console.log(event);
+            }, false);
+        });
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+</body>
+
+</html>

@@ -11,7 +11,11 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/editor.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+
 
   </head>
   <body>
@@ -98,10 +102,6 @@
               </li>
             </ul>
             <ul class="nav navbar-nav d-md-flex d-lg-none">
-              <li class="d-none">
-                <a href="./">Problemfelder</a>
-              </li>
-              <li class="d-none"><a href="./">Exptertinnen</a></li>
               <li class="dropdown">
                 <a
                   class="dropdown-lang"
@@ -117,25 +117,13 @@
                     height="17.04"
                     style="margin-right: 5px;" /></a>
                 <ul class="dropdown-menu-lang" id="country-switcher">
-                  <!-- <li id="country-at">
-                    <a href="?language=at"
-                      ><img
-                        src="./assets/images/languages/AUSTRIA.png "
-                        width="28.31"
-                        height="17.04"
-                        
-                      />
-                      AT</a
-                    >
-                  </li> -->
                   <li id="country-de">
                     <a href="?language=de"
                       ><img
                         src="./assets/images/languages/DE.png"
                         width="28.31"
                         height="17.04"
-                      />
-                      DE</a
+                      /></a
                     >
                   </li>
                   <li id="country-eng">
@@ -144,8 +132,7 @@
                         src="./assets/images/languages/ENG.png"
                         width="28.31"
                         height="17.04"
-                      />
-                      ENG</a
+                      /></a
                     >
                   </li>
                   <li id="country-esp">
@@ -154,22 +141,60 @@
                         src="./assets/images/languages/SPAIN.png"
                         width="28.31"
                         height="17.04"
-                      />
-                      ESP</a
+                      /></a
                     >
                   </li>
                 </ul>
               </li>
               <li class="user-login">
-                <a href="./login.html"
-                  ><img src="./assets/images/user_login.png" style="margin-right: 5px;"/></a>
+                <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;"/></a>
               </li>
               <li>
                 <button class="btn-collapse" type="button" data-toggle="collapse" data-target="" aria-expanded="false">
-                  <img src="./assets/images/Group 290.svg">
+                  <!-- <img src="./assets/images/Group 290.svg"> -->
+                  <i class="fas fa-bars"></i>
                 </button>
               </li>
             </ul>
+            <div class="menu-user-mobile">
+              <ul>
+                <li>
+                  <a>Problemfelder</a>
+                </li>
+                <li>
+                  <a>Expertinnen</a>
+                </li>
+                <li class="login-mobile">
+                  <a><img src="./assets/images/Group 72.png" style="margin-right: 5px;"/>Login</a>
+                  <div class="menu-login-mobile">
+                    <ul>
+                      <li>
+                        <a>Problemfelder</a>
+                      </li>
+                      <li>
+                        <a>Expertinnen</a>
+                      </li>
+                      <li>
+                        <a><img src="./assets/images/Group 72.png" style="margin-right: 5px;"/>Login</a>
+                      </li>
+                      <li>
+                        <a>Linkedin</a>
+                      </li>
+                      <li>
+                        <a>Facebook</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                
+                <li>
+                  <a>Linkedin</a>
+                </li>
+                <li>
+                  <a>Facebook</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -177,12 +202,7 @@
     <main class="site-main" id="main-content">
       <!-- Gemeinsam zur besten Lösung -->
       <div class="gemeinsam">
-        <div class="image-gemeinsam">
-          <img
-            src="./assets/images/shridhar-gupta-dZxQn4VEv2M-unsplash.png"
-            alt=""
-          />
-        </div>
+        <img src="./assets/images/shridhar-gupta-dZxQn4VEv2M-unsplash.png" width="1017" height="812" alt="" />
         <div class="content-gemeinsam-box">
           <div class="text-box" data-aos="fade-up">
             <h1>Gemeinsam zur besten Lösung</h1>
@@ -236,23 +256,13 @@
             </div>
           </div>
         </div>
-        <div class="funktioniert-image">
-          <img src="./assets/images/clay-banks-POzx_amnWJw-unsplash.png" />
-        </div>
-      </div>
-      <!-- Wie die mutschmiede funktioniert -->
-
-
-      <!-- Coaches -->
-      <div class="coaches">
         <div class="title-1">
           <h1>1</h1>
-          <div class="subtitle-1">
-            <p>Problem<br>erkennen</p>
-          </div>
         </div>
-          <div class="container-fluid">
-            <div class="slider slider-nav">
+        <div class="subtitle-1">
+          <p>Problem<br>erkennen</p>
+        </div>
+        <div class="container-fluid slider slider-nav">
               <div class="box">
                   <div class="content">
                       <span>Covid-19</span>
@@ -309,9 +319,8 @@
                   </div> 
               </div>
             </div>
-          </div>
         
-          <div class="custom-slick-navigator">
+        <div class="custom-slick-navigator">
             <button
               class="custom-slick-arrow custom-slick-arrow-left"
               type="button"
@@ -324,17 +333,23 @@
             >
               <img src="./assets/images/Group 118.png" />
             </button>
-          </div>
+        </div>
+        <div class="funktioniert-image">
+          <img src="./assets/images/clay-banks-POzx_amnWJw-unsplash.png" />
+        </div>
+      </div>
+      <!-- Wie die mutschmiede funktioniert -->
 
 
+      <!-- Coaches -->
+      <div class="coaches">
         <div class="title-coachs">
           <h1>Coaches</h1>
           <div class="subtitle-coachs">
             <p>Verfügbare<br />Coaches</p>
           </div>
         </div>
-        <div class="container-fluid">
-          <div class="slider slider-nav-1">
+          <div class="container-fluid slider slider-nav-1">
             <a href="#exampleModal" data-toggle="modal">
               <div class="box onl">
                   <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
@@ -417,7 +432,6 @@
               </div>
             </div>
           </div>
-        </div>
         <div class="custom-slick-navigator-1">
           <button
             class="custom-slick-arrow custom-slick-arrow-left-1"
@@ -442,7 +456,7 @@
         </div>
         <div class="coming-soon">
           <div class="content">
-            <div class="text" data-aos="fade-up">
+            <div class="text">
               <h1>Coming soon: mutschmiede App</h1>
               <p>
                 Das mutschmiede System ist darauf ausgelegt, Sie so schnell und
@@ -727,6 +741,18 @@
 
         $('.dropdown-lang').click(function(e){   
               $('.dropdown-menu-lang').slideToggle();
+              e.preventDefault();
+        });
+
+        $('.btn-collapse').click(function(e){   
+              $('.menu-user-mobile').slideToggle('1000');
+              e.preventDefault();
+              icon = $(this).find("i");
+              icon.toggleClass("fa-times");
+        });
+
+        $('.login-mobile').click(function(e){   
+              $('.menu-login-mobile').slideToggle();
               e.preventDefault();
         });
       });
