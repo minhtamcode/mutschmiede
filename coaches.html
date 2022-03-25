@@ -90,13 +90,13 @@
     <main class="site-main-coaches form-coach" id="main-content">
         <div class="title">
             <div class="text">
-                <h1>Inaktive Coaches</h1>
+                <h1 data-aos="zoom-in-up">Inaktive Coaches</h1>
             </div>
         </div>
         <div class="content">
             <div class="container">
                 <div class="form">
-                    <div class="header-table">
+                    <div class="header-table" data-aos="fade-up">
                         <div></div>
                         <div class="search">
                             <ul>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
 
-                    <div class="coach-box">
+                    <div class="coach-box" data-aos="fade-up">
                         <div class="coach">
                             <div class="coach-img">
                                 <div class="action">
@@ -182,7 +182,7 @@
                         </div>
                     </div>
 
-                    <div class="coach-box">
+                    <div class="coach-box" data-aos="fade-up">
                         <div class="coach">
                             <div class="coach-img">
                                 <div class="action">
@@ -247,7 +247,7 @@
                         </div>
                     </div>
 
-                    <div class="coach-box">
+                    <div class="coach-box" data-aos="fade-up">
                         <div class="coach">
                             <div class="coach-img">
                                 <div class="action">
@@ -353,7 +353,9 @@
 
     <script type="text/javascript">
         $(document).ready(function(e) {
-
+            AOS.init({
+                duration: 1200,
+            })
             $('.dropdown-lang').click(function(e) {
                 $('.dropdown-menu-lang').slideToggle();
                 e.preventDefault();
@@ -364,9 +366,7 @@
                 e.preventDefault();
             });
         });
-        AOS.init({
-            duration: 1200,
-        })
+
         var viewport = $('meta[name="viewport"]');
         window.onresize = function() {
             if (window.screen.width <= 1024 && window.screen.width >= 576) {
