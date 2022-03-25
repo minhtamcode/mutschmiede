@@ -1078,34 +1078,33 @@ footer {
     justify-content: space-between;
 }
 
-table {
+.table-page-gutschen table {
     background-color: #fff;
     width: 100%;
     border-radius: 10px 0px 0px 10px;
 }
 
-tr {
+.table-page-gutschen tr {
     border-bottom: 1px solid #FBC7B2;
 }
 
-tr:nth-child(even) {
+.table-page-gutschen tr:nth-child(even) {
     background-color: rgba(251, 199, 178, 8%);
     ;
 }
 
-th {
+.table-page-gutschen th {
     text-align: left;
     padding: 16px 0px 16px 20px;
     border-right: 1px solid #FBC7B2;
 }
 
-td {
+.table-page-gutschen td {
     padding: 16px 0px 16px 20px;
-    border-bottom: 1px solid #FBC7B2;
-    border-right: 1px solid #FBC7B2;
+    border: 1px solid #FBC7B2;
 }
 
-tbody tr:hover {
+.table-page-gutschen tbody tr:hover {
     background-color: #FBC7B2;
 }
 
@@ -1121,6 +1120,7 @@ tbody tr:hover {
 
 .header-table ul li {
     margin-right: 25px;
+    font-family: 'Raleway-medium';
 }
 
 .site-main-face2face .form .table-booking .body-table {

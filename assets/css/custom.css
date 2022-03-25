@@ -483,6 +483,9 @@
     display: block;
 }
 
+
+/* site-main-coaches */
+
 .site-main-coaches .container {
     padding: 0 !important;
     margin: auto !important;
@@ -544,6 +547,100 @@
 
 .site-main-coaches .form .coach-box .coach .coach-infor .name {
     padding: 58px 20px;
+}
+
+
+/* site-main-gutscheincodes */
+
+.site-main-gutscheincodes .table-booking .table-responsive {
+    overflow-x: hidden;
+    border: 1px solid #FBC7B2;
+    border-radius: 10px;
+}
+
+.site-main-gutscheincodes .table-booking .table-responsive .table {
+    border: 1px solid #FBC7B2;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.site-main-gutscheincodes .table-booking .table-responsive .table th,
+.site-main-gutscheincodes .table-booking .table-responsive .table td {
+    border: 1px solid #FBC7B2;
+}
+
+.site-main-gutscheincodes .form .subtitle h1 {
+    text-transform: capitalize;
+}
+
+.site-main-gutscheincodes .content {
+    padding: 48px 0px 93px 0px !important;
+}
+
+.site-main-gutscheincodes .form .tab a {
+    line-height: 30px;
+}
+
+.site-main-gutscheincodes .form .tab {
+    margin-bottom: 100px !important;
+}
+
+.actived {
+    padding-bottom: 5.5px;
+}
+
+.form-coach#main-content .content label {
+    margin-bottom: 20px;
+}
+
+.form .form-input {
+    display: unset!important;
+    flex-direction: unset!important;
+    margin-bottom: unset!important;
+}
+
+.form-coach#main-content .group-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.form-coach#main-content .group-form .group-input label {
+    width: 100%;
+    font-size: 20px;
+}
+
+.form-coach#main-content .group-form .group-input input {
+    width: 444px;
+    border-radius: 10px;
+    border: 1px solid #FBC7B2;
+    padding: 24px 21px;
+}
+
+.form-coach#main-content .group-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.form-coach#main-content .group-button a {
+    width: 306px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #FBC7B2;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 20px;
 }
 
 @media (max-width: 576px) {
