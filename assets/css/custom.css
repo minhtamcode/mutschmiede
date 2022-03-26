@@ -2,6 +2,29 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #EFEFEF;
+}
+
+
+/* layout-home */
+
+.layout-home .lht-vertical {
+    height: 437px;
+    margin-top: 460px;
+}
+
+.layout-home .lht-vertical .lht-text {
+    transform: rotate(270deg);
+    width: 437px;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+
+/* layout-home */
+
 .text-center {
     text-align: center;
 }
@@ -553,22 +576,43 @@
 /* site-main-gutscheincodes */
 
 .site-main-gutscheincodes .table-booking .table-responsive {
-    overflow-x: hidden;
-    border: 1px solid #FBC7B2;
     border-radius: 10px;
+    border: 1px solid #FBC7B2;
+    overflow: auto;
+    max-height: 456px;
+    padding-right: 24px;
 }
 
 .site-main-gutscheincodes .table-booking .table-responsive .table {
-    border: 1px solid #FBC7B2;
-    border-collapse: collapse;
-    border-radius: 10px;
-    overflow: hidden;
     margin-bottom: 0;
+    background-color: #fff !important;
 }
 
-.site-main-gutscheincodes .table-booking .table-responsive .table th,
+.site-main-gutscheincodes .table-booking .table-responsive .table th {
+    border-bottom: 1px solid #FBC7B2;
+    border-right: 1px solid #FBC7B2;
+    border-top: unset;
+}
+
 .site-main-gutscheincodes .table-booking .table-responsive .table td {
-    border: 1px solid #FBC7B2;
+    border-right: 1px solid #FBC7B2;
+    border-top: 1px solid #FBC7B2;
+}
+
+.site-main-gutscheincodes .table-booking .table-responsive .table tbody tr td:last-child {
+    border-right: unset;
+}
+
+.site-main-gutscheincodes .table-booking .table-responsive .table thead tr th:last-child {
+    border-right: unset;
+}
+
+.site-main-gutscheincodes .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fffbf9 !important;
+}
+
+.site-main-gutscheincodes .table-striped tbody tr:hover {
+    background-color: #FBC7B2!important;
 }
 
 .site-main-gutscheincodes .form .subtitle h1 {
@@ -897,6 +941,58 @@
     }
     .site-main-coaches .form .box-name-button {
         margin-top: 10px;
+    }
+    .site-main-gutscheincodes#main-content .content {
+        padding: 0 35px !important;
+    }
+    .form-coach#main-content .group-form .group-input input,
+    .site-main-gutscheincodes#main-content .content .form {
+        width: 100%;
+    }
+    .site-main-gutscheincodes .form .tab a {
+        font-size: 16px;
+        margin-right: 32px;
+        margin-top: 20px;
+    }
+    .site-main-gutscheincodes .form .subtitle {
+        margin-right: 0;
+        margin-bottom: 54px;
+    }
+    .site-main-gutscheincodes .form .subtitle h1 {
+        font-size: 25px;
+        padding-right: 83px;
+    }
+    .form-coach#main-content .group-button,
+    .form-coach#main-content .group-form {
+        flex-direction: column;
+    }
+    .form-coach#main-content .group-button a:first-child {
+        margin-bottom: 20px;
+    }
+    .form-coach#main-content .group-form .group-input label {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .form-coach#main-content .group-form .group-input {
+        margin-bottom: 20px;
+    }
+    .site-main-gutscheincodes .title .text h1 {
+        font-size: 25px;
+    }
+    .site-main-gutscheincodes .form .tab {
+        display: flex;
+        margin-bottom: 45px !important;
+    }
+    .site-main-gutscheincodes .form .table-booking {
+        margin-top: 79px;
+        margin-bottom: 45px;
+    }
+    .site-main-gutscheincodes .form .table-booking .label {
+        width: 100%;
+    }
+    .site-main-gutscheincodes .form .table-booking .header-table {
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 }
 
