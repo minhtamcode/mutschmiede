@@ -9,17 +9,55 @@ body {
 
 /* layout-home */
 
-.layout-home .lht-vertical {
-    height: 437px;
-    margin-top: 460px;
+.layout-homes .lh-top {
+    min-height: 897px;
+    padding-bottom: 85px;
 }
 
-.layout-home .lht-vertical .lht-text {
-    transform: rotate(270deg);
-    width: 437px;
-    right: 0;
+.layout-homes .lh-top img {
     top: 0;
-    text-align: center;
+    left: 0;
+    z-index: 9;
+}
+
+.layout-homes .lht-vertical {
+    max-height: 427px;
+    height: 100%;
+    bottom: 0;
+    z-index: 1;
+    text-align: right;
+}
+
+.layout-homes .lht-text-box {
+    z-index: 99;
+    bottom: 176px;
+}
+
+.layout-homes .content-gemeinsam-box .text-box {
+    width: 889px;
+    padding: 91px 101px 68px 110px !important;
+    background-color: #fff;
+    float: right;
+    margin-right: 63px;
+}
+
+.layout-homes .lht-vertical-text {
+    transform-origin: top right;
+    right: 0;
+    top: 50%;
+    transform: rotate(270deg) translateX(85px);
+    width: 427px;
+    z-index: 999;
+    float: right;
+    text-align: left;
+}
+
+.layout-homes .lht-vertical-text a {
+    margin-right: 50px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 24px;
+    font-size: 20px;
 }
 
 
