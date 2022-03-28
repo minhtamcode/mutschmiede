@@ -98,7 +98,7 @@ body {
 }
 
 .ddbuch-content .ddbuch-title h1 {
-    margin: 52px 0;
+    padding: 52px 0;
 }
 
 .ddbuch-wrap {
@@ -631,46 +631,98 @@ body {
 
 /* site-main-gutscheincodes */
 
+.site-main-face2face .table-booking .table-responsive,
 .site-main-gutscheincodes .table-booking .table-responsive {
     border-radius: 10px;
     border: 1px solid #FBC7B2;
     overflow: auto;
-    max-height: 456px;
+    max-height: 611px;
     padding-right: 24px;
 }
 
+.table-customer .table-booking .table-responsive .table,
+.site-main-face2face .table-booking .table-responsive .table,
 .site-main-gutscheincodes .table-booking .table-responsive .table {
     margin-bottom: 0;
     background-color: #fff !important;
 }
 
+.table-customer .table-booking .scroll-wrapper {
+    border-radius: 10px;
+    border: 1px solid #FBC7B2;
+    overflow: auto;
+    max-height: 329px !important;
+    padding-right: 24px !important;
+    padding-left: 17px!important;
+    padding-top: 24px!important;
+    padding-bottom: 23px!important;
+    background-color: #fff;
+}
+
+.site-main-face2face .table-booking .table-responsive .table th,
 .site-main-gutscheincodes .table-booking .table-responsive .table th {
     border-bottom: 1px solid #FBC7B2;
     border-right: 1px solid #FBC7B2;
     border-top: unset;
+    font-family: 'Raleway-semibold';
+    padding: 16px 21px;
 }
 
+.site-main-face2face .table-booking .table-responsive .table td,
 .site-main-gutscheincodes .table-booking .table-responsive .table td {
     border-right: 1px solid #FBC7B2;
     border-top: 1px solid #FBC7B2;
+    padding: 16px 21px;
 }
 
+.table-customer .table-booking .table-responsive .table th,
+.table-customer .table-booking .table-responsive .table td {
+    border: 0 !important;
+    background-color: unset !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 10px !important;
+}
+
+.table-customer .table-booking .table-responsive .table td {
+    margin-bottom: 10px;
+    line-height: 19px;
+}
+
+.table-customer .table-booking .table-responsive .table td:last-child {
+    text-decoration: underline;
+}
+
+.site-main-face2face .table-booking .table-responsive .table tbody tr td:last-child,
 .site-main-gutscheincodes .table-booking .table-responsive .table tbody tr td:last-child {
     border-right: unset;
 }
 
+.site-main-face2face .table-booking .table-responsive .table thead tr th:last-child,
 .site-main-gutscheincodes .table-booking .table-responsive .table thead tr th:last-child {
     border-right: unset;
 }
 
+.site-main-face2face .table-striped tbody tr:nth-of-type(odd),
 .site-main-gutscheincodes .table-striped tbody tr:nth-of-type(odd) {
     background-color: #fffbf9 !important;
 }
 
+.table-customer .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff !important;
+}
+
+.site-main-face2face .table-striped tbody tr:hover,
 .site-main-gutscheincodes .table-striped tbody tr:hover {
     background-color: #FBC7B2!important;
 }
 
+.table-customer .table-striped tbody tr:hover {
+    background: #fff !important;
+}
+
+.site-main-face2face .form .subtitle h1,
 .site-main-gutscheincodes .form .subtitle h1 {
     text-transform: capitalize;
 }
@@ -679,6 +731,7 @@ body {
     padding: 48px 0px 93px 0px !important;
 }
 
+.site-main-face2face .form .tab a,
 .site-main-gutscheincodes .form .tab a {
     line-height: 30px;
 }
@@ -693,9 +746,10 @@ body {
 
 .form-coach#main-content .content label {
     margin-bottom: 20px;
+    font-family: 'Raleway-semibold';
 }
 
-.form .form-input {
+.form-coach .form .form-input {
     display: unset!important;
     flex-direction: unset!important;
     margin-bottom: unset!important;
@@ -743,7 +797,107 @@ body {
     margin-right: 20px;
 }
 
+.site-main-face2face .title .text h1 {
+    font-family: 'Raleway-semibold';
+}
+
+.table-booking .header-table ul li a {
+    font-family: 'Raleway-medium';
+    color: #000;
+}
+
+
+/* face page */
+
+.wrap-top-face .form-input input,
+.wrap-top-face .form-input label {
+    width: 100%;
+}
+
+.wrap-top-face .form-input label {
+    font-family: 'Raleway-semibold';
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.wrap-top-face .form-input a {
+    width: 306px;
+    border-radius: 100px;
+    background-color: #FBC7B2;
+    text-align: center;
+    line-height: 19px;
+    padding: 15px 0;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway-medium';
+}
+
+.wrap-top-face .form-input input {
+    line-height: 19px;
+    border-radius: 10px;
+    border: 1px solid #FBC7B2;
+    margin-bottom: 20px;
+    padding: 24px 20px;
+    height: 66px;
+    font-style: italic;
+}
+
+.wrap-top-face .form-top-face {
+    padding-top: 87px;
+    margin-bottom: 50px;
+}
+
+.wrap-top-face .form-top-face {
+    padding-top: 87px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wrap-top-face .form-bottom-face {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wrap-top-face .form-bottom-face .coaching-unit,
+.wrap-top-face .form-top-face .check-customer-number {
+    width: 950px;
+}
+
+.wrap-top-face .form-bottom-face .manage-customer,
+.wrap-top-face .form-top-face .add-customer-number {
+    width: 398px;
+    margin-left: 18px;
+}
+
+.form-bottom-face .input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.form-bottom-face .input input {
+    margin-right: 16px;
+}
+
+.form-bottom-face .input input:last-child {
+    margin-right: unset;
+}
+
+.site-main-face2face .table-booking {
+    padding-bottom: 89px;
+}
+
+
+/* face page */
+
 @media (max-width: 576px) {
+    .container {
+        padding: 0;
+    }
     .hide-mobile {
         display: none;
     }
@@ -1009,6 +1163,7 @@ body {
         font-size: 16px;
         margin-right: 32px;
         margin-top: 20px;
+        font-family: 'Raleway-medium';
     }
     .site-main-gutscheincodes .form .subtitle {
         margin-right: 0;
@@ -1017,13 +1172,20 @@ body {
     .site-main-gutscheincodes .form .subtitle h1 {
         font-size: 25px;
         padding-right: 83px;
+        font-family: 'Raleway-semibold';
     }
     .form-coach#main-content .group-button,
     .form-coach#main-content .group-form {
         flex-direction: column;
+        width: 100%;
     }
     .form-coach#main-content .group-button a:first-child {
         margin-bottom: 20px;
+    }
+    .form-coach#main-content .group-button a {
+        width: 100%;
+        margin-right: 0;
+        font-family: 'Raleway-medium';
     }
     .form-coach#main-content .group-form .group-input label {
         font-size: 16px;
@@ -1043,12 +1205,91 @@ body {
         margin-top: 79px;
         margin-bottom: 45px;
     }
+    .site-main-face2face .table-booking .label,
     .site-main-gutscheincodes .form .table-booking .label {
         width: 100%;
     }
+    .site-main-face2face .table-booking .header-table,
     .site-main-gutscheincodes .form .table-booking .header-table {
         flex-direction: column;
         margin-bottom: 20px;
+    }
+    .site-main-face2face .title .text {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .site-main-face2face .title .text h1 {
+        font-size: 25px;
+        height: 120px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .wrap-top-face .form-top-face div:first-child {
+        margin-bottom: 40px;
+    }
+    .wrap-top-face .form-top-face .check-customer-number,
+    .wrap-top-face .form-top-face .add-customer-number {
+        margin-left: unset;
+        width: 100%;
+    }
+    .wrap-top-face .form-top-face {
+        padding-top: 0 !important;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .wrap-top-face .form-bottom-face {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .wrap-top-face .form-bottom-face .coaching-unit,
+    .wrap-top-face .form-top-face .check-customer-number {
+        width: 100%;
+        margin-left: unset;
+    }
+    .wrap-top-face .form-bottom-face .manage-customer,
+    .wrap-top-face .form-top-face .add-customer-number {
+        margin-left: unset !important;
+        width: 100%;
+    }
+    .site-main-face2face .content {
+        padding: 42px 35px 46px 35px;
+    }
+    .wrap-top-face .form-input a,
+    .table-customer .table-booking .scroll-wrapper {
+        width: 100%;
+    }
+    .site-main-face2face .table-booking {
+        padding-bottom: 35px;
+    }
+    .form-bottom-face .input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+    }
+    .form-bottom-face .input input {
+        width: 100%;
+    }
+    .site-main-face2face .table-booking .table-responsive,
+    .site-main-gutscheincodes .table-booking .table-responsive {
+        padding-right: 0 !important;
+    }
+    .table-customer .table-booking .scroll-wrapper,
+    .site-main-gutscheincodes .table-booking .scroll-wrapper {
+        padding-right: 0 !important;
     }
 }
 
