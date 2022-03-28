@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Handbuch</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" />
@@ -63,9 +63,9 @@
                             </div>
                             <div class="search">
                                 <ul>
-                                    <li><a>Sortieren nach</a></li>
-                                    <li><a>Name</a></li>
-                                    <li><a>Datum</a></li>
+                                    <li><a href="">Sortieren nach</a></li>
+                                    <li><a href="">Name</a></li>
+                                    <li><a href="">Datum</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -253,7 +253,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtdvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/editor.js"></script>
     <script src="./assets/js/wysihtml5-0.3.0.js"></script>
@@ -261,14 +260,15 @@
     <script src="./assets/js/jquery.scrollbar.js"></script>
 
     <script type="application/javascript">
+        AOS.init({
+            duration: 1200,
+        })
         jQuery(document).ready(function() {
             jQuery('.scrollbar-inner').scrollbar();
             jQuery('.scrollbar-inner .scroll-bar').append('<div class="scroll-bar-body"></div>');
 
         });
-        AOS.init({
-            duration: 1200,
-        })
+
         jQuery('.textarea').wysihtml5({
             "font-styles": false,
             "image": false,
@@ -278,10 +278,10 @@
 
         var viewport = $('meta[name="viewport"]');
         window.onresize = function() {
-            if (window.screen.widtd <= 1024 && window.screen.widtd >= 576) {
-                viewport.attr("content", "widtd=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
+            if (window.screen.width <= 1024 && window.screen.width >= 576) {
+                viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
             } else {
-                viewport.attr("content", "widtd=device-widtd, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
+                viewport.attr("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
             }
         }
 
