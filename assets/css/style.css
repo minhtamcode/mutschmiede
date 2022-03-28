@@ -282,7 +282,9 @@ header .navbar {
     width: 100%;
     height: 284px;
     display: none;
-    z-index: 5;
+    z-index: 999;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .menu-user-mobile ul {
@@ -326,14 +328,14 @@ header .navbar {
 
 .menu-login-mobile {
     width: 100%;
-    height: 284px;
+    height: fit-content;
     display: none;
 }
 
-.menu-login-mobile ul {
+.menu-user-mobile .login-mobile .menu-login-mobile ul {
     display: block;
-    padding-left: 36.5px;
-    padding-right: 36.5px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
     background-color: #FBC7B2;
     padding-top: 0!important;
     padding-bottom: 0 !important;
@@ -377,6 +379,10 @@ header .navbar {
 
 .menu-user ul li a img {
     margin-right: 10px;
+}
+
+#mutschmiede-nav ul li .btn-collapse{
+    width: 26px;
 }
 
 .navbar-right ul .dropdown-menu-lang {
@@ -540,7 +546,7 @@ header .navbar {
 }
 
 
-.layout-homes .slider-nav-1 .slick-track{
+.layout-homes .slider-nav .slick-track,.layout-homes .slider-nav-1 .slick-track{
     height: 493px
 }
 
@@ -692,7 +698,7 @@ header .navbar {
 
 #main-content .funktioniert .custom-slick-navigator {
     position: relative;
-    bottom: 245px;
+    bottom: 335px;
     z-index: 1;
 }
 
@@ -1452,6 +1458,11 @@ a.slick-slide {
 /* Medium devices (tablets, 768px and up) */
 
 @media (max-width: 576px) {
+    .container-fluid{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
     .navbar-right ul li {
         margin-left: 15px;
         margin-bottom: 0;
@@ -1517,6 +1528,10 @@ a.slick-slide {
         position: relative;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .site-footer .main-footer .contact ul{
+        flex-direction: column;
     }
 }
 
