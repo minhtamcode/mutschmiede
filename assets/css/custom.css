@@ -12,6 +12,7 @@ body {
 .layout-homes .lh-top {
     min-height: 897px;
     padding-bottom: 85px;
+    background: #EFEFEF;
 }
 
 .layout-homes .lh-top img {
@@ -50,6 +51,7 @@ body {
     z-index: 999;
     float: right;
     text-align: left;
+    margin-right: 43px;
 }
 
 .layout-homes .lht-vertical-text a {
@@ -58,6 +60,22 @@ body {
     color: #000;
     line-height: 24px;
     font-size: 20px;
+}
+
+.layout-homes input.email,
+.layout-homes input.pass {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #FBC7B2;
+    box-sizing: border-box;
+    font-size: 16px;
+    position: relative;
+    z-index: 5;
+    background: none;
+    padding: 10px;
+    font-style: italic;
+    margin-bottom: 20px;
 }
 
 

@@ -171,10 +171,6 @@ a:hover {
     text-decoration: none !important;
 }
 
-img {
-    max-width: 100%;
-}
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -227,7 +223,7 @@ header .navbar {
 }
 
 .site-header .navbar {
-    padding: 66px 0 28px 0 !important;
+    padding: 66px 15px 28px 15px !important;
 }
 
 .navbar-toggle {
@@ -251,7 +247,7 @@ header .navbar {
 
 .navbar-right ul li {
     margin-left: 40px;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
 }
 
 .navbar-right ul li.dropdown .dropdown-lang::after {
@@ -400,38 +396,12 @@ header .navbar {
     position: relative;
 }
 
-main .site-main #main-content {
+/* main .site-main #main-content {
     position: relative;
-}
+} */
 
-#main-content .gemeinsam {
-    background-color: #EFEFEF;
-    position: relative;
-}
-
-#main-content .content-gemeinsam {
-    height: 425px;
-    width: 47%;
-    background-color: #fff;
-    position: absolute;
-    z-index: 0;
-    bottom: 3px;
-    right: 0;
-}
-
-#main-content .content-gemeinsam ul {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-evenly;
-    float: right;
-    height: 425px;
-    margin-right: 92px;
-}
-
-#main-content .content-gemeinsam ul li {
-    transform: rotate(270deg);
-    font-size: 20px;
+.site-main.layout-homes{
+    background: #fff;
 }
 
 
@@ -486,6 +456,7 @@ main .site-main #main-content {
 
 #main-content .funktioniert {
     position: relative;
+    background-color: #fff;
 }
 
 #main-content .funktioniert .funktioniert-content {
@@ -566,6 +537,11 @@ main .site-main #main-content {
 
 #main-content .coaches .slider-nav-1 {
     margin-top: -77px;
+}
+
+
+.layout-homes .slider-nav-1 .slick-track{
+    height: 493px
 }
 
 .box {
@@ -653,9 +629,10 @@ main .site-main #main-content {
     display: flex !important;
     justify-content: center;
     align-items: center;
+    border: 12px solid #FBC7B2;
 }
 
-#main-content .funktioniert .slider-nav-1 .box-action,
+#main-content .coaches .slider-nav-1 .box-action,
 #main-content .funktioniert .slider-nav .box-action {
     margin: auto 5px;
 }
@@ -721,7 +698,7 @@ main .site-main #main-content {
 
 #main-content .coaches .custom-slick-navigator-1 {
     position: relative;
-    bottom: 255px;
+    bottom: 345px;
 }
 
 #main-content .funktioniert .custom-slick-navigator .custom-slick-arrow-left {
@@ -763,7 +740,7 @@ main .site-main #main-content {
 .section-coming-soon {
     position: relative;
     /* z-index: -1; */
-    margin-top: 385px;
+    margin-top: 378px;
 }
 
 #main-content .coaches .subtitle-coachs {
