@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+<style>
+    #dLabel {
+    width: 240px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: solid 2px #cccccc;
+    text-align: left;
+    padding: 7.5px 15px;
+    color: #ccc;
+    letter-spacing: 0.7px;
+    margin-top: 25px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="dropdown">
+          <button id="dLabel" class="dropdown-select" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Select
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+            <li>Option 5</li>
+            <li>Option 6</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function (e) {
+   
+
+        $('.dropdown-menu li').on('click', function() {
+        var getValue = $(this).text();
+        $('.dropdown-select').text(getValue);
+    });
+ });
+</script>

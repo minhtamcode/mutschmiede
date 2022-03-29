@@ -311,6 +311,10 @@ header .navbar {
     margin: 0 !important;
 }
 
+.menu-user-mobile ul li a{
+    color: #000;
+}
+
 .menu-user-mobile ul li.login-mobile span::after {
     content: "\f107";
     color: #000;
@@ -558,7 +562,7 @@ header .navbar {
 
 
 .layout-homes .slider-nav .slick-track,.layout-homes .slider-nav-1 .slick-track{
-    height: 493px
+    height:505px
 }
 
 .box {
@@ -704,6 +708,8 @@ header .navbar {
 
 .lang-coach img {
     margin: 0 12px;
+    width: 71.26px;
+    height: 71.26px;
 }
 
 #main-content .funktioniert .custom-slick-navigator {
@@ -714,7 +720,7 @@ header .navbar {
 
 #main-content .coaches .custom-slick-navigator-1 {
     position: relative;
-    bottom: 345px;
+    bottom: 355px;
 }
 
 #main-content .funktioniert .custom-slick-navigator .custom-slick-arrow-left {
@@ -904,6 +910,11 @@ footer {
 .title .text h1 {
     font-size: 40px;
     font-weight: 600;
+    text-align: center;
+}
+
+.site-main.site-main-impressum img,.site-main.site-main-agb img,.site-main.site-main-expertinnen img{
+    max-width: 100%;
 }
 
 .site-main-impressum .content,
@@ -912,6 +923,11 @@ footer {
     padding: 72px 0px 134px 0px;
     font-size: 16px !important;
     line-height: 25px;
+}
+
+.site-main-user .content{
+    background: #fff;
+    padding-top: 107px;
 }
 
 .site-main-user .content .menu-item {
@@ -1305,10 +1321,22 @@ footer {
     padding: 21px 146px 18px 20px;
 }
 
+
 .site-main-expertinnen .content {
     background-color: #fff;
     padding: 113px 0 136px 0;
 }
+
+.site-main-expertinnen select{
+    width: 302px;
+    margin: 0 auto;
+    text-align: center;
+    height: 48px;
+    color: #fff;
+    background: #FBC7B2;
+    border-radius: 25px;
+}
+
 
 .site-main-expertinnen .tabControl .nav-item {
     background-color: #EFEFEF;
@@ -1339,6 +1367,17 @@ footer {
 .site-main-expertinnen .row .box,
 .site-main-expertinnen .row .box-action {
     margin-bottom: 275px;
+}
+
+.site-main-expertinnen .row .box-action .contact{
+    width: 212px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.site-main-expertinnen .row .box-action .contact img{
+    margin: 0 !important;
+    width: 36px;
 }
 
 .site-main-expertinnen .row .name {
@@ -1394,6 +1433,10 @@ footer {
 .layout-homes .slide-1{
     position: relative;
     background-color: #fff;
+}
+
+.layout-homes .text-box .forgot-pass{
+    color: #FBC7B2;
 }
 
 a.slick-slide {
@@ -1551,6 +1594,11 @@ a.slick-slide {
         position: relative;
         top: -37em;
     }
+
+
+    #main-content .content-gemeinsam-box .text-box h1 {
+        font-size: 25px !important;
+    }
     /* #main-content .coaches .title-coachs {
         display: none;
     } */
@@ -1592,6 +1640,10 @@ a.slick-slide {
         left: 33%;
     }
 
+    .onl {
+        border: 10px #78B476 solid;
+    }
+
 
     #main-content .funktioniert .title-1 h1,
     #main-content .funktioniert .title-2 h1{
@@ -1609,7 +1661,7 @@ a.slick-slide {
         line-height: 1;
     }
 
-    .box , .box-action{
+    .layout-homes .box ,.layout-homes .box-action{
         height: 160px !important;
         width: 160px !important;
     }
@@ -1619,6 +1671,10 @@ a.slick-slide {
         font-size: 16px !important;
     }
 
+
+    .layout-homes .text-box .forgot-pass {
+        float: left;
+    }
 
     #main-content .image-coming-soon {
         position: relative;
@@ -1640,6 +1696,75 @@ a.slick-slide {
 
     .site-footer .main-footer .contact ul{
         flex-direction: column;
+    }
+
+    .site-main-expertinnen .row .box, .site-main-expertinnen .row .box-action {
+        width: 319px !important;
+        height: 319px !important;
+    }
+
+    .site-main-expertinnen .row {
+        justify-content: space-around;
+    }
+
+
+    .site-main-expertinnen .content{
+        padding: 45px 0 45px 0;
+    }
+
+    .site-main-expertinnen .row .box-action a{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .site-main-expertinnen .row .box-action .content img{
+       margin-bottom: 15px;
+    }
+
+    .site-main-expertinnen .row .lang-coach img{
+        width: 34.13px;
+        height: 34.13px;
+    }
+
+    .site-main-user img {
+        max-width: 100%;
+    }
+
+
+    .site-main-user .content .menu-item .box {
+        width: 319px !important;
+        height: 319px !important;
+    }
+
+    .site-main-expertinnen .row .lang-coach {
+        bottom: -155px;
+    }
+    
+    .site-main-expertinnen .row .box, .site-main-expertinnen .row .box-action {
+        margin-bottom: 180px;
+    }
+
+    .modal .modal-content {
+        padding: 70px 0 104px 0;
+    }
+
+    .modal .modal-content .content a {
+        font-size: 25px !important;
+    }
+
+    .modal .modal-content .content img {
+        max-width: 100%;
+    }
+
+    .modal#problemModal .modal-content .content .box-action {
+        width: 196px !important;
+        height: 196px !important;
+        padding: 30px 10px 0;
+    }
+
+    .modal#coachModal .modal-content .content .box {
+        width: 207px !important;
+        height: 207px !important;
     }
 
 }
