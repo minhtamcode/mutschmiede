@@ -850,6 +850,10 @@ header .navbar {
     margin-bottom: 45px;
 }
 
+.site-main.site-main-expertinnen{
+    background: #fff;
+}
+
 footer {
     background-color: #fff;
 }
