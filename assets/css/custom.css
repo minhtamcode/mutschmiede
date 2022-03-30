@@ -7,6 +7,98 @@ body {
 }
 
 
+/* slick slide */
+
+.layout-homes .slick-slider {
+    position: relative;
+}
+
+.layout-homes .slick-slider-detect .slick-slider-next {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.layout-homes .slick-slider-detect .slick-slider-previous {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.layout-homes .slick-slider-detect .slick-slider-next,
+.layout-homes .slick-slider-detect .slick-slider-previous {
+    border: 0!important;
+    background-color: unset !important;
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    opacity: 0.5;
+}
+
+.layout-homes .slick-slider__slide {
+    text-align: center;
+    color: #000;
+}
+
+.layout-homes .slick-slider__slide {
+    border-radius: 100%;
+}
+
+.layout-homes .slick-prev {
+    left: 5px;
+    z-index: 1000;
+}
+
+.layout-homes .slick-next {
+    right: 5px;
+    z-index: 1000;
+}
+
+.layout-homes .slider-nav .slick-track,
+.layout-homes .slider-nav-1 .slick-track {
+    height: unset !important;
+}
+
+.layout-homes .slick-slider-detect .slick-slide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    text-align: center;
+}
+
+.layout-homes .slick-slider-detect .slick-list {
+    height: 399px;
+}
+
+.layout-homes .slick-slider-detect .slick-list .slick-track {
+    height: 100%;
+}
+
+.layout-homes .slick-slide {
+    text-align: center;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+
+.layout-homes .slick-slider-detect .slick-slide img {
+    width: 125px !important;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.layout-homes .slick-slider-detect .slick-slide span {
+    margin-top: 45px;
+    font-size: 20px;
+    font-family: 'Raleway-semibold';
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+
+/* slick slide */
+
+
 /* layout-home */
 
 .layout-homes .lh-top {
@@ -981,14 +1073,10 @@ body {
         align-items: unset;
         align-content: unset;
     }
-    .profile-content-bottom .profile-cb-icon-mobile {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        margin-left: 53px;
+    .profile-content-bottom .profile-cb-icon-mobile .cricle-profile-icons {
+        width: 236px;
+        margin: auto;
+        /* padding: 0 53px; */
     }
     .profile-content-bottom .profile-cb-icon .item-icon {
         margin-right: 30px;
@@ -1134,6 +1222,9 @@ body {
         height: 234px;
         margin: 0 auto 20px auto;
         margin-top: 30px;
+    }
+    .site-main-coaches .form .coach-box .coach .coach-img .img img {
+        width: 100%;
     }
     .site-main-coaches .form .coach-box .coach .coach-img .action {
         margin-bottom: 0;
