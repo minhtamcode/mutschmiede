@@ -1382,6 +1382,16 @@ body {
     .site-main-gutscheincodes .table-booking .scroll-wrapper {
         padding-right: 0 !important;
     }
+    .layout-homes .slick-wrapper .slide-item {
+        background-color: rebeccapurple;
+        color: aqua;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 200px;
+        border: 1px solid white;
+    }
 }
 
 @media (max-width: 768px) {}
