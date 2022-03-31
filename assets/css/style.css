@@ -342,6 +342,11 @@ header .navbar {
     display: none;
 }
 
+.site-header .navbar-header img {
+    max-width: 100%;
+    width: 245px;
+}
+
 .menu-user-mobile .login-mobile .menu-login-mobile ul {
     display: block;
     padding-left: 0px !important;
@@ -554,7 +559,7 @@ header .navbar {
 #main-content .coaches {
     background-color: #fff;
     position: relative;
-    margin-top: 99px;
+    margin-top: 260px;
 }
 
 #main-content .coaches .title-coachs {
@@ -622,10 +627,10 @@ header .navbar {
 #main-content .coaches .box,
 #main-content .funktioniert .box {
     background-color: #EFEFEF;
-    margin: auto 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .box span{
@@ -772,7 +777,7 @@ header .navbar {
 .layout-homes .section-coming-soon {
     position: relative;
     /* z-index: -1; */
-    margin-top: 378px;
+    margin-top: 335px;
 }
 
 .layout-homes .section-coming-soon.mobile {
@@ -1467,6 +1472,7 @@ footer {
 .layout-homes .slide-1{
     position: relative;
     background-color: #fff;
+    top: 137px;
 }
 
 .layout-homes .text-box .forgot-pass{
@@ -1629,6 +1635,11 @@ a.slick-slide {
         top: -37em;
     }
 
+    .funktioniert .slick-slide img {
+        max-width: 100%;
+        width: 63px;
+    }
+
 
     #main-content .content-gemeinsam-box .text-box h1 {
         font-size: 25px !important;
@@ -1690,7 +1701,7 @@ a.slick-slide {
     }
 
     #main-content .coaches {
-        margin-top: 0;
+        margin-top: 137px;
     }
 
     #main-content .funktioniert .subtitle-1 p,
@@ -1707,6 +1718,11 @@ a.slick-slide {
     #main-content .box span{
         margin-bottom: 10px !important;
         font-size: 16px !important;
+    }
+
+    #main-content .funktioniert .box span{
+        color: #000;
+        font-family: 'Raleway-semibold';
     }
 
 
