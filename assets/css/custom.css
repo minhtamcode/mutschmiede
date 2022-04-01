@@ -6,6 +6,11 @@ body {
     background-color: #EFEFEF;
 }
 
+.site-main-login .lh-top {
+    padding-bottom: 0 !important;
+    min-height: 812px !important;
+}
+
 
 /* slick slide */
 
@@ -51,7 +56,7 @@ body {
     opacity: 1;
 }
 
-.layout-homes .coaches .slick-mobile .slick-slider-next{
+.layout-homes .coaches .slick-mobile .slick-slider-next {
     border: 0!important;
     background-color: unset !important;
     z-index: 99;
@@ -70,8 +75,7 @@ body {
     opacity: 1;
 }
 
-
-.layout-homes .funktioniert .slick-mobile .slick-slider-next{
+.layout-homes .funktioniert .slick-mobile .slick-slider-next {
     border: 0!important;
     background-color: unset !important;
     z-index: 99;
@@ -145,7 +149,7 @@ body {
     margin-left: 7.5px;
 }
 
-.layout-homes .funktioniert  .slick-slider-detect .slick-slide img {
+.layout-homes .funktioniert .slick-slider-detect .slick-slide img {
     width: 125px !important;
     text-align: center;
     margin-bottom: 26px;
@@ -154,7 +158,6 @@ body {
 .layout-homes .coaches .slick-slider-detect .slick-slide img {
     max-width: 100%;
 }
-
 
 .layout-homes .slick-slider-detect .slick-slide span {
     margin-top: 45px;
@@ -179,6 +182,46 @@ body {
 
 
 /* slick slide */
+
+
+/* css login page */
+
+#main-content .content-gemeinsam-box .text-box h1 {
+    font-family: 'Raleway-semibold';
+    margin-bottom: 30px;
+}
+
+#main-content .content-gemeinsam-box .login-button {
+    display: block;
+    font-family: 'Raleway-medium';
+    color: #fff;
+    background-color: #FBC7B2;
+    border-radius: 100px;
+    width: 306px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#main-content .content-gemeinsam-box .text-box p {
+    margin-bottom: 45px;
+}
+
+.site-main-login .content-gemeinsam-box .text-box {
+    padding: 91px 94px 114px 110px !important;
+}
+
+.site-main-login .lht-vertical {
+    max-height: 352px;
+}
+
+.site-main-login .text-box .forgot-pass {
+    float: unset !important;
+    margin-bottom: 45px;
+    display: block;
+}
+
+
+/* css login page */
 
 
 /* layout-home */
@@ -1574,6 +1617,40 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     }
     .site-main-generate .wrap-top-face .header-table .label label {
         margin-bottom: 20px;
+    }
+    #main-content .content-gemeinsam-box {
+        width: 301px;
+        margin: auto;
+    }
+    #main-content .content-gemeinsam-box .login-button {
+        width: 100%;
+    }
+    #main-content .content-gemeinsam-box .text-box h1 {
+        margin-bottom: 39px;
+    }
+    #main-content .content-gemeinsam-box .text-box {
+        padding: 24px 20px 31px 21px !important;
+    }
+    .site-main-login .lh-top img {
+        width: 100%;
+        max-width: unset;
+        min-height: unset;
+        object-fit: unset;
+    }
+    .site-main-login .lht-vertical {
+        max-height: 105px;
+    }
+    .site-main-login .lht-text-box {
+        bottom: unset !important;
+        top: 235px;
+    }
+    .site-main-login .lh-top {
+        min-height: 623px !important;
+    }
+    .site-main-login .text-box .forgot-pass {
+        float: unset !important;
+        margin-bottom: 45px;
+        display: block;
     }
 }
 
