@@ -285,7 +285,7 @@ header .navbar {
 
 .menu-user-mobile {
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 0;
     width: 100%;
     /* max-height: calc(100vh - 120px); */
@@ -1402,9 +1402,55 @@ footer {
     width: 250px;
 }
 
-.site-main-expertinnen .tabControl .nav-item:nth-child(1) {
-    margin: auto 8px auto 0px;
+.site-main-expertinnen .tabControl.mobile .nav-item {
+    background-color: #FBC7B2;
 }
+
+.site-main-expertinnen .tabControl.mobile .nav{
+    align-items: center;
+}
+
+.site-main-expertinnen .tabControl .nav-item:nth-child(1) {
+    margin: auto 8px auto 0;
+}
+
+.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(1) {
+    margin: 0 !important;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(1) .nav-link.active {
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.site-main-expertinnen .tabControl.mobile .nav-item{
+    margin: 0 !important;
+    border-radius: 0;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.site-main-expertinnen .tabControl.mobile .nav-item .nav-link.active{
+    margin: 0 !important;
+    border-radius: 0;
+}
+
+.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(6) {
+    border-radius: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+}
+
+.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(6) .nav-link.active {
+    border-radius: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
 
 .site-main-expertinnen .tabControl .nav-item:nth-child(6) {
     margin: auto 0px auto 8px;
@@ -1448,6 +1494,10 @@ footer {
 
 .site-main-expertinnen .tabControl .nav-pills .nav-link.active {
     background-color: #FBC7B2;
+}
+
+.site-main-expertinnen .tabControl.mobile .nav-pills .nav-link.active {
+    background-color: #EFEFEF;
 }
 
 .site-main-expertinnen .funktioniert-die {
@@ -1768,6 +1818,10 @@ a.slick-slide {
         font-family: 'Raleway-semibold';
     }
 
+    .title .text {
+        height: 120px;
+    }
+
 
 
     .layout-homes .text-box .forgot-pass {
@@ -1805,6 +1859,13 @@ a.slick-slide {
     .site-main-expertinnen .row .lang-coach img{
         width: 34.13px;
         height: 34.13px;
+    }
+
+    .site-main-expertinnen .funktioniert-die .col:nth-child(2) {
+        border: none;
+        border-top: 1px solid #FBC7B2;
+        border-bottom: 1px solid #FBC7B2;
+        width: 506px;
     }
 
     .site-main-user img {
@@ -1876,8 +1937,8 @@ a.slick-slide {
         font-size: 16px;
     }
 
-    .modal.coach .modal-header {
-        margin-bottom: 55px;
+    .modal .modal-header {
+        margin-bottom: 55px !important;
     }
 
     .lang-coach {
