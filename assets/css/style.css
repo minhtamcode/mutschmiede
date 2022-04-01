@@ -1008,6 +1008,23 @@ footer {
     font-family: "Raleway-medium";
 }
 
+.site-main-impressum .content p strong,
+.site-main-agb .content p strong{
+    font-family: "Raleway-semibold";
+}
+
+.site-main-impressum .content h2,
+.site-main-agb .content h2{
+    font-size: 30px;
+    line-height: 19px;
+    font-family: "Raleway-semibold";
+}
+
+.site-main-impressum .content .haftung h2, .site-main-impressum .content .daten h2,.site-main-agb .content h2{ 
+    text-decoration: underline;
+    color: #FBC7B2;
+}
+
 .site-main-user .content{
     background: #fff;
     padding-top: 107px;
@@ -1534,6 +1551,7 @@ footer {
     text-align: center;
     font-weight: 600;
     margin-bottom: 50px;
+    font-family: "Raleway-semibold";
 }
 
 .site-main-expertinnen .funktioniert-die .col {
@@ -1549,10 +1567,13 @@ footer {
 .site-main-expertinnen .funktioniert-die .col h4 {
     font-weight: 600;
     margin-bottom: 32px;
+    font-family: "Raleway-semibold";
 }
 
 .site-main-expertinnen .funktioniert-die .col p {
     margin-bottom: 52px;
+    font-family: "Raleway-medium";
+
 }
 
 .site-main-expertinnen .funktioniert-die .col .btn-box {
@@ -1561,20 +1582,20 @@ footer {
 
 .site-main-expertinnen .funktioniert-die .col .btn {
     padding-top: 12px;
-    font-family: "Raleway-medium";
+    font-family: "Raleway-semibold";
 }
 
 .site-main-expertinnen .box-action p{
-    font-family: "Raleway-medium";
+    font-family: "Raleway-semibold";
 }
 
 .site-main-expertinnen .box-action h2{
-    font-family: "Raleway-medium";
+    font-family: "Raleway-semibold";
     font-size: 24px;
 }
 
 .site-main-expertinnen .box-action a{
-    font-family: "Raleway-medium";
+    font-family: "Raleway-semibold";
     font-size: 16px;
 }
 
@@ -1705,14 +1726,15 @@ a.slick-slide {
     }
 
     .navbar-right ul li {
-        margin-left: 15px;
+        margin-left: 0px;
+        margin-right: 5px;
         margin-bottom: 0;
     }
     .navbar-right ul li ul li {
         margin-bottom: 10px;
     }
     .navbar-right ul .dropdown-menu-lang {
-        left: -15px;
+        left: 0;
     }
     .navbar-right ul li.dropdown .dropdown-lang::after {
         content: "";
@@ -1923,7 +1945,10 @@ a.slick-slide {
         border: none;
         border-top: 1px solid #FBC7B2;
         border-bottom: 1px solid #FBC7B2;
-        width: 506px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .site-main-user .img-full img {
@@ -2066,6 +2091,10 @@ a.slick-slide {
 @media (max-width: 992px) {
     .menu-user-mobile {
         top: 120px;
+    }
+    .container-fluid{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 }
 

@@ -241,7 +241,7 @@ body {
 
 .layout-homes .content-gemeinsam-box .text-box {
     width: 889px;
-    padding: 91px 101px 68px 110px !important;
+    padding: 91px 101px 68px 110px;
     background-color: #fff;
     float: right;
     margin-right: 63px;
