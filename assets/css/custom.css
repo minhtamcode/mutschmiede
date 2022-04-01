@@ -18,6 +18,11 @@ body {
     position: relative;
 }
 
+
+.layout-homes p {
+    font-family: 'Raleway-medium';
+}
+
 .layout-homes .coaches .slick-slider {
     top: -90px;
 }
@@ -129,6 +134,26 @@ body {
     margin-bottom: 105px;
 }
 
+.layout-homes .slick-slider-detect .slick-slide .box-action h2{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.layout-homes .slick-slider-detect .slick-slide .box-action p{
+    margin-bottom: 10px;
+}
+
+.layout-homes .slick-slider-detect .slick-slide .box-action a{
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.layout-homes .slick-slider-detect .slick-slide.bg-pink {
+    justify-content: center;
+}
+
 .layout-homes .funktioniert .slick-slider-detect .slick-list {
     height: 399px;
     z-index: 9;
@@ -165,6 +190,12 @@ body {
     font-family: 'Raleway-semibold';
     line-height: 24px;
     margin-bottom: 30px;
+}
+
+.layout-homes .slick-slider-detect .slick-slide h2 {
+    font-size: 30px;
+    font-family: 'Raleway-semibold';
+    line-height: 25px;
 }
 
 .layout-homes .slick-slider-detect .slick-slide p {
@@ -253,7 +284,7 @@ body {
 
 .layout-homes .content-gemeinsam-box .text-box {
     width: 889px;
-    padding: 91px 101px 68px 110px !important;
+    padding: 91px 101px 68px 110px;
     background-color: #fff;
     float: right;
     margin-right: 63px;
@@ -277,6 +308,7 @@ body {
     color: #000;
     line-height: 24px;
     font-size: 20px;
+    font-family: "Raleway-medium";
 }
 
 .layout-homes input.email,
