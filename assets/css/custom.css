@@ -17,6 +17,10 @@ body {
     top: -90px;
 }
 
+.layout-homes .coaches .slick-slider.slick-mobile {
+    top: -15px;
+}
+
 .layout-homes .slick-slider-detect .slick-slider-next {
     right: 0;
     transform: translate(50%, -50%);
@@ -47,6 +51,44 @@ body {
     opacity: 1;
 }
 
+.layout-homes .coaches .slick-mobile .slick-slider-next{
+    border: 0!important;
+    background-color: unset !important;
+    z-index: 99;
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+    right: 0;
+}
+
+.layout-homes .coaches .slick-mobile .slick-slider-previous {
+    border: 0!important;
+    background-color: unset !important;
+    z-index: 99;
+    position: absolute;
+    bottom: 48%;
+    opacity: 1;
+}
+
+
+.layout-homes .funktioniert .slick-mobile .slick-slider-next{
+    border: 0!important;
+    background-color: unset !important;
+    z-index: 99;
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+    right: 0;
+}
+
+.layout-homes .funktioniert .slick-mobile .slick-slider-previous {
+    border: 0!important;
+    background-color: unset !important;
+    z-index: 99;
+    position: absolute;
+    bottom: 45%;
+    opacity: 1;
+}
 
 .layout-homes .slick-slider__slide {
     text-align: center;
@@ -80,7 +122,7 @@ body {
     align-items: center;
     align-content: center;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
 }
 
 .layout-homes .funktioniert .slick-slider-detect .slick-list {

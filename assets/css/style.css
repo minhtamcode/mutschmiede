@@ -228,7 +228,10 @@ header .navbar {
 }
 
 .site-header .navbar {
-    padding: 66px 15px 28px 15px !important;
+    padding-top: 66px  !important;
+    padding-bottom: 20px !important;
+    padding-right: 0 !important;
+    padding-left: 0!important;
 }
 
 .navbar-toggle {
@@ -277,15 +280,16 @@ header .navbar {
     font-size: 20px;
     color: #000;
     text-transform: uppercase;
-    font-weight: 600;
+    font-family: 'Raleway-medium';
 }
 
 .menu-user-mobile {
     position: absolute;
-    top: 120px;
+    top: 60px;
     left: 0;
     width: 100%;
-    max-height: calc(100vh - 120px);
+    /* max-height: calc(100vh - 120px); */
+    height: 100vh;
     display: none;
     z-index: 999;
     font-size: 20px;
@@ -300,6 +304,9 @@ header .navbar {
     padding-left: 36.5px;
     padding-right: 36.5px;
     background-color: #FBC7B2;
+    height: 100vh;
+    font-family: 'Raleway-medium';
+    overflow: auto;
 }
 
 .menu-user-mobile ul li {
@@ -313,6 +320,9 @@ header .navbar {
 
 .menu-user-mobile ul li a{
     color: #000;
+    text-transform: uppercase;
+    font-family: 'Raleway-medium';
+    line-height: 24px;
 }
 
 .menu-user-mobile ul li.login-mobile span::after {
@@ -340,6 +350,10 @@ header .navbar {
     width: 100%;
     height: fit-content;
     display: none;
+}
+
+.menu-login-mobile ul{
+    height: auto;
 }
 
 .site-header .navbar-header img {
@@ -484,6 +498,10 @@ header .navbar {
     background-color: #fff;
 }
 
+
+#main-content .coaches .slick-mobile .box{
+    margin-bottom: 60px;
+}
 
 #main-content .funktioniert .funktioniert-content {
     background-color: #EFEFEF;
@@ -1561,9 +1579,26 @@ a.slick-slide {
 /* Medium devices (tablets, 768px and up) */
 
 @media (max-width: 576px) {
+
+    header .navbar {
+        height: auto;
+    }
+
+    #main-content {
+        padding-top: 60px;
+    }
+
     .container-fluid{
         padding-left: 15px !important;
         padding-right: 15px !important;
+    }
+
+    .site-header .navbar {
+        padding-top: 30px  !important;
+        padding-bottom: 14px !important;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+
     }
 
     .navbar-right ul li {
@@ -1681,7 +1716,7 @@ a.slick-slide {
 
     #main-content .coaches .subtitle-coachs {
         position: absolute;
-        top: 55px;
+        top: 145px;
         left: 33%;
     }
 
@@ -1698,16 +1733,24 @@ a.slick-slide {
     #main-content .coaches .title-coachs h1{
         font-size: 134px;
         line-height: 6rem;
+        letter-spacing: 0.4rem;
     }
 
     #main-content .coaches {
         margin-top: 137px;
+        padding-top: 75px;
     }
 
     #main-content .funktioniert .subtitle-1 p,
     #main-content .funktioniert .subtitle-2 p,#main-content .coaches .subtitle-coachs p{
         font-size: 25px;
         line-height: 1;
+    }
+
+    #main-content .funktioniert .funktioniert-content .text h1 {
+        font-size: 25px !important;
+        line-height: 30px;
+        margin-bottom: 26px;
     }
 
     .layout-homes .box ,.layout-homes .box-action{
@@ -1724,6 +1767,7 @@ a.slick-slide {
         color: #000;
         font-family: 'Raleway-semibold';
     }
+
 
 
     .layout-homes .text-box .forgot-pass {
@@ -1781,8 +1825,17 @@ a.slick-slide {
         margin-bottom: 180px;
     }
 
+    .site-footer .main-footer {
+        padding: 0 20px;
+        height: 141px;
+    }
+
+    #main-content .coaches .title-coachs {
+        margin-left: 31px;
+    }
+
     .modal .modal-content {
-        padding: 70px 0 104px 0;
+        padding: 51px 0 155px 0;
     }
 
     .modal .modal-content .content a {
@@ -1791,6 +1844,12 @@ a.slick-slide {
 
     .modal .modal-content .content img {
         max-width: 100%;
+    }
+
+    .modal .modal-content .content .contact img {
+        max-width: 100%;
+        width: 36px;
+        height: 36px;
     }
 
     .modal#problemModal .modal-content .content .box-action {
@@ -1802,6 +1861,33 @@ a.slick-slide {
     .modal#coachModal .modal-content .content .box {
         width: 207px !important;
         height: 207px !important;
+    }
+
+    .modal.coach .modal-content .content .contact {
+        width: 260px;
+    }
+
+    .modal.coach .modal-content .content h1{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .modal.coach .modal-content .content h2{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .modal.coach .modal-header {
+        margin-bottom: 55px;
+    }
+
+    .lang-coach {
+        bottom: -45px;
+    }
+
+    .lang-coach img {
+        margin: 0 9.5px;
+        width: 34.13px;
+        height: 34.13px;
     }
 
 }
