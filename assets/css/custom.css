@@ -1550,7 +1550,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         align-items: center;
         text-align: center;
         height: 200px;
-        border: 1px solid white;
+        /* border: 1px solid white; */
     }
     .site-main-generate .wrap-top-face .table-top {
         flex-direction: column;

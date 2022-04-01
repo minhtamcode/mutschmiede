@@ -90,7 +90,7 @@
                 <a href="#">Expertinnen</a>
             </li>
             <li class="login-mobile">
-                <a href="#"><img src="./assets/images/Group 72.png" style="margin-right: 5px;" />Login</a>
+                <span href="#"><img src="./assets/images/Group 72.png" style="margin-right: 5px;" />Login</span>
                 <div class="menu-login-mobile">
                      <ul>
                         <li>
@@ -762,6 +762,16 @@
     
     <script type="text/javascript">
       $(document).ready(function (e) {
+
+        var viewport = $('meta[name="viewport"]');
+            window.onresize = function() {
+                if (window.screen.width <= 1024 && window.screen.width >= 576) {
+                    viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
+                } else {
+                    viewport.attr("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
+                }
+            }
+            // js scale màn hình
    
 
         $('.dropdown-lang').click(function(e){   

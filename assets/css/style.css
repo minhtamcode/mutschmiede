@@ -633,6 +633,7 @@ header .navbar {
     text-align: center;
     width: 240px;
     color: black;
+    font-family: 'Raleway-semibold';
 }
 
 .box a,
@@ -950,6 +951,10 @@ footer {
 .img-full {
     width: 100% !important;
     height: 100% !important;
+}
+
+.img-full img{
+    max-width: 100%;
 }
 
 .title {
@@ -1868,10 +1873,19 @@ a.slick-slide {
         width: 506px;
     }
 
+    .site-main-user .img-full img {
+        max-width: 100%;
+        width: 576px;
+    }
+
     .site-main-user img {
         max-width: 100%;
     }
 
+    .site-main-user .content .title .text{
+        height: auto;
+        margin-bottom: 41px;
+    }
 
     .site-main-user .content .menu-item .box {
         width: 319px !important;
@@ -1895,8 +1909,16 @@ a.slick-slide {
         margin-left: 31px;
     }
 
-    .modal .modal-content {
+    .modal .modal-dialog{
+        margin: auto 26px;
+    }
+
+    .modal#coachModal .modal-content {
         padding: 51px 0 155px 0;
+    }
+
+    .modal .modal-content {
+        padding: 51px 0 40px 0;
     }
 
     .modal .modal-content .content a {
@@ -1905,6 +1927,21 @@ a.slick-slide {
 
     .modal .modal-content .content img {
         max-width: 100%;
+        width: 150px;
+    }
+
+    .modal#coachModal .modal-content .content img {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .modal .modal-content .modal-body {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .modal#problemModal .modal-content .content h1 {
+        margin: 27px 0;
     }
 
     .modal .modal-content .content .contact img {
@@ -1941,6 +1978,10 @@ a.slick-slide {
         margin-bottom: 55px !important;
     }
 
+    .modal .modal-content .content .box-action {
+        margin-top: 32px;
+    }
+
     .lang-coach {
         bottom: -45px;
     }
@@ -1951,6 +1992,22 @@ a.slick-slide {
         height: 34.13px;
     }
 
+    .menu-user-mobile {
+        top: 65px !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .menu-user-mobile {
+        top: 120px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-user-mobile {
+        top: 120px;
+    }
 }
 
 .navbar-right ul.d-flex li button {

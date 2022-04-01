@@ -51,8 +51,27 @@
                           </ul>
                       </li>
                       <li class="user-login">
-                          <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" />login</a>
+                          <a href="#" style="text-decoration: underline;"><img src="./assets/images/user_login.png" style="margin-right: 5px;" />Sabine Strauss</a>
                       </li>
+                      <div class="menu-user">
+                        <ul>
+                          <li>
+                            <a href="./face2face.html"><img src="./assets/images/Group 167.png">Face-2-Face Coaching</a>
+                          </li>
+                          <li>
+                            <a href="./kundennummer.html"><img src="./assets/images/Group 169.png">Kundennummern Generieren</a>
+                          </li>
+                          <li>
+                            <a href="./guthabenüberwachung–rufnummern.html"><img src="./assets/images/Group 171.png">Guthabenüberwachung</a>
+                          </li>
+                          <li>
+                            <a href="./coaches.html"><img src="./assets/images/Group 173.png">Coaches Freischalten</a>
+                          </li>
+                          <li>
+                            <a href="./handbuch.html"><img src="./assets/images/Group 175.png">Handbuch</a>
+                          </li>
+                        </ul>
+                      </div>
                   </ul>
                   <ul class="nav navbar-nav d-flex d-lg-none">
                       <li class="dropdown">
@@ -88,7 +107,7 @@
                 <a href="#">Expertinnen</a>
             </li>
             <li class="login-mobile">
-                <a href="#"><img src="./assets/images/Group 72.png" style="margin-right: 5px;" />Login</a>
+                <span href="#"><img src="./assets/images/Group 72.png" style="margin-right: 5px;" />Login</span>
                 <div class="menu-login-mobile">
                      <ul>
                         <li>
@@ -150,33 +169,39 @@
                         </div> 
                       </div>
                     </a>
-                    <div class="box" data-aos="fade-up">
+                    <a href="./guthabenüberwachung–rufnummern.html">
+                      <div class="box" data-aos="fade-up">
                         <div class="content">
                             <img src="./assets/images/Group 153.png">
                             <p>Guthabenüberwachung</p>
                         </div> 
-                    </div>
-                    <div class="box" data-aos="fade-up">
+                      </div>
+                    </a>
+                    <a href="./coaches.html">
+                      <div class="box" data-aos="fade-up">
                         <div class="content">
                             <img src="./assets/images/Group 155.png">
                             <p>Coaches
                                 freischalten</p>
                         </div> 
-                    </div>    
-                    <div class="box" data-aos="fade-up">
+                      </div>    
+                    </a>
+                    <a href="./handbuch.html">
+                      <div class="box" data-aos="fade-up">
                         <div class="content">
-                            
                             <img src="./assets/images/Group 163.png" width="125">
                             <p>Handbuch</p>
                         </div>                 
-                    </div>
-                    <div class="box" data-aos="fade-up">
+                      </div>
+                    </a>
+                    <a href="./profile.html">
+                      <div class="box" data-aos="fade-up">
                         <div class="content">
-                        
                             <img src="./assets/images/Group 157.png">
                             <p>Profil bearbeiten</p>
                         </div> 
-                    </div>
+                      </div>
+                    </a>
                     <a href="./login.html">
                       <div class="box" data-aos="fade-up">
                         <div class="content">
@@ -215,6 +240,15 @@
     <script type="text/javascript">
       $(document).ready(function (e) {
    
+        var viewport = $('meta[name="viewport"]');
+            window.onresize = function() {
+                if (window.screen.width <= 1024 && window.screen.width >= 576) {
+                    viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
+                } else {
+                    viewport.attr("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
+                }
+            }
+            // js scale màn hình
 
         $('.dropdown-lang').click(function(e){   
               $('.dropdown-menu-lang').slideToggle();
