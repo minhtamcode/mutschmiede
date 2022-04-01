@@ -1755,7 +1755,7 @@ a.slick-slide {
         position: relative;
     }
     #main-content .content-gemeinsam-box .text-box {
-        padding: 24px 34px 45px 29px !important;
+        padding: 24px 34px 45px 29px;
         /* text-align: center; */
         margin-right: 0 !important;
         width: auto !important;
