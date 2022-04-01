@@ -318,7 +318,7 @@ header .navbar {
     margin: 0 !important;
 }
 
-.menu-user-mobile ul li a{
+.menu-user-mobile ul li a ,.menu-user-mobile ul li span{
     color: #000;
     text-transform: uppercase;
     font-family: 'Raleway-medium';
@@ -463,14 +463,15 @@ header .navbar {
 
 #main-content .content-gemeinsam-box .text-box h1 {
     font-size: 40px !important;
-    font-weight: 700;
     margin-bottom: 28px;
     letter-spacing: 1.4px;
+    font-family: "Raleway-semibold";
 }
 
 #main-content .content-gemeinsam-box .text-box p {
     margin-bottom: 40px;
     line-height: 24px;
+    font-family: "Raleway-medium";
 }
 
 .btn-box {
@@ -491,6 +492,7 @@ header .navbar {
     padding: 5px;
     text-align: center;
     text-transform: uppercase;
+    font-family: "Raleway-medium";
 }
 
 #main-content .funktioniert {
@@ -551,6 +553,8 @@ header .navbar {
 #main-content .funktioniert .funktioniert-content .text .btn-box .btn .btn-problem {
     padding: 5px;
     text-align: center;
+    font-family: 'Raleway-medium';
+    text-transform: uppercase;
 }
 
 #main-content .funktioniert .title-1,
@@ -686,6 +690,13 @@ header .navbar {
     border: 12px solid #FBC7B2;
 }
 
+.box-action{
+    height: 399px;
+    width: 399px !important;
+    position: relative;
+    text-align: center;
+}
+
 #main-content .coaches .slider-nav-1 .box-action,
 #main-content .funktioniert .slider-nav .box-action {
     margin: auto 5px;
@@ -697,11 +708,6 @@ header .navbar {
 }
 
 
-.box-action{
-    height: 399px;
-    width: 399px !important;
-    position: relative;
-}
 
 .box-action a {
     color: #fff;
@@ -887,6 +893,8 @@ header .navbar {
 #main-content.layout-homes .coming-soon .text .btn-box .btn .btn-download {
     padding: 5px;
     text-align: center;
+    font-family: 'Raleway-medium';
+    text-transform: uppercase;
 }
 
 #main-content .coming {
@@ -918,6 +926,10 @@ header .navbar {
     background: #fff;
 }
 
+.site-main.site-main-expertinnen p, .site-main.site-main-expertinnen a{
+    font-family: "Raleway-medium";
+}
+
 footer {
     background-color: #fff;
 }
@@ -931,6 +943,7 @@ footer {
 
 .site-footer .main-footer a {
     color: #000;
+    font-family: "Raleway-medium";
 }
 
 .site-footer .main-footer .contact ul {
@@ -941,6 +954,7 @@ footer {
 
 .site-footer .main-footer .contact ul li {
     margin-right: 30px;
+    font-family: "Raleway-medium";
 }
 
 .site-footer .main-footer .logo {
@@ -973,6 +987,7 @@ footer {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+    font-family: "Raleway-semibold";
 }
 
 .site-main.site-main-impressum img,.site-main.site-main-agb img,.site-main.site-main-expertinnen img{
@@ -983,8 +998,14 @@ footer {
 .site-main-agb .content {
     background-color: #EFEFEF;
     padding: 72px 0px 134px 0px;
-    font-size: 16px !important;
+    font-family: "Raleway-medium";
+}
+
+.site-main-impressum .content p,
+.site-main-agb .content p{
+    font-size: 16px;
     line-height: 25px;
+    font-family: "Raleway-medium";
 }
 
 .site-main-user .content{
@@ -1540,6 +1561,28 @@ footer {
 
 .site-main-expertinnen .funktioniert-die .col .btn {
     padding-top: 12px;
+    font-family: "Raleway-medium";
+}
+
+.site-main-expertinnen .box-action p{
+    font-family: "Raleway-medium";
+}
+
+.site-main-expertinnen .box-action h2{
+    font-family: "Raleway-medium";
+    font-size: 24px;
+}
+
+.site-main-expertinnen .box-action a{
+    font-family: "Raleway-medium";
+    font-size: 16px;
+}
+
+.site-main-expertinnen .box-action .contact{
+    display: flex;
+    align-items: center;
+    width: 232px;
+    justify-content: space-between;
 }
 
 .layout-homes .slide-1{
@@ -1554,6 +1597,10 @@ footer {
 
 a.slick-slide {
     width: auto !important;
+}
+
+.modal p{
+    font-family: 'Raleway-medium';;
 }
 
 .modal .modal-dialog {
@@ -1620,6 +1667,7 @@ a.slick-slide {
 .modal .modal-content .content a {
     color: #000;
     font-size: 40px !important;
+    font-family: "Raleway-semibold";
 }
 
 .modal.coach .modal-content .content .contact {
@@ -1827,6 +1875,11 @@ a.slick-slide {
         height: 120px;
     }
 
+    .site-main-impressum .content, .site-main-agb .content {
+        background-color: #EFEFEF;
+        padding: 41px 0px 45px 0px;
+    }
+
 
 
     .layout-homes .text-box .forgot-pass {
@@ -1908,6 +1961,12 @@ a.slick-slide {
     #main-content .coaches .title-coachs {
         margin-left: 31px;
     }
+
+
+    .modal p{
+        font-family: 'Raleway-regular';;
+    }
+
 
     .modal .modal-dialog{
         margin: auto 26px;
