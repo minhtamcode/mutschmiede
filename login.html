@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
 
-
 </head>
 
 <body>
@@ -178,11 +177,65 @@
     <script src="./assets/js/editor.js"></script>
     <script src="./assets/js/wysihtml5-0.3.0.js"></script>
     <script src="./assets/js/bootstrap-wysihtml5.js"></script>
-
     <script type="text/javascript">
         $(document).ready(function(e) {
 
+            var viewport = $('meta[name="viewport"]');
+            window.onresize = function() {
+                    if (window.screen.width <= 1024 && window.screen.width >= 576) {
+                        viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
+                    } else {
+                        viewport.attr("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
+                    }
+                }
+                // js scale màn hình
+                // js slide slick
+            function SlickSlideHome(current) {
+                $('.' + current).slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    centerPadding: '100px',
 
+                    nextArrow: '<button class="slick-slider-previous"><img src="./assets/images/Group 117.png" width="125"></button>',
+                    prevArrow: '<button class="slick-slider-next"><img src="./assets/images/Group 118.png" width="125"></button>',
+
+
+                    responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            dots: false,
+                            infinite: true,
+                            height: 100,
+
+                            speed: 300,
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            nextArrow: '<button class="slick-slider-previous"><img src="./assets/images/Group 117.png" width="125"></button>',
+                            prevArrow: '<button class="slick-slider-next"><img src="./assets/images/Group 118.png" width="125"></button>',
+                        },
+                    }]
+                });
+            }
+
+            function SlickSlideHomeMobile(current) {
+                $('.' + current).slick({
+                    rows: 2,
+                    dots: false,
+                    arrows: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    nextArrow: '<button class="slick-slider-previous"><img src="./assets/images/Group 313.png"></button>',
+                    prevArrow: '<button class="slick-slider-next"><img src="./assets/images/Group 315.png"></button>',
+                });
+            }
+            SlickSlideHomeMobile("slick-mobile");
+            SlickSlideHome("slick-slider-detect");
+            // js slide slick
             $('.dropdown-lang').click(function(e) {
                 $('.dropdown-menu-lang').slideToggle();
                 e.preventDefault();
