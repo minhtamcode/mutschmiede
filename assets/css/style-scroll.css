@@ -150,7 +150,7 @@
 }
 
 .scrollbar-inner>.scroll-element .scroll-element_track {
-    background-color: #fff;
+    /* background-color: #fff; */
     border-left: 1px solid #FBC7B2;
 }
 

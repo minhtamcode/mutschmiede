@@ -806,6 +806,7 @@ body {
 /* site-main-gutscheincodes */
 
 .site-main-face2face .table-booking .table-responsive,
+.site-main-generate .table-booking .table-responsive,
 .site-main-gutscheincodes .table-booking .table-responsive {
     border-radius: 10px;
     border: 1px solid #FBC7B2;
@@ -814,6 +815,15 @@ body {
     padding-right: 24px;
 }
 
+.site-main-generate .table-top .tt-item .table-responsive {
+    border-radius: 10px;
+    border: 1px solid #FBC7B2;
+    overflow: auto;
+    max-height: 303px !important;
+    padding-right: 24px;
+}
+
+.site-main-generate .table-booking .table-responsive .table,
 .table-customer .table-booking .table-responsive .table,
 .site-main-face2face .table-booking .table-responsive .table,
 .site-main-gutscheincodes .table-booking .table-responsive .table {
@@ -842,11 +852,74 @@ body {
     padding: 16px 21px;
 }
 
+.site-main-generate .border-top-bottom-0 .table-responsive .table tr th {
+    border-bottom: unset !important;
+    border-top: unset !important;
+    border-right: 1px solid #FBC7B2;
+}
+
+.site-main-generate .border-top-bottom-0 .table-responsive .table tr td:last-child,
+.site-main-generate .border-top-bottom-0 .table-responsive .table tr th:last-child {
+    border-right: unset;
+}
+
+.site-main-generate .table-booking .table-responsive .table td,
 .site-main-face2face .table-booking .table-responsive .table td,
 .site-main-gutscheincodes .table-booking .table-responsive .table td {
     border-right: 1px solid #FBC7B2;
     border-top: 1px solid #FBC7B2;
     padding: 16px 21px;
+    line-height: 19px;
+}
+
+.site-main-generate .table-top .tt-item .table-responsive .table td {
+    border-right: unset !important;
+}
+
+.site-main-generate .table-top .tt-item .table-responsive .table tbody tr:first-child td {
+    border-top: unset !important;
+}
+
+.site-main-generate .wrap-top-face .table-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    margin-bottom: 20px;
+}
+
+.site-main-generate .wrap-top-face .table-top .tt-item p {
+    font-size: 20px;
+    font-family: 'Raleway-semibold';
+    margin-bottom: 20px;
+}
+
+.site-main-generate .wrap-top-face .table-top .tt-item {
+    width: 50%;
+    padding-right: 8px;
+}
+
+.site-main-generate .wrap-top-face .table-top .tt-item:last-child {
+    padding-right: 0;
+}
+
+.site-main-generate .tt-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 67px;
+}
+
+.site-main-generate .tt-button a {
+    display: block;
+    width: 306px;
+    border-radius: 100px;
+    color: #fff;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: 'Raleway-medium';
 }
 
 .table-customer .table-booking .table-responsive .table th,
@@ -878,20 +951,23 @@ body {
     border-right: unset;
 }
 
+.site-main-generate .table-striped tbody tr:nth-of-type(odd),
 .site-main-face2face .table-striped tbody tr:nth-of-type(odd),
 .site-main-gutscheincodes .table-striped tbody tr:nth-of-type(odd) {
     background-color: #fffbf9 !important;
 }
 
+site-main-generate .table-striped tbody tr:nth-of-type(odd),
 .table-customer .table-striped tbody tr:nth-of-type(odd) {
     background-color: #fff !important;
 }
 
-.site-main-face2face .table-striped tbody tr:hover,
+.site-main-face2face .table-booking tbody tr:hover,
 .site-main-gutscheincodes .table-striped tbody tr:hover {
     background-color: #FBC7B2!important;
 }
 
+.site-main-generate .table-striped tbody tr:hover,
 .table-customer .table-striped tbody tr:hover {
     background: #fff !important;
 }
@@ -1378,10 +1454,12 @@ body {
         margin-top: 79px;
         margin-bottom: 45px;
     }
+    .site-main-generate .table-booking .label,
     .site-main-face2face .table-booking .label,
     .site-main-gutscheincodes .form .table-booking .label {
         width: 100%;
     }
+    .site-main-generate .table-booking .header-table,
     .site-main-face2face .table-booking .header-table,
     .site-main-gutscheincodes .form .table-booking .header-table {
         flex-direction: column;
@@ -1473,6 +1551,29 @@ body {
         text-align: center;
         height: 200px;
         border: 1px solid white;
+    }
+    .site-main-generate .wrap-top-face .table-top {
+        flex-direction: column;
+    }
+    .site-main-generate .wrap-top-face .table-top .tt-item {
+        width: 100%;
+        padding-right: 0;
+    }
+    .site-main-generate .content {
+        padding: 42px 37px;
+    }
+    .title .text h1 {
+        font-size: 25px;
+        font-family: 'Raleway-semibold';
+    }
+    .site-main-generate .wrap-top-face .table-top .tt-item p {
+        font-size: 16px;
+    }
+    .site-main-generate .wrap-top-face .table-top .tt-item:last-child {
+        margin-top: 40px;
+    }
+    .site-main-generate .wrap-top-face .header-table .label label {
+        margin-bottom: 20px;
     }
 }
 
