@@ -18,7 +18,6 @@ body {
     position: relative;
 }
 
-
 .layout-homes p {
     font-family: 'Raleway-medium';
 }
@@ -134,21 +133,20 @@ body {
     margin-bottom: 105px;
 }
 
-.layout-homes .slick-slider-detect .slick-slide .box-action h2{
+.layout-homes .slick-slider-detect .slick-slide .box-action h2 {
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 10px;
 }
 
-.layout-homes .slick-slider-detect .slick-slide .box-action p{
+.layout-homes .slick-slider-detect .slick-slide .box-action p {
     margin-bottom: 10px;
 }
 
-.layout-homes .slick-slider-detect .slick-slide .box-action a{
+.layout-homes .slick-slider-detect .slick-slide .box-action a {
     font-size: 16px;
     color: #fff;
 }
-
 
 .layout-homes .slick-slider-detect .slick-slide.bg-pink {
     justify-content: center;
@@ -348,6 +346,7 @@ body {
 
 .ddbuch-content .ddbuch-title h1 {
     padding: 52px 0;
+    font-family: 'Raleway-semibold';
 }
 
 .ddbuch-wrap {
@@ -471,6 +470,8 @@ body {
 
 .tab-wrap-top-icon a {
     margin-left: 22px;
+    color: #000;
+    font-family: 'Raleway-semibold';
 }
 
 .tab-section .tab-section-icon {
@@ -496,6 +497,12 @@ body {
 
 .tab-section .tab-section-icon a {
     font-size: 16px;
+    color: #000;
+    font-family: 'Raleway-semibold';
+}
+
+.tab-section .tab-section-icon h5 {
+    font-family: 'Raleway-semibold';
 }
 
 .tab-section .tab-section-content {
@@ -678,6 +685,7 @@ body {
     margin-bottom: 40px;
     font-size: 30px;
     line-height: 35px;
+    font-family: 'Raleway-semibold';
 }
 
 .profile-content-top .profile-ct-right,
@@ -696,6 +704,7 @@ body {
     width: 100%;
     display: block;
     margin-bottom: 29px;
+    font-family: 'Raleway-medium';
 }
 
 .profile-ct-right .profile-ctr-img img {
@@ -809,6 +818,7 @@ body {
     padding: 15px 0;
     width: 306px;
     display: block;
+    font-family: 'Raleway-medium';
 }
 
 
@@ -837,6 +847,21 @@ body {
 
 .site-main-coaches .header-table ul li a {
     color: #000;
+    font-family: 'Raleway-medium';
+}
+
+.site-main-coaches .form .coach-box .coach .coach-infor h3,
+.site-main-coaches .form .coach-box .coach .coach-infor h1 {
+    font-family: 'Raleway-semibold';
+}
+
+.site-main-coaches .form .coach-box .coach .coach-img .action div a {
+    display: flex;
+    align-items: center;
+}
+
+.site-main-coaches .form .coach-box .coach .coach-img .action div a img {
+    margin-right: 5px;
 }
 
 .site-main-coaches .action a,
@@ -1120,6 +1145,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     color: #fff;
     text-transform: uppercase;
     margin-right: 20px;
+    font-family: 'Raleway-medium';
 }
 
 .site-main-face2face .title .text h1 {
