@@ -285,7 +285,7 @@ header .navbar {
 
 .menu-user-mobile {
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 0;
     width: 100%;
     /* max-height: calc(100vh - 120px); */
@@ -415,8 +415,7 @@ header .navbar {
 }
 
 #mutschmiede-nav ul li .btn-collapse{
-    width: 17px;
-    padding: 0;
+    width: 26px;
 }
 
 .navbar-right ul .dropdown-menu-lang {
@@ -1758,7 +1757,7 @@ a.slick-slide {
 @media (max-width: 576px) {
 
     header .navbar {
-        height: 60px;
+        height: auto;
     }
 
     #main-content {
@@ -1772,21 +1771,22 @@ a.slick-slide {
 
     .site-header .navbar {
         padding-top: 30px  !important;
-        padding-bottom: 15px !important;
+        padding-bottom: 14px !important;
         padding-right: 20px !important;
         padding-left: 20px !important;
 
     }
 
     .navbar-right ul li {
-        margin-left: 10px;   
+        margin-left: 0px;
+        margin-right: 5px;
         margin-bottom: 0;
     }
     .navbar-right ul li ul li {
         margin-bottom: 10px;
     }
     .navbar-right ul .dropdown-menu-lang {
-        left: -10px;
+        left: 0;
     }
     .navbar-right ul li.dropdown .dropdown-lang::after {
         content: "";
@@ -2142,7 +2142,7 @@ a.slick-slide {
     }
 
     .menu-user-mobile {
-        top: 60px !important;
+        top: 65px !important;
     }
 
 }

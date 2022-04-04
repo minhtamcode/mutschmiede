@@ -83,21 +83,21 @@
                     <ul class="nav navbar-nav d-flex d-md-none">
                         <li class="dropdown">
                             <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
-                              <img src="./assets/images/languages/AUSTRIA.png" width="26.01" height="15.66" /></a>
-                          <ul class="dropdown-menu-lang" id="country-switcher">
-                              <li id="country-de">
-                                  <a href="?language=de"><img src="./assets/images/languages/DE.png" width="26.01" height="15.66" /></a>
-                              </li>
-                              <li id="country-eng">
-                                  <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="26.01" height="15.66" /></a>
-                              </li>
-                              <li id="country-esp">
-                                  <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="26.01" height="15.66" /></a>
-                              </li>
-                          </ul>
+                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" style="margin-right: 5px;" /></a>
+                            <ul class="dropdown-menu-lang" id="country-switcher">
+                                <li id="country-de">
+                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31" height="17.04" /></a>
+                                </li>
+                                <li id="country-eng">
+                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31" height="17.04" /></a>
+                                </li>
+                                <li id="country-esp">
+                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31" height="17.04" /></a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="user-login">
-                            <a href="./login.html"><img src="./assets/images/user_login.png"/></a>
+                            <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" /></a>
                         </li>
                         <li>
                             <button class="btn-collapse" type="button" data-toggle="collapse" data-target="" aria-expanded="false"><i class="fas fa-bars"></i></button>
@@ -147,7 +147,7 @@
         </nav>
     </header>
     <main class="site-main-generate form-face" id="main-content">
-        <div class="title">
+        <div class="title" data-aos="fade-up">
             <div class="text">
                 <h1>Kundennummer generieren</h1>
             </div>
@@ -155,7 +155,7 @@
         <div class="content">
             <div class="container p-0">
                 <div class="wrap-top-face">
-                    <div class="table-top">
+                    <div class="table-top" data-aos="fade-up">
                         <div class="tt-item">
                             <p>Kunde</p>
                             <div class="table-booking">
@@ -233,10 +233,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tt-button">
+                    <div class="tt-button" data-aos="fade-up">
                         <a href="#" class="ttb-gene bg-pink">Generieren</a>
                     </div>
-                    <div class="table-booking border-top-bottom-0">
+                    <div class="table-booking border-top-bottom-0" data-aos="fade-up">
                         <div class="header-table">
                             <div class="label">
                                 <label>Vorhandene Buchungen</label>
@@ -249,7 +249,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="table-responsive scrollbar-inner">
+                        <div class="table-responsive scrollbar-inner" data-aos="fade-up">
                             <table class="table table-striped table-page-gutschen">
                                 <thead>
                                     <tr>
@@ -460,8 +460,8 @@
 
     <script type="text/javascript">
         $(document).ready(function(e) {
-            // jQuery('.scrollbar-inner').scrollbar();
-            // jQuery('.scrollbar-inner .scroll-bar').append('<div class="scroll-bar-body"></div>');
+            jQuery('.scrollbar-inner').scrollbar();
+            jQuery('.scrollbar-inner .scroll-bar').append('<div class="scroll-bar-body"></div>');
             $('.dropdown-lang').click(function(e) {
                 $('.dropdown-menu-lang').slideToggle();
                 e.preventDefault();
