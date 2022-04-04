@@ -1661,8 +1661,13 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         margin-bottom: 39px;
     }
     #main-content .content-gemeinsam-box .text-box {
-        padding: 24px 20px 31px 21px !important;
+        padding: 24px 20px 45px 21px !important;
     }
+
+    #main-content .content-gemeinsam-box .text-box p {
+        margin-bottom: 37px;
+    }
+
     .site-main-login .lh-top img {
         width: 100%;
         max-width: unset;

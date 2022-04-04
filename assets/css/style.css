@@ -402,6 +402,10 @@ header .navbar {
     border-bottom: 1px solid #EFEFEF;
 }
 
+.menu-user ul li:nth-child(6){
+    border: none;
+}
+
 .menu-user ul li a:hover {
     text-decoration: none !important;
 }
@@ -1441,7 +1445,7 @@ footer {
 
 .site-main-expertinnen .tabControl .nav-item {
     background-color: #EFEFEF;
-    margin: auto 8px;
+    margin: 10px 8px;
     border-radius: 100px;
     width: 250px;
 }
@@ -1455,7 +1459,7 @@ footer {
 }
 
 .site-main-expertinnen .tabControl .nav-item:nth-child(1) {
-    margin: auto 8px auto 0;
+    margin: 10px 8px 10px 8px;
 }
 
 .site-main-expertinnen .tabControl.mobile .nav-item:nth-child(1) {
@@ -1463,48 +1467,74 @@ footer {
     border-radius: 0;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    display: block;
 }
 
 .site-main-expertinnen .tabControl.mobile .nav-item:nth-child(1) .nav-link.active {
     border-radius: 0;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    background-color: #FBC7B2;
 }
 
 .site-main-expertinnen .tabControl.mobile .nav-item{
     margin: 0 !important;
     border-radius: 0;
     border-bottom: 1px solid #EFEFEF;
+    display: none;
 }
+
+.site-main-expertinnen .tabControl.mobile .nav-item:hover{
+    background-color: #EFEFEF;
+}
+
 
 .site-main-expertinnen .tabControl.mobile .nav-item .nav-link.active{
     margin: 0 !important;
     border-radius: 0;
 }
 
-.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(6) {
+.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(7) {
     border-radius: 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border: none;
 }
 
-.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(6) .nav-link.active {
+.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(7) .nav-link.active {
     border-radius: 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
+/* .site-main-expertinnen .tabControl.mobile li.nav-item:not(.init){
+    display: none;
+} */
+
+.site-main-expertinnen .tabControl.mobile li.nav-item.init .nav-link::after{
+    content: "\f107";
+    color: #000;
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    right: 85px;
+    font-weight: 900;
+}
+
+.border-radius-25px{
+    border-radius: 100px !important;
+}
+
 
 .site-main-expertinnen .tabControl .nav-item:nth-child(6) {
-    margin: auto 0px auto 8px;
+    margin: 10px 8px 10px 8px;
 }
 
 .site-main-expertinnen .tabControl .nav-pills .nav-link {
     border-radius: 100px;
-    color: #000 !important;
+    color: #fff !important;
     padding: 15px;
     text-transform: uppercase;
+    font-family: 'Raleway-medium';
 }
 
 .site-main-expertinnen .row {
@@ -1607,6 +1637,27 @@ footer {
     justify-content: space-between;
 }
 
+.layout-homes.homes2 .section-coming-soon {
+    margin-top: 500px;
+}
+
+
+.layout-homes.homes2 .funktioniert .slick-slider-detect .slick-slider-next, .layout-homes.homes2 .funktioniert .slick-slider-detect .slick-slider-previous {
+    top: 40%;
+}
+
+.layout-homes.homes2 .funktioniert .slick-slider-detect .slick-slide img {
+    width: auto !important;
+    text-align: center;
+    /* margin-bottom: 26px; */
+    margin:  0 !important;
+}
+
+.layout-homes.homes2 .funktioniert .slick-slider-detect .slick-list {
+    height: auto !important;
+}
+
+
 .layout-homes .slide-1{
     position: relative;
     background-color: #fff;
@@ -1626,7 +1677,8 @@ a.slick-slide {
 }
 
 .modal .modal-dialog {
-    max-width: 1640px;
+    max-width: 100%;
+    width: 1640px;
 }
 
 .modal .modal-header {
@@ -1798,6 +1850,19 @@ a.slick-slide {
     .funktioniert .slick-slide img {
         max-width: 100%;
         width: 63px;
+    }
+
+    .layout-homes.homes2 .funktioniert .slick-slide img {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .layout-homes.homes2 .funktioniert .slick-slide .box {
+        margin-bottom: 60px;
+    }
+
+    .layout-homes.homes2 .section-coming-soon {
+        margin-top: 137px;
     }
 
 

@@ -20,153 +20,42 @@
 
 </head>
 
-<body>
-    <header class="site-header">
-        <div class="container-fluid">
-            <nav class="navbar">
-                <!-- Brand and toggle get grouped for better mobile display-->
-                <div class="navbar-header">
-                    <a href="./">
-                        <img class="" src="./assets/images/mutschmiede logo.png" />
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling-->
-                <div id="mutschmiede-nav" class="navbar-right">
-                    <ul class="nav navbar-nav d-none d-lg-flex">
-                        <li>
-                            <a href="./">Problemfelder</a>
-                        </li>
-                        <li><a href="./">Exptertinnen</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
-                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" style="margin-right: 5px;" />AT</a>
-                            <ul class="dropdown-menu-lang" id="country-switcher">
-                                <li id="country-de">
-                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31" height="17.04" /> DE
-                                    </a>
-                                </li>
-                                <li id="country-eng">
-                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31" height="17.04" /> ENG
-                                    </a>
-                                </li>
-                                <li id="country-esp">
-                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31" height="17.04" /> ESP
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="user-login">
-                            <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" />login</a>
-                        </li>
-                    </ul>
-             <ul class="nav navbar-nav d-flex d-lg-none">
-                        <li class="dropdown">
-                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
-                              <img src="./assets/images/languages/AUSTRIA.png" width="26.01" height="15.66" /></a>
-                          <ul class="dropdown-menu-lang" id="country-switcher">
-                              <li id="country-de">
-                                  <a href="?language=de"><img src="./assets/images/languages/DE.png" width="26.01" height="15.66" /></a>
-                              </li>
-                              <li id="country-eng">
-                                  <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="26.01" height="15.66" /></a>
-                              </li>
-                              <li id="country-esp">
-                                  <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="26.01" height="15.66" /></a>
-                              </li>
-                          </ul>
-                        </li>
-                        <li class="user-login">
-                            <a href="./login.html"><img src="./assets/images/user_login.png" /></a>
-                        </li>
-                        <li>
-                            <button class="btn-collapse" type="button" data-toggle="collapse" data-target="" aria-expanded="false"><i class="fas fa-bars"></i></button>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="menu-user-mobile">
-          <ul>
-              <li>
-                  <a href="#">Problemfelder</a>
-              </li>
-              <li>
-                  <a href="#">Expertinnen</a>
-              </li>
-              <li class="login-mobile">
-                <span href="#"><img src="./assets/images/Group 72.png" style="margin-right: 5px;" />Login</span>
-                <div class="menu-login-mobile">
-                     <ul>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 167.png"><br>Face-2-Face Coaching</a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 169.png"><br>Kundennummern Generieren</a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 171.png"><br>Guthabenüberwachung</a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 173.png"><br>Coaches Freischalten</a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 175.png"><br>Handbuch</a>
-                        </li>
-                      </ul>
-                </div>
-            </li>
+<style>
+    .select ul li.option {
+  background-color: #DEDEDE;
+  box-shadow: 0px 1px 0 #DEDEDE, 0px -1px 0 #DEDEDE;
+  -webkit-box-shadow: 0px 1px 0 #DEDEDE, 0px -1px 0 #DEDEDE;
+  -moz-box-shadow: 0px 1px 0 #DEDEDE, 0px -1px 0 #DEDEDE;
+}
 
-              <li>
-                  <a href="#">Linkedin</a>
-              </li>
-              <li>
-                  <a href="#">Facebook</a>
-              </li>
-          </ul>
-      </div>
-        </nav>
-    </header>
-    <div style="padding-top:500px;">
-        <button class="abc" value="Alle">ghfg</button>
-        <ul style="display: none;" class="nav nav-pills nav-fill flex-column" id="pills-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-1" role="tab">Alle</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-2" role="tab">Österreich</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-3" role="tab">Deutschland</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-4" role="tab">Schweiz</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-5" role="tab">Italien</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-6" role="tab">Tschechien</a>
-            </li>
-        </ul>
-    </div>
-    <footer class="site-footer">
-        <div class="container-fluid">
-            <div class="main-footer">
-                <div class="contact">
-                    <ul>
-                        <a href="./impressum.html">
-                            <li>Impressum</li>
-                        </a>
-                        <a href="./agb.html">
-                            <li>AGB</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="logo">
-                    fi
-                </div>
-            </div>
+.select ul li.option:hover {
+  background-color: #B8B8B8;
+}
+
+.select ul li.option {
+  z-index: 1;
+  padding: 5px;
+  display: none;
+}
+
+.select ul li:first-child {
+  display: block;
+}
+
+.select ul li {
+  cursor: default;
+}
+
+</style>
+
+<body>
+    <div class="select" style="padding-top: 200px;">
+            <ul style="width:150px;">
+              <li values="1" class="option">Dropdown one</li>
+              <li values="2" class="option">Dropdown two</li>
+              <li values="3" class="option">Dropdown three</li>
+            </ul>
         </div>
-    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -176,6 +65,12 @@
     <script src="./assets/js/bootstrap-wysihtml5.js"></script>
     <script type="text/javascript">
         $(document).ready(function(e) {
+
+            $('.select ul li.option').click(function() {
+                $(this).siblings().children().remove();
+                var a = $(this).siblings().toggle();
+                // console.log($(a).is(":visible"));
+            })
 
             var viewport = $('meta[name="viewport"]');
             window.onresize = function() {
