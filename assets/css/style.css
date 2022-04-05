@@ -18,6 +18,11 @@
     src: url('../fonts/raleway/Raleway-SemiBold.ttf');
 }
 
+@font-face {
+    font-family: 'Raleway-italic';
+    src: url('../fonts/raleway/Raleway-Italic.ttf');
+}
+
 
 /* @font-face kit by Fonts2u (https://fonts2u.com) */
 
@@ -192,6 +197,11 @@ header .navbar {
     height: 120px;
 }
 
+
+header .navbar .navbar-header{
+    margin-bottom: 5px;
+}
+
 .btn {
     cursor: pointer;
 }
@@ -299,7 +309,7 @@ header .navbar {
 
 .menu-user-mobile ul {
     display: block;
-    padding-bottom: 95px;
+    padding-bottom: 170px;
     padding-top: 95px;
     padding-left: 36.5px;
     padding-right: 36.5px;
@@ -317,6 +327,7 @@ header .navbar {
     text-align: center;
     margin: 0 !important;
 }
+
 
 .menu-user-mobile ul li a ,.menu-user-mobile ul li span{
     color: #000;
@@ -349,7 +360,7 @@ header .navbar {
 .menu-login-mobile {
     width: 100%;
     height: fit-content;
-    display: none;
+    display: block;
 }
 
 .menu-login-mobile ul{
@@ -377,6 +388,10 @@ header .navbar {
     border-bottom: 1px solid #EFEFEF;
     text-align: center;
     margin: 0 !important;
+}
+
+.menu-login-mobile ul li:last-child{
+    padding-bottom: 0;
 }
 
 .menu-user {
@@ -468,14 +483,19 @@ header .navbar {
 #main-content .content-gemeinsam-box .text-box h1 {
     font-size: 40px !important;
     margin-bottom: 28px;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.9px;
     font-family: "Raleway-semibold";
+    line-height: 36px;
 }
 
 #main-content .content-gemeinsam-box .text-box p {
     margin-bottom: 40px;
     line-height: 24px;
     font-family: "Raleway-medium";
+}
+
+.layout-homes .btn-box {
+    width: 647px;
 }
 
 .btn-box {
@@ -502,6 +522,7 @@ header .navbar {
 #main-content .funktioniert {
     position: relative;
     background-color: #fff;
+    overflow-x: clip;
 }
 
 
@@ -532,6 +553,7 @@ header .navbar {
     font-size: 40px !important;
     font-weight: 700;
     margin-bottom: 30px;
+    font-family: "Raleway-semibold";
 }
 
 #main-content .funktioniert .funktioniert-content .text p {
@@ -585,11 +607,11 @@ header .navbar {
 #main-content .coaches {
     background-color: #fff;
     position: relative;
-    margin-top: 260px;
+    margin-top: 285px;
 }
 
 #main-content .coaches .title-coachs {
-    margin-left: 42px;
+    margin-left: 61px;
 }
 
 
@@ -737,17 +759,22 @@ header .navbar {
     color: #fff;
     text-transform: uppercase;
     border-radius: 50px;
+    font-family: "Raleway-medium";
 }
 
 .onl {
     border: 12px #78B476 solid;
 }
 
-.lang-coach {
+.box.onl .lang-coach,.box-action.onl .lang-coach  {
+    bottom: -105px;
+}
+
+.box .lang-coach,.box-action .lang-coach {
+    bottom: -93px;
     display: flex;
     position: absolute;
     justify-content: center;
-    bottom: -105px;
 }
 
 .lang-coach img {
@@ -806,7 +833,8 @@ header .navbar {
 .layout-homes .section-coming-soon {
     position: relative;
     /* z-index: -1; */
-    margin-top: 335px;
+    margin-top: 240px;
+
 }
 
 .layout-homes .section-coming-soon.mobile {
@@ -834,8 +862,8 @@ header .navbar {
 
 #main-content .coaches .subtitle-coachs {
     position: absolute;
-    top: 12px;
-    left: 90px;
+    top: 16px;
+    left: 138px;
 }
 
 #main-content .funktioniert .subtitle-1,
@@ -872,8 +900,8 @@ header .navbar {
 
 #main-content.layout-homes .coming-soon .text h1 {
     font-size: 40px !important;
-    font-weight: 700;
     margin-bottom: 30px;
+    font-family: "Raleway-semibold";
 }
 
 #main-content.layout-homes .coming-soon .text p {
@@ -992,6 +1020,7 @@ footer {
     font-weight: 600;
     text-align: center;
     font-family: "Raleway-semibold";
+    letter-spacing: 0.02em;
 }
 
 .site-main.site-main-impressum img,.site-main.site-main-agb img,.site-main.site-main-expertinnen img{
@@ -1010,6 +1039,7 @@ footer {
     font-size: 16px;
     line-height: 25px;
     font-family: "Raleway-medium";
+    letter-spacing: 0.02em;
 }
 
 .site-main-impressum .content p strong,
@@ -1020,18 +1050,19 @@ footer {
 .site-main-impressum .content h2,
 .site-main-agb .content h2{
     font-size: 30px;
-    line-height: 19px;
+    line-height: 34px;
     font-family: "Raleway-semibold";
 }
 
 .site-main-impressum .content .haftung h2, .site-main-impressum .content .daten h2,.site-main-agb .content h2{ 
     text-decoration: underline;
     color: #FBC7B2;
+    line-height: 25px;
 }
 
 .site-main-user .content{
     background: #fff;
-    padding-top: 107px;
+    /* padding-top: 107px; */
 }
 
 .site-main-user .content .menu-item {
@@ -1042,6 +1073,10 @@ footer {
 
 .site-main-user .content .menu-item .box {
     margin: auto 5px 33px 5px;
+}
+
+.site-main-user .box p{
+    font-size: 20px !important;
 }
 
 .site-main-user .content .menu-item .box .content {
@@ -1444,21 +1479,32 @@ footer {
 
 .site-main-expertinnen .tabControl .nav-item {
     background-color: #EFEFEF;
-    margin: 10px 8px;
+    /* margin: 10px 8px; */
     border-radius: 100px;
-    width: 250px;
+    max-width: 260px;
 }
 
 .site-main-expertinnen .tabControl.mobile .nav-item {
     background-color: #FBC7B2;
+    max-width: 302px !important;
+}
+
+
+.site-main-expertinnen .tabControl .nav{
+    justify-content: space-between;
+    width: 1640px;
 }
 
 .site-main-expertinnen .tabControl.mobile .nav{
     align-items: center;
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 25px;
+    width: 302px;
 }
 
 .site-main-expertinnen .tabControl .nav-item:nth-child(1) {
-    margin: 10px 8px 10px 8px;
+    /* margin: 10px 8px 10px 8px; */
 }
 
 .site-main-expertinnen .tabControl.mobile .nav-item:nth-child(1) {
@@ -1467,6 +1513,8 @@ footer {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     display: block;
+    width: 302px;
+    
 }
 
 .site-main-expertinnen .tabControl.mobile .nav-item:nth-child(1) .nav-link.active {
@@ -1476,15 +1524,22 @@ footer {
     background-color: #FBC7B2;
 }
 
+.site-main-expertinnen .tabControl.mobile .nav-item .nav-link:hover{
+    background-color: #EFEFEF;
+    border-radius: 0;
+}
+
 .site-main-expertinnen .tabControl.mobile .nav-item{
     margin: 0 !important;
     border-radius: 0;
     border-bottom: 1px solid #EFEFEF;
     display: none;
+    width: 302px;
 }
 
-.site-main-expertinnen .tabControl.mobile .nav-item:hover{
-    background-color: #EFEFEF;
+
+.site-main-expertinnen .tabControl.mobile .nav-item .nav-link{
+    color: #fff !important;
 }
 
 
@@ -1493,14 +1548,14 @@ footer {
     border-radius: 0;
 }
 
-.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(7) {
+.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(6) {
     border-radius: 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border: none;
 }
 
-.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(7) .nav-link.active {
+.site-main-expertinnen .tabControl.mobile .nav-item:nth-child(6) .nav-link.active {
     border-radius: 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -1510,13 +1565,14 @@ footer {
     display: none;
 } */
 
-.site-main-expertinnen .tabControl.mobile li.nav-item.init .nav-link::after{
+.site-main-expertinnen .tabControl.mobile ul:after{
     content: "\f107";
     color: #000;
     font-family: "Font Awesome 5 Pro";
     position: absolute;
-    right: 85px;
+    right: 15px;
     font-weight: 900;
+    top: 15px;
 }
 
 .border-radius-25px{
@@ -1525,12 +1581,14 @@ footer {
 
 
 .site-main-expertinnen .tabControl .nav-item:nth-child(6) {
-    margin: 10px 8px 10px 8px;
+    /* margin: 10px 8px 10px 8px; */
 }
+
+
 
 .site-main-expertinnen .tabControl .nav-pills .nav-link {
     border-radius: 100px;
-    color: #fff !important;
+    color: #000 !important;
     padding: 15px;
     text-transform: uppercase;
     font-family: 'Raleway-medium';
@@ -1567,10 +1625,17 @@ footer {
 
 .site-main-expertinnen .tabControl .nav-pills .nav-link.active {
     background-color: #FBC7B2;
+    color: #fff !important;
+}
+
+.site-main-expertinnen .tabControl.mobile{
+    position: absolute;
+    z-index: 99;
+    left: 10%;
 }
 
 .site-main-expertinnen .tabControl.mobile .nav-pills .nav-link.active {
-    background-color: #EFEFEF;
+    background-color: #FBC7B2;
 }
 
 .site-main-expertinnen .funktioniert-die {
@@ -1622,6 +1687,16 @@ footer {
 .site-main-expertinnen .box-action h2{
     font-family: "Raleway-semibold";
     font-size: 24px;
+}
+
+.site-main-expertinnen .box-action .name h2{
+    font-family: "Raleway-semibold";
+    font-size: 30px;
+}
+
+.site-main-expertinnen .box .name h2{
+    font-family: "Raleway-semibold";
+    font-size: 30px;
 }
 
 .site-main-expertinnen .box-action a{
@@ -1737,6 +1812,10 @@ a.slick-slide {
     text-align: center;
 }
 
+.modal .modal-content img {
+    max-width: 100%;
+}
+
 .modal .modal-content .content a {
     color: #000;
     font-size: 40px !important;
@@ -1779,7 +1858,7 @@ a.slick-slide {
 
     .navbar-right ul li {
         margin-left: 0px;
-        margin-right: 5px;
+        margin-right: 0px;
         margin-bottom: 0;
     }
     .navbar-right ul li ul li {
@@ -1967,10 +2046,18 @@ a.slick-slide {
         padding: 41px 0px 45px 0px;
     }
 
+    #main-content.layout-homes .coming-soon .text h1{
+        font-size: 25px !important;
+    }
+
 
 
     .layout-homes .text-box .forgot-pass {
         float: left;
+    }
+
+    .btn-box {
+        width: auto;
     }
 
 
@@ -1989,7 +2076,7 @@ a.slick-slide {
 
 
     .site-main-expertinnen .content{
-        padding: 45px 0 45px 0;
+        padding: 90px 0 45px 0;
     }
 
     .site-main-expertinnen .row .box-action a{
@@ -2131,8 +2218,12 @@ a.slick-slide {
         margin-top: 32px;
     }
 
-    .lang-coach {
-        bottom: -45px;
+    .box .lang-coach, .box-action .lang-coach {
+        bottom: -45px !important;
+    }
+
+    .box.onl .lang-coach, .box-action.onl .lang-coach {
+        bottom: -55px !important;
     }
 
     .lang-coach img {
@@ -2143,6 +2234,22 @@ a.slick-slide {
 
     .menu-user-mobile {
         top: 65px !important;
+    }
+    .layout-homes .btn-box {
+        width: auto;
+    }
+
+    .site-main-user .content {
+        /* background: #fff; */
+        padding-top: 107px;
+    }
+
+    .modal .modal-dialog {
+        width: 320px;
+    }
+
+    .menu-user-mobile ul li a img {
+        margin-right: 0;
     }
 
 }

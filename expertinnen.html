@@ -24,7 +24,7 @@
               <!-- Brand and toggle get grouped for better mobile display-->
               <div class="navbar-header">
                   <a href="./">
-                      <img class="" src="./assets/images/mutschmiede logo.png" />
+                      <img class="" src="./assets/images/logo.svg" />
                   </a>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling-->
@@ -33,7 +33,7 @@
                       <li>
                           <a href="./">Problemfelder</a>
                       </li>
-                      <li><a href="./">Exptertinnen</a></li>
+                      <li><a href="./expertinnen.html">Exptertinnen</a></li>
                       <li class="dropdown">
                           <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
                               <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" style="margin-right: 5px;" />AT</a>
@@ -156,7 +156,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tabControl mobile d-block d-md-none">
+                <div class="tabControl mobile d-inline-block d-md-none">
                     <ul class="nav nav-pills nav-fill flex-column" id="pills-tab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-1" role="tab">Alle</a>
@@ -856,10 +856,9 @@
       $(document).ready(function (e) {
 
         $('.mobile ul li.nav-item').click(function() {
-                $(this).siblings().children().remove();
-                var a = $(this).siblings().toggle();
-
-        })
+                $(this).siblings().children();
+                $(this).siblings().toggle();
+        });
 
         var viewport = $('meta[name="viewport"]');
             window.onresize = function() {
