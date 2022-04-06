@@ -884,7 +884,18 @@ body {
 .header-table ul {
     justify-content: flex-end;
 }
-
+.site-main-face2face .header-table ul {
+    margin-right: 30px;
+    
+}
+.site-main-face2face label{
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+.site-main-face2face .header-table ul li {
+    margin-right: 0 !important;
+    margin-left: 15px;
+}
 .header-table ul li:last-child {
     margin-right: 0;
 }
@@ -1037,7 +1048,9 @@ body {
     padding-left: 0 !important;
     padding-bottom: 10px !important;
 }
-
+.table-customer .table-booking .table-responsive .table td:first-child{
+    width: 61%;
+}
 .table-customer .table-booking .table-responsive .table td {
     margin-bottom: 10px;
     line-height: 19px;
@@ -1156,6 +1169,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 
 .site-main-face2face .title .text h1 {
     font-family: 'Raleway-semibold';
+    letter-spacing: 1px;
 }
 
 .table-booking .header-table ul li a {
@@ -1169,6 +1183,8 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 .wrap-top-face .form-input input,
 .wrap-top-face .form-input label {
     width: 100%;
+    letter-spacing: 0.5px;
+    font-size: 20px;
 }
 
 .wrap-top-face .form-input label {
@@ -1188,6 +1204,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     color: #fff;
     text-transform: uppercase;
     font-family: 'Raleway-medium';
+    
 }
 
 .wrap-top-face .form-input input {
@@ -1198,6 +1215,8 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     padding: 24px 20px;
     height: 66px;
     font-style: italic;
+    font-size: 16px;
+    color: #000;
 }
 
 .wrap-top-face .form-top-face {
@@ -1225,6 +1244,10 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 .wrap-top-face .form-top-face .add-customer-number {
     width: 398px;
     margin-left: 18px;
+}
+.wrap-top-face .form-top-face .add-customer-number a{
+    width: 100%;
+
 }
 
 .form-bottom-face .input {
