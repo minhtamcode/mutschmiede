@@ -731,7 +731,9 @@ body {
 .profile-specifications {
     margin-top: 50px;
 }
-
+.profile-specifications p{
+    line-height: 19px;
+}
 .profile-specifications .profile-s-bottom {
     margin-top: 15px;
 }
@@ -769,17 +771,21 @@ body {
 .profile-content-bottom {
     margin-top: 50px;
 }
-
+.profile-content-bottom .profile-cb-icon:first-of-type .profile-cb-icon-desktop{
+    margin-top: 0;
+}
 .profile-content-bottom .profile-cb-icon .profile-cb-icon-desktop {
     margin-top: 64px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;
 }
-
+.ddbuch-content .profile-content-bottom .line-bottom{
+    margin-bottom: 20px ;
+}
 .profile-content-bottom .profile-cb-icon:first-of-type {
     margin-top: 20px !important;
 }
@@ -795,7 +801,9 @@ body {
     width: 103px;
     text-align: center;
 }
-
+.profile-content-bottom .profile-cb-icon .item-icon p{
+    line-height: 19px;
+}
 .profile-content-bottom .profile-cb-icon .item-icon img {
     margin-bottom: 10px;
 }
@@ -804,14 +812,14 @@ body {
     margin-right: unset;
 }
 
-.profile-cb-button {
+.ddbuch-content .profile-cb-button {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .profile-cb-button .profile-sumit {
