@@ -855,7 +855,19 @@ body {
     color: #000;
     font-family: 'Raleway-medium';
 }
-
+.form-face .header-table ul{
+    margin-right: 20px !important;
+}
+.form-face .header-table ul li:first-child{
+    margin-right: 10px !important;
+}
+.form-face .table-booking table tbody tr:hover{
+    background-color: #FBC7B2 !important;
+}
+.form-face .header-table ul li{
+    margin-right: 0 !important;
+    margin-left: 15px !important;
+}
 .site-main-coaches .form .coach-box .coach .coach-infor h3,
 .site-main-coaches .form .coach-box .coach .coach-infor h1 {
     font-family: 'Raleway-semibold';
@@ -891,6 +903,9 @@ body {
 .site-main-face2face label{
     font-size: 20px;
     letter-spacing: 0.8px;
+}
+.site-main-face2face .header-table ul li:first-child{
+    margin-right: 10px !important;
 }
 .site-main-face2face .header-table ul li {
     margin-right: 0 !important;
@@ -1143,8 +1158,15 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     border-radius: 10px;
     border: 1px solid #FBC7B2;
     padding: 24px 21px;
+    font-size: 16px;
 }
-
+.site-main-generate label{
+    font-size: 20px;
+    font-family: 'Raleway-semibold';
+}
+.form-face .header-table{
+    margin-bottom:20px ;
+}
 .form-coach#main-content .group-button {
     display: flex;
     flex-direction: row;
