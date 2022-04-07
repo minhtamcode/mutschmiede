@@ -480,6 +480,7 @@ header .navbar .navbar-header{
     padding-top: 120px;
 }
 
+
 #main-content .content-gemeinsam-box .text-box h1 {
     font-size: 40px !important;
     margin-bottom: 28px;
@@ -543,6 +544,7 @@ header .navbar .navbar-header{
 #main-content .funktioniert.mobile .funktioniert-image {
     position: unset !important;
     /* margin-top: 53px; */
+    margin-bottom: -3px;
 }
 
 #main-content .funktioniert .funktioniert-content .text {
@@ -1006,6 +1008,7 @@ footer {
 .site-footer .main-footer .contact ul li {
     margin-right: 30px;
     font-family: "Raleway-medium";
+    line-height: 24px;
 }
 
 .site-footer .main-footer .logo {
@@ -1893,15 +1896,16 @@ a.slick-slide {
     }
 
     .navbar-right ul li {
-        margin-left: 0px;
+        margin-left: 4px;
         margin-right: 0px;
-        margin-bottom: 0;
+        margin-bottom: 3px;
     }
     .navbar-right ul li ul li {
-        margin-bottom: 10px;
+        margin-left: 0;
     }
     .navbar-right ul .dropdown-menu-lang {
         left: 0;
+        top: 25px;
     }
     .navbar-right ul li.dropdown .dropdown-lang::after {
         content: "";
@@ -1934,6 +1938,7 @@ a.slick-slide {
     }
     .content-gemeinsam-box .btn-box .btn {
         margin-top: 10px;
+        width: 260px;
     }
 
     .site-main.layout-homes {
@@ -1948,7 +1953,8 @@ a.slick-slide {
     }
 
     .layout-homes .lht-vertical {
-        bottom: -30px !important;
+        bottom: 1px !important;
+        max-height: 532px !important;
     }
 
     .layout-homes .lht-vertical-text{
@@ -1957,7 +1963,7 @@ a.slick-slide {
 
     
     .layout-homes .lht-text-box {
-        bottom: -11px !important;
+        bottom: 1px !important;
     }
 
 
@@ -1987,6 +1993,7 @@ a.slick-slide {
 
     #main-content .content-gemeinsam-box .text-box h1 {
         font-size: 25px !important;
+        line-height: 30px;
     }
     /* #main-content .coaches .title-coachs {
         display: none;
@@ -2014,19 +2021,19 @@ a.slick-slide {
     #main-content .funktioniert .title-1,
     #main-content .funktioniert .title-2{
         top: -255px;
-        left: 108px;
+        left: 91px;
     }
 
     #main-content .funktioniert .subtitle-1,
     #main-content .funktioniert .subtitle-2{
-        top: -161px;
-        left: 169px;
+        top: -167px;
+        left: 152px;
     }
 
     #main-content .coaches .subtitle-coachs {
         position: absolute;
-        top: 145px;
-        left: 33%;
+        top: 139px;
+        left: 31%;
     }
 
     .onl {
@@ -2046,7 +2053,7 @@ a.slick-slide {
     }
 
     #main-content .coaches {
-        margin-top: 137px;
+        margin-top: 100px;
         padding-top: 75px;
     }
 
@@ -2118,6 +2125,9 @@ a.slick-slide {
         justify-content: space-around;
     }
 
+    #main-content .content-gemeinsam-box .text-box p {
+        line-height: 25px;
+    }
 
     .site-main-expertinnen .content{
         padding: 90px 0 45px 0;
@@ -2288,11 +2298,26 @@ a.slick-slide {
         top: 65px !important;
     }
     .layout-homes .btn-box {
-        width: auto !important;
+        width: 260px !important;
+        margin: 0 -8px;
     }
 
     #main-content.layout-homes .coming-soon{
         height: auto;
+    }
+
+    .site-footer .main-footer .contact ul a:nth-child(1){
+        margin-bottom: 5px;
+    }
+
+
+    .site-footer .main-footer .logo {
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+    }
+
+    .site-footer .main-footer .contact ul a:nth-child(2){
+        margin-bottom: -5px;
     }
 
     .site-main-user .content {

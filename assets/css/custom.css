@@ -79,9 +79,9 @@ body {
     background-color: unset !important;
     z-index: 99;
     position: absolute;
-    top: 43%;
+    top: 40%;
     opacity: 1;
-    right: 0;
+    right: -2px;
 }
 
 .layout-homes .coaches .slick-mobile .slick-slider-previous {
@@ -89,8 +89,9 @@ body {
     background-color: unset !important;
     z-index: 99;
     position: absolute;
-    bottom: 50%;
+    bottom: 52%;
     opacity: 1;
+    left: -4px;
 }
 
 .layout-homes .funktioniert .slick-mobile .slick-slider-next {
@@ -1774,15 +1775,15 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         margin-bottom: 20px;
     }
     #main-content .content-gemeinsam-box .text-box {
-        padding: 24px 20px 45px 29px !important;
+        padding: 22px 22px 45px 29px !important;
     }
 
     #main-content .funktioniert {
-        margin-top: 80px;
+        margin-top: 44px;
     }
 
     #main-content .content-gemeinsam-box .text-box p {
-        margin-bottom: 37px;
+        margin-bottom: 23px;
     }
 
     .site-main-login .lh-top img {

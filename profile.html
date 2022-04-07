@@ -97,7 +97,10 @@
                             <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" /></a>
                         </li>
                         <li>
-                            <button class="btn-collapse" type="button" data-toggle="collapse" data-target="" aria-expanded="false"><i class="fas fa-bars"></i></button>
+                            <button class="btn-collapse" type="button">
+                                <img class="icon-menu" src="./assets/images/icon-menu.svg" alt="" width="100%">
+                                <img class="icon-close" src="./assets/images/icon-close.svg" alt="" width="100%">
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -460,6 +463,7 @@
             });
 
             $('.btn-collapse').click(function(e) {
+                $(this).toggleClass("show-icon-close");
                 $('.menu-user-mobile').slideToggle('1000');
                 e.preventDefault();
                 icon = $(this).find("i");

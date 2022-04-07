@@ -79,7 +79,10 @@
                             <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" /></a>
                         </li>
                         <li>
-                            <button class="btn-collapse" type="button" data-toggle="collapse" data-target="" aria-expanded="false"><i class="fas fa-bars"></i></button>
+                            <button class="btn-collapse" type="button">
+                                <img class="icon-menu" src="./assets/images/icon-menu.svg" alt="" width="100%">
+                                <img class="icon-close" src="./assets/images/icon-close.svg" alt="" width="100%">
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -142,9 +145,24 @@
             <div class="content-gemeinsam-box container-fluid p-0 ">
                 <div class="text-box" data-aos="fade-up">
                     <h1>Gemeinsam zur besten Lösung</h1>
-                    <p>Die mutschmiede ist ein Netzwerk international t&auml;tiger ExpertInnen, die Beratung in&nbsp; den Bereichen privater und beruflicher Belastungen anbieten. Ziel ist es, gemeinsam&nbsp;
+                    <p class="d-none d-lg-block">Die mutschmiede ist ein Netzwerk international t&auml;tiger ExpertInnen, die Beratung in&nbsp; den Bereichen privater und beruflicher Belastungen anbieten. Ziel ist es, gemeinsam&nbsp;
                         </> mit den KundInnen L&ouml;sungen zu finden und dadurch die Lebensqualit&auml;t zu steigern.&nbsp; Telefonische Beratungsleistungen der Coaches sind vollkommen anonym und k&ouml;nnen&nbsp; bei Bedarf in den Praxen der ExpertInnen
                         fortgesetzt werden.</p>
+                      <p class="d-block d-lg-none">Die mutschmiede ist ein 
+                          Netzwerk international tätiger 
+                          ExpertInnen, die Beratung in 
+                          den Bereichen privater und 
+                          beruflicher Belastungen an-
+                          bieten. Ziel ist es, gemeinsam 
+                          mit den KundInnen Lösungen 
+                          zu finden und dadurch die 
+                          Lebensqualität zu steigern. 
+                          Telefonische Beratungs-
+                          leistungen der Coaches sind 
+                          vollkommen anonym und 
+                          können bei Bedarf in den 
+                          Praxen der ExpertInnen 
+                          fortgesetzt werden.</p>
                     <div class="btn-box">
                         <div class="btn">
                             <div class="btn-problem">Problem erkennen</div>
@@ -228,7 +246,7 @@
 
         <div class="funktioniert mobile d-block d-md-none">
             <div class="funktioniert-image">
-                <img src="./assets/images/clay-banks-POzx_amnWJw-unsplash.png" />
+                <img src="./assets/images/clay-banks-POzx_amnWJw-unsplash-mobile.png"/>
             </div>
             <div class="funktioniert-content">
                 <div class="text" data-aos="fade-up">
@@ -236,7 +254,7 @@
                     <p>
                         Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme und Ängste zu konkretisieren. Basierend auf Ihren Antworten,
                         können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten. Wir freuen uns über Ihre Anfragen und stehen
-                        Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung: +43 664 227 58 17
+                        Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung:<br>  +43 664 227 58 17
                     </p>
                     <div class="btn-box">
                         <div class="btn">
@@ -711,6 +729,7 @@
             });
 
             $('.btn-collapse').click(function(e) {
+                $(this).toggleClass("show-icon-close");
                 $('.menu-user-mobile').slideToggle('1000');
                 e.preventDefault();
                 icon = $(this).find("i");
