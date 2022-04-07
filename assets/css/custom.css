@@ -14,6 +14,8 @@ body {
 /* css menu */
 .btn-collapse .icon-menu{
     display: block;
+    width: 19px !important;
+    height: 100% !important;
 }
 .btn-collapse .icon-close{
     display: none;
