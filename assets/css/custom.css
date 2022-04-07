@@ -981,6 +981,9 @@ body {
 .bg-pink {
     background-color: #FBC7B2;
 }
+.bg-pink-0 {
+    background-color: #fffbf9;
+}
 
 .site-main-coaches .form .coach-box .coach .coach-infor .name {
     padding: 58px 20px;
@@ -990,7 +993,6 @@ body {
 /* site-main-gutscheincodes */
 
 .site-main-face2face .table-booking .table-responsive,
-.site-main-generate .table-booking .table-responsive,
 .site-main-gutscheincodes .table-booking .table-responsive {
     border-radius: 10px;
     border: 1px solid #FBC7B2;
@@ -998,6 +1000,20 @@ body {
     max-height: 611px;
     padding-right: 24px;
     background-color: #fff;
+    margin-left: 1px;
+}
+
+.site-main-generate .table-booking .table-responsive {
+    border-radius: 10px;
+    border: 1px solid #FBC7B2;
+    overflow: auto;
+    max-height: 611px;
+    padding-right: 24px;
+    margin-left: 1px;
+}
+.site-main-generate .table-booking .table-responsive-mobile {
+    background-color: #fff;
+    
 }
 
 .site-main-generate .table-top .tt-item .table-responsive {
@@ -1353,7 +1369,9 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     padding-bottom: 89px;
 }
 
-
+.manage-customer .table-booking table tbody tr:hover{
+    background-color: unset !important;
+}
 /* face page */
 
 @media (max-width: 576px) {
@@ -1822,7 +1840,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     }
 
     .site-main-face2face .content {
-        padding: 42px 35px 46px 35px;
+        padding: 42px 35px 0 35px;
     }
 
     .wrap-top-face .form-input a,
@@ -1890,6 +1908,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 
     .site-main-generate .wrap-top-face .table-top .tt-item p {
         font-size: 16px;
+        letter-spacing: 0;
     }
 
     .site-main-generate .wrap-top-face .table-top .tt-item:last-child {
@@ -1898,6 +1917,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 
     .site-main-generate .wrap-top-face .header-table .label label {
         margin-bottom: 20px;
+        font-size: 16px;
     }
 
     #main-content .content-gemeinsam-box {
@@ -1968,8 +1988,9 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         margin-left: 0 !important;
     }
 
-    .table-responsive-mobile {
+    #main-content .table-responsive-mobile {
         position: relative !important;
+        max-height: 329px;
     }
 
     .table-responsive-mobile .top-content-table {
@@ -2006,7 +2027,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     .table-responsive-mobile .table-striped .content-table-item p:last-child{
         margin-bottom: 0;
     }
-    .site-main-face2face label{
+    .table-responsive-mobile label{
         font-size: 16px;
         font-family: 'Raleway-semibold';
     }
