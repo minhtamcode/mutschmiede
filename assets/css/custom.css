@@ -11,7 +11,21 @@ body {
     min-height: 812px !important;
 }
 
-
+/* css menu */
+.btn-collapse .icon-menu{
+    display: block;
+    width: 19px !important;
+    height: 100% !important;
+}
+.btn-collapse .icon-close{
+    display: none;
+}
+.show-icon-close .icon-menu{
+    display: none;
+}
+.show-icon-close .icon-close{
+    display: block;
+}
 /* slick slide */
 
 .layout-homes .slick-slider {
@@ -1642,14 +1656,21 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     }
     .site-main-face2face .title .text h1 {
         font-size: 25px;
-        height: 120px;
         text-align: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    .site-main-face2face .title .text h1 span{
+        width: 100%;
+        display: block;
+        letter-spacing: 1px;
+    }
+    .wrap-top-face .form-input label{
+        font-size: 16px;
     }
     .wrap-top-face .form-top-face div:first-child {
         margin-bottom: 40px;
