@@ -738,7 +738,9 @@ body {
 .profile-specifications {
     margin-top: 50px;
 }
-
+.profile-specifications p{
+    line-height: 19px;
+}
 .profile-specifications .profile-s-bottom {
     margin-top: 15px;
 }
@@ -776,17 +778,21 @@ body {
 .profile-content-bottom {
     margin-top: 50px;
 }
-
+.profile-content-bottom .profile-cb-icon:first-of-type .profile-cb-icon-desktop{
+    margin-top: 0;
+}
 .profile-content-bottom .profile-cb-icon .profile-cb-icon-desktop {
     margin-top: 64px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;
 }
-
+.ddbuch-content .profile-content-bottom .line-bottom{
+    margin-bottom: 20px ;
+}
 .profile-content-bottom .profile-cb-icon:first-of-type {
     margin-top: 20px !important;
 }
@@ -802,7 +808,9 @@ body {
     width: 103px;
     text-align: center;
 }
-
+.profile-content-bottom .profile-cb-icon .item-icon p{
+    line-height: 19px;
+}
 .profile-content-bottom .profile-cb-icon .item-icon img {
     margin-bottom: 10px;
 }
@@ -811,14 +819,14 @@ body {
     margin-right: unset;
 }
 
-.profile-cb-button {
+.ddbuch-content .profile-cb-button {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .profile-cb-button .profile-sumit {
@@ -862,7 +870,19 @@ body {
     color: #000;
     font-family: 'Raleway-medium';
 }
-
+.form-face .header-table ul{
+    margin-right: 20px !important;
+}
+.form-face .header-table ul li:first-child{
+    margin-right: 10px !important;
+}
+.form-face .table-booking table tbody tr:hover{
+    background-color: #FBC7B2 !important;
+}
+.form-face .header-table ul li{
+    margin-right: 0 !important;
+    margin-left: 15px !important;
+}
 .site-main-coaches .form .coach-box .coach .coach-infor h3,
 .site-main-coaches .form .coach-box .coach .coach-infor h1 {
     font-family: 'Raleway-semibold';
@@ -891,7 +911,21 @@ body {
 .header-table ul {
     justify-content: flex-end;
 }
-
+.site-main-face2face .header-table ul {
+    margin-right: 30px;
+    
+}
+.site-main-face2face label{
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+.site-main-face2face .header-table ul li:first-child{
+    margin-right: 10px !important;
+}
+.site-main-face2face .header-table ul li {
+    margin-right: 0 !important;
+    margin-left: 15px;
+}
 .header-table ul li:last-child {
     margin-right: 0;
 }
@@ -1044,7 +1078,9 @@ body {
     padding-left: 0 !important;
     padding-bottom: 10px !important;
 }
-
+.table-customer .table-booking .table-responsive .table td:first-child{
+    width: 61%;
+}
 .table-customer .table-booking .table-responsive .table td {
     margin-bottom: 10px;
     line-height: 19px;
@@ -1137,8 +1173,15 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     border-radius: 10px;
     border: 1px solid #FBC7B2;
     padding: 24px 21px;
+    font-size: 16px;
 }
-
+.site-main-generate label{
+    font-size: 20px;
+    font-family: 'Raleway-semibold';
+}
+.form-face .header-table{
+    margin-bottom:20px ;
+}
 .form-coach#main-content .group-button {
     display: flex;
     flex-direction: row;
@@ -1163,6 +1206,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 
 .site-main-face2face .title .text h1 {
     font-family: 'Raleway-semibold';
+    letter-spacing: 1px;
 }
 
 .table-booking .header-table ul li a {
@@ -1176,6 +1220,8 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 .wrap-top-face .form-input input,
 .wrap-top-face .form-input label {
     width: 100%;
+    letter-spacing: 0.5px;
+    font-size: 20px;
 }
 
 .wrap-top-face .form-input label {
@@ -1195,6 +1241,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     color: #fff;
     text-transform: uppercase;
     font-family: 'Raleway-medium';
+    
 }
 
 .wrap-top-face .form-input input {
@@ -1205,6 +1252,8 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     padding: 24px 20px;
     height: 66px;
     font-style: italic;
+    font-size: 16px;
+    color: #000;
 }
 
 .wrap-top-face .form-top-face {
@@ -1232,6 +1281,10 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 .wrap-top-face .form-top-face .add-customer-number {
     width: 398px;
     margin-left: 18px;
+}
+.wrap-top-face .form-top-face .add-customer-number a{
+    width: 100%;
+
 }
 
 .form-bottom-face .input {
