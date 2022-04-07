@@ -1943,8 +1943,12 @@ a.slick-slide {
 
     .layout-homes .lh-top img {
         max-width: 100%;
-        min-height: 70%;
+        min-height: 44%;
         object-fit: cover;
+    }
+
+    .layout-homes .lht-vertical {
+        bottom: -30px !important;
     }
 
     .layout-homes .lht-vertical-text{
@@ -1953,7 +1957,7 @@ a.slick-slide {
 
     
     .layout-homes .lht-text-box {
-        bottom: 0 !important;
+        bottom: -11px !important;
     }
 
 

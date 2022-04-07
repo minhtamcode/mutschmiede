@@ -1743,17 +1743,21 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         margin-bottom: 20px;
     }
     #main-content .content-gemeinsam-box {
-        width: 301px;
+        width: 353px;
         margin: auto;
     }
     #main-content .content-gemeinsam-box .login-button {
         width: 100%;
     }
     #main-content .content-gemeinsam-box .text-box h1 {
-        margin-bottom: 39px;
+        margin-bottom: 20px;
     }
     #main-content .content-gemeinsam-box .text-box {
-        padding: 24px 20px 45px 21px !important;
+        padding: 24px 20px 45px 29px !important;
+    }
+
+    #main-content .funktioniert {
+        margin-top: 80px;
     }
 
     #main-content .content-gemeinsam-box .text-box p {
