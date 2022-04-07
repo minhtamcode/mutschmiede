@@ -483,7 +483,7 @@ header .navbar .navbar-header{
 #main-content .content-gemeinsam-box .text-box h1 {
     font-size: 40px !important;
     margin-bottom: 28px;
-    letter-spacing: 0.9px;
+    letter-spacing: 1px;
     font-family: "Raleway-semibold";
     line-height: 36px;
 }
@@ -492,9 +492,10 @@ header .navbar .navbar-header{
     margin-bottom: 40px;
     line-height: 24px;
     font-family: "Raleway-medium";
+    letter-spacing: 0.4px;
 }
 
-.layout-homes .btn-box {
+.layout-homes .content-gemeinsam-box .btn-box {
     width: 647px;
 }
 
@@ -545,8 +546,8 @@ header .navbar .navbar-header{
 }
 
 #main-content .funktioniert .funktioniert-content .text {
-    padding: 190px 107px 190px 140px;
-    width: 1070px;
+    padding: 190px 105px 190px 140px;
+    width: 1092px;
 }
 
 #main-content .funktioniert .funktioniert-content .text h1 {
@@ -554,16 +555,19 @@ header .navbar .navbar-header{
     font-weight: 700;
     margin-bottom: 30px;
     font-family: "Raleway-semibold";
+    letter-spacing: 1px;
+    line-height: 45px;
 }
 
 #main-content .funktioniert .funktioniert-content .text p {
     margin-bottom: 40px;
     line-height: 25px;
+    letter-spacing: 0.4px;
 }
 
 #main-content .funktioniert .funktioniert-image {
     position: absolute;
-    right: 0;
+    right: -6px;
     top: 53px;
     /* z-index: 1; */
 }
@@ -581,6 +585,11 @@ header .navbar .navbar-header{
     text-align: center;
     font-family: 'Raleway-medium';
     text-transform: uppercase;
+}
+
+#main-content .funktioniert.mobile .container-fluid{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }
 
 #main-content .funktioniert .title-1,
@@ -794,7 +803,7 @@ header .navbar .navbar-header{
     bottom: 355px;
 }
 
-#main-content .funktioniert .custom-slick-navigator .custom-slick-arrow-left {
+/* #main-content .funktioniert .custom-slick-navigator .custom-slick-arrow-left {
     position: absolute;
     left: 82px;
     border: none;
@@ -820,7 +829,7 @@ header .navbar .navbar-header{
     right: 82px;
     border: none;
     background-color: transparent;
-}
+} */
 
 #main-content .coaches .title-coachs h1 {
     font-size: 266px;
@@ -828,12 +837,13 @@ header .navbar .navbar-header{
     font-weight: bold;
     color: #FBC7B2;
     font-family: 'Raleway-bold';
+    letter-spacing: 7px;
 }
 
 .layout-homes .section-coming-soon {
     position: relative;
     /* z-index: -1; */
-    margin-top: 240px;
+    margin-top: 295px;
 
 }
 
@@ -880,10 +890,11 @@ header .navbar .navbar-header{
     font-size: 40px;
     line-height: 47px;
     font-family: 'Raleway-semibold';
+    letter-spacing: 1px;
 }
 
 #main-content.layout-homes .coming-soon {
-    /* height: 690px; */
+    height: 690px;
     background-color: #EFEFEF;
     display: flex;
     justify-content: flex-end;
@@ -891,22 +902,29 @@ header .navbar .navbar-header{
 
 
 #main-content.layout-homes .coming-soon .content {
-    max-width: 1070px;
+    max-width: 1087px;
 }
 
 #main-content.layout-homes .coming-soon .text {
-    padding: 191px 140px 190px 102px;
+    padding: 191px 121px 190px 102px;
+
 }
 
 #main-content.layout-homes .coming-soon .text h1 {
     font-size: 40px !important;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     font-family: "Raleway-semibold";
+    letter-spacing: 1px;
+}
+
+#main-content.layout-homes .coming-soon .text .btn-box{
+    margin-bottom: 10px;
 }
 
 #main-content.layout-homes .coming-soon .text p {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     line-height: 25px;
+    letter-spacing: 0.4px;
 }
 
 #main-content.layout-homes .image-coming-soon {
@@ -982,6 +1000,7 @@ footer {
     display: flex;
     text-transform: uppercase;
     font-size: 20px;
+    letter-spacing: 0.6px;
 }
 
 .site-footer .main-footer .contact ul li {
@@ -1021,6 +1040,11 @@ footer {
     text-align: center;
     font-family: "Raleway-semibold";
     letter-spacing: 0.02em;
+    
+}
+
+.site-main.site-main-impressum .title .text h1{
+    margin-right: 25px;
 }
 
 .site-main.site-main-impressum img,.site-main.site-main-agb img,.site-main.site-main-expertinnen img{
@@ -1039,7 +1063,7 @@ footer {
     font-size: 16px;
     line-height: 25px;
     font-family: "Raleway-medium";
-    letter-spacing: 0.02em;
+    letter-spacing: 0.025em;
 }
 
 .site-main-impressum .content p strong,
@@ -1052,13 +1076,16 @@ footer {
     font-size: 30px;
     line-height: 34px;
     font-family: "Raleway-semibold";
+    text-decoration: underline;
+    letter-spacing: 0.8px;
 }
 
-.site-main-impressum .content .haftung h2, .site-main-impressum .content .daten h2,.site-main-agb .content h2{ 
-    text-decoration: underline;
+.site-main-impressum .content .haftung h2, .site-main-impressum .content .daten h2{ 
+    /* text-decoration: underline; */
     color: #FBC7B2;
-    line-height: 25px;
+    line-height: 24px;
 }
+
 
 .site-main-user .content{
     background: #fff;
@@ -1466,6 +1493,10 @@ footer {
     padding: 113px 0 136px 0;
 }
 
+.site-main-expertinnen .box-action .content {
+    margin-bottom: 26px;
+}
+
 .site-main-expertinnen select{
     width: 302px;
     margin: 0 auto;
@@ -1503,9 +1534,9 @@ footer {
     width: 302px;
 }
 
-.site-main-expertinnen .tabControl .nav-item:nth-child(1) {
-    /* margin: 10px 8px 10px 8px; */
-}
+/* .site-main-expertinnen .tabControl .nav-item:nth-child(1) {
+    margin: 10px 8px 10px 8px;
+} */
 
 .site-main-expertinnen .tabControl.mobile .nav-item:nth-child(1) {
     margin: 0 !important;
@@ -1580,9 +1611,9 @@ footer {
 }
 
 
-.site-main-expertinnen .tabControl .nav-item:nth-child(6) {
-    /* margin: 10px 8px 10px 8px; */
-}
+/* .site-main-expertinnen .tabControl .nav-item:nth-child(6) {
+    margin: 10px 8px 10px 8px;
+} */
 
 
 
@@ -1595,7 +1626,7 @@ footer {
 }
 
 .site-main-expertinnen .row {
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .site-main-expertinnen .row .box,
@@ -1604,14 +1635,14 @@ footer {
 }
 
 .site-main-expertinnen .row .box-action .contact{
-    width: 212px;
-   align-items: center;
-   justify-content: space-between;
+    width: 232px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .site-main-expertinnen .row .box-action .contact img{
     margin: 0 !important;
-    width: 36px;
+    width: 43px;
 }
 
 .site-main-expertinnen .row .name {
@@ -1682,11 +1713,15 @@ footer {
 
 .site-main-expertinnen .box-action p{
     font-family: "Raleway-semibold";
+    margin-bottom: 10px;
+    line-height: 19px;
 }
 
 .site-main-expertinnen .box-action h2{
     font-family: "Raleway-semibold";
     font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 29px;
 }
 
 .site-main-expertinnen .box-action .name h2{
@@ -1702,6 +1737,7 @@ footer {
 .site-main-expertinnen .box-action a{
     font-family: "Raleway-semibold";
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .site-main-expertinnen .box-action .contact{
@@ -1843,16 +1879,16 @@ a.slick-slide {
         padding-top: 60px;
     }
 
-    .container-fluid{
+    /* .container-fluid{
         padding-left: 15px !important;
         padding-right: 15px !important;
-    }
+    } */
 
     .site-header .navbar {
-        padding-top: 30px  !important;
-        padding-bottom: 14px !important;
-        padding-right: 20px !important;
-        padding-left: 20px !important;
+        padding-top: 30px !important;
+        padding-bottom: 6px !important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
 
     }
 
@@ -2050,6 +2086,10 @@ a.slick-slide {
         font-size: 25px !important;
     }
 
+    #main-content .coaches .container-fluid{
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
 
 
     .layout-homes .text-box .forgot-pass {
@@ -2131,8 +2171,16 @@ a.slick-slide {
     }
 
     .site-footer .main-footer {
-        padding: 0 20px;
+        padding: 0 10px;
         height: 141px;
+    }
+
+    #main-content.layout-homes.homes2 .funktioniert.mobile .box {
+        margin-bottom: 60px;
+    }
+
+    #main-content.layout-homes.homes2 .funktioniert.mobile .slide-1 {
+        padding-bottom: 35px;
     }
 
     #main-content .coaches .title-coachs {
@@ -2236,7 +2284,11 @@ a.slick-slide {
         top: 65px !important;
     }
     .layout-homes .btn-box {
-        width: auto;
+        width: auto !important;
+    }
+
+    #main-content.layout-homes .coming-soon{
+        height: auto;
     }
 
     .site-main-user .content {
@@ -2264,11 +2316,15 @@ a.slick-slide {
     .menu-user-mobile {
         top: 120px;
     }
+}
+
+@media (max-width: 1650px){
     .container-fluid{
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        padding-left: 26px !important;
+        padding-right: 26px !important;
     }
 }
+
 
 .navbar-right ul.d-flex li button {
     border: none;

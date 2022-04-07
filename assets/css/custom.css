@@ -46,7 +46,7 @@ body {
     background-color: unset !important;
     z-index: 99;
     position: absolute;
-    top: 40%;
+    top: 43%;
     opacity: 1;
 }
 
@@ -84,7 +84,7 @@ body {
     background-color: unset !important;
     z-index: 99;
     position: absolute;
-    top: 45%;
+    top: 42%;
     opacity: 1;
     right: 0;
 }
@@ -94,7 +94,7 @@ body {
     background-color: unset !important;
     z-index: 99;
     position: absolute;
-    bottom: 45%;
+    bottom: 49%;
     opacity: 1;
 }
 
@@ -133,6 +133,10 @@ body {
     margin-bottom: 105px;
 }
 
+.layout-homes .funktioniert .slick-slider-detect .slick-slide.bg-pink img{
+    width: auto !important;
+}
+
 .layout-homes .slick-slider-detect .slick-slide .box-action h2 {
     font-size: 24px;
     line-height: 29px;
@@ -141,6 +145,7 @@ body {
 
 .layout-homes .slick-slider-detect .slick-slide .box-action p {
     margin-bottom: 10px;
+    font-family: 'Raleway-semibold' !important;
 }
 
 .layout-homes .slick-slider-detect .slick-slide .box-action a {
@@ -160,6 +165,7 @@ body {
 .layout-homes .coaches .slick-slider-detect .slick-list {
     height: 100%;
     /* z-index: 9; */
+    top:11px;
 }
 
 .layout-homes .slick-slider-detect .slick-list .slick-track {
@@ -183,17 +189,18 @@ body {
 }
 
 .layout-homes .slick-slider-detect .slick-slide span {
-    margin-top: 45px;
+    margin-top: 41px;
     font-size: 20px;
     font-family: 'Raleway-semibold';
-    line-height: 24px;
-    margin-bottom: 30px;
+    line-height: 25px;
+    margin-bottom: 44px;
 }
 
 .layout-homes .slick-slider-detect .slick-slide h2 {
     font-size: 30px;
     font-family: 'Raleway-semibold';
     line-height: 25px;
+    margin-bottom: 30px;
 }
 
 .layout-homes .slick-slider-detect .slick-slide p {
@@ -216,7 +223,7 @@ body {
 
 #main-content .content-gemeinsam-box .text-box h1 {
     font-family: 'Raleway-semibold';
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 }
 
 #main-content .content-gemeinsam-box .login-button {
@@ -231,9 +238,9 @@ body {
     text-transform: uppercase;
 }
 
-#main-content .content-gemeinsam-box .text-box p {
+/* #main-content .content-gemeinsam-box .text-box p {
     margin-bottom: 45px;
-}
+} */
 
 .site-main-login .content-gemeinsam-box .text-box {
     padding: 91px 94px 114px 110px !important;
@@ -283,10 +290,10 @@ body {
 
 .layout-homes .content-gemeinsam-box .text-box {
     width: 888px;
-    padding: 97px  101px 114px 110px;
+    padding: 97px  99px  114px 110px;
     background-color: #fff;
     float: right;
-    margin-right: 61px;
+    margin-right: 62px;
 }
 
 
