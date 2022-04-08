@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Handbuch</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -30,18 +32,17 @@
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling-->
-                                <div id="mutschmiede-nav" class="navbar-right">
-
-                    <ul class="menu-desktop nav navbar-nav d-none d-lg-flex">
+                <div id="mutschmiede-nav" class="navbar-right">
+                    <ul class="nav navbar-nav d-none d-lg-flex">
                         <li>
                             <a href="./">Problemfelder</a>
                         </li>
                         <li><a href="./expertinnen.html">Exptertinnen</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" id="country-switcher-current">
-                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" />
-                                <span>AT</span>
-                            </a>
+                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false" id="country-switcher-current">
+                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04"
+                                    style="margin-right: 5px;" />AT</a>
                             <ul class="dropdown-menu-lang" id="country-switcher">
                                 <li id="country-de">
                                     <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31"
@@ -61,11 +62,37 @@
                             </ul>
                         </li>
                         <li class="user-login">
-                            <a href="./login.html"><img src="./assets/images/user_login.png" /><span>Sabine Strauss</span></a>
+                            <a href="#" style="text-decoration: underline;"><img src="./assets/images/user_login.png"
+                                    style="margin-right: 5px;" />Sabine Strauss</a>
                         </li>
+                        <div class="menu-user">
+                            <ul>
+                                <li>
+                                    <a href="./face2face.html"><img src="./assets/images/Group 167.png">Face-2-Face
+                                        Coaching</a>
+                                </li>
+                                <li>
+                                    <a href="./kundennummer.html"><img src="./assets/images/Group 169.png">Kundennummern
+                                        Generieren</a>
+                                </li>
+                                <li>
+                                    <a href="./guthabenüberwachung–rufnummern.html"><img
+                                            src="./assets/images/Group 171.png">Guthabenüberwachung</a>
+                                </li>
+                                <li>
+                                    <a href="./coaches.html"><img src="./assets/images/Group 173.png">Coaches
+                                        Freischalten</a>
+                                </li>
+                                <li>
+                                    <a href="./handbuch.html"><img src="./assets/images/Group 175.png">Handbuch</a>
+                                </li>
+                                <li>
+                                    <a href="./login.html"><img src="./assets/images/Group 177.png">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
                     </ul>
-                    <!-- dropmenu mobile -->
-                    <ul class="menu-mobile nav navbar-nav d-flex d-lg-none">
+                    <ul class="nav navbar-nav d-flex d-lg-none">
                         <li class="dropdown">
                             <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true"
                                 aria-expanded="false" id="country-switcher-current">
@@ -125,7 +152,7 @@
     </header>
 
     <main class="site-main-gutscheincodes form-coach" id="main-content">
-        <div class="title" data-aos="fade-up">
+        <div class="title">
             <div class="text">
                 <h1>Guthabenüberwachung</h1>
             </div>
@@ -133,14 +160,14 @@
         <div class="content p-0">
             <div class="container p-0">
                 <div class="form">
-                    <div class="tab" data-aos="fade-up">
-                        <a href="./guthabenüberwachung–rufnummern.html">Rufnummern</a>
-                        <a class="actived" href="./guthabenüberwachung–gutscheincodes.html">Gutscheincodes</a>
+                    <div class="tab">
+                        <a class="actived" href="./guthabenüberwachung–rufnummern.html">Rufnummern</a>
+                        <a href="./guthabenüberwachung–gutscheincodes.html">Gutscheincodes</a>
                     </div>
-                    <div class="subtitle" data-aos="fade-up">
-                        <h1>Gutscheincodes für die automatische Verständigung</h1>
+                    <div class="subtitle">
+                        <h1>Rufnummern für die automatische Verständigung</h1>
                     </div>
-                    <div class="group-form" data-aos="fade-up">
+                    <div class="group-form">
                         <div class="group-input">
                             <label>Gutscheincode zur Überwachung</label>
                             <input type="text" name="" class="" placeholder="z.B.: 0043123456789">
@@ -154,7 +181,7 @@
                             <input type="text" name="" class="" placeholder="z.B.: Name, Kundennummer, …">
                         </div>
                     </div>
-                    <div class="group-button" data-aos="fade-up">
+                    <div class="group-button">
                         <a href="#">Eintragen</a>
                         <a href="#">synchronisieren</a>
                     </div>
@@ -172,16 +199,16 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="table-responsive scrollbar-inner">
+                        <div class="table-responsive scrollbar-inner d-none d-sm-block">
                             <table class="table table-striped table-page-gutschen">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Kunde</th>
-                                        <th scope="col">Rufnummer</th>
-                                        <th scope="col">Gutdaben</th>
-                                        <th scope="col">Eingetragen am / um</th>
-                                        <th scope="col">Schwellwert</th>
-                                        <th scope="col"></th>
+                                        <th scope="col" width="20.2%">Kunde</th>
+                                        <th scope="col" width="20.2%">Rufnummer</th>
+                                        <th scope="col" width="10.1">Gutdaben</th>
+                                        <th scope="col" width="20.2%">Eingetragen am / um</th>
+                                        <th scope="col" width="19">Schwellwert</th>
+                                        <th scope="col" width="10.3%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -193,7 +220,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -203,7 +230,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -213,7 +240,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -223,7 +250,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -233,7 +260,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -243,7 +270,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -253,7 +280,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -263,7 +290,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -273,7 +300,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -283,7 +310,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -293,7 +320,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -303,7 +330,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -313,7 +340,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -323,7 +350,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -333,7 +360,7 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">Starkl Tulln</td>
@@ -343,10 +370,111 @@
                                             <p><span>23.10.2016</span><span>09:46 97</span></p>
                                         </td>
                                         <td>EUR</td>
-                                        <td>Löschen</td>
+                                        <td><u>Löschen</u></td>
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                        <div class="table-responsive table-responsive-mobile scrollbar-inner d-block d-sm-none">
+                            <div class="top-content-table">
+                                <p>Coach</p>
+                                <p>Kundennr.</p>
+                                <p>Datum</p>
+                                <p>Uhrzeit</p>
+                                <p>Stunden</p>
+                            </div>
+                            <div class="table table-striped table-page-gutschen">
+                                <div class="content-table bg-pink-0">
+                                    <div class="content-table-item">
+                                        <p>Fritz Tanner</p>
+                                        <p>123</p>
+                                        <p>456</p>
+                                        <p>789</p>
+                                        <p>1</p>
+                                        <p><u>Löschen</u></p>
+                                    </div>
+                                </div>
+                                <div class="content-table">
+                                    <div class="content-table-item">
+                                        <p>Fritz Tanner</p>
+                                        <p>123</p>
+                                        <p>456</p>
+                                        <p>789</p>
+                                        <p>1</p>
+                                        <p><u>Löschen</u></p>
+                                    </div>
+                                </div>
+                                <div class="content-table bg-pink-0">
+                                    <div class="content-table-item">
+                                        <p>Fritz Tanner</p>
+                                        <p>123</p>
+                                        <p>456</p>
+                                        <p>789</p>
+                                        <p>1</p>
+                                        <p><u>Löschen</u></p>
+                                    </div>
+                                </div>
+                                <div class="content-table">
+                                    <div class="content-table-item">
+                                        <p>Fritz Tanner</p>
+                                        <p>123</p>
+                                        <p>456</p>
+                                        <p>789</p>
+                                        <p>1</p>
+                                        <p><u>Löschen</u></p>
+                                    </div>
+                                </div>
+                                <div class="content-table bg-pink-0">
+                                    <div class="content-table-item">
+                                        <p>Fritz Tanner</p>
+                                        <p>123</p>
+                                        <p>456</p>
+                                        <p>789</p>
+                                        <p>1</p>
+                                        <p><u>Löschen</u></p>
+                                    </div>
+                                </div>
+                                <div class="content-table">
+                                    <div class="content-table-item">
+                                        <p>Fritz Tanner</p>
+                                        <p>123</p>
+                                        <p>456</p>
+                                        <p>789</p>
+                                        <p>1</p>
+                                        <p><u>Löschen</u></p>
+                                    </div>
+                                </div>
+                                <div class="content-table bg-pink-0">
+                                    <div class="content-table-item">
+                                        <p>Fritz Tanner</p>
+                                        <p>123</p>
+                                        <p>456</p>
+                                        <p>789</p>
+                                        <p>1</p>
+                                        <p><u>Löschen</u></p>
+                                    </div>
+                                </div>
+                                <div class="content-table">
+                                    <div class="content-table-item">
+                                        <p>Fritz Tanner</p>
+                                        <p>123</p>
+                                        <p>456</p>
+                                        <p>789</p>
+                                        <p>1</p>
+                                        <p><u>Löschen</u></p>
+                                    </div>
+                                </div>
+                                <div class="content-table bg-pink-0">
+                                    <div class="content-table-item">
+                                        <p>Fritz Tanner</p>
+                                        <p>123</p>
+                                        <p>456</p>
+                                        <p>789</p>
+                                        <p>1</p>
+                                        <p><u>Löschen</u></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -372,7 +500,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/editor.js"></script>
@@ -384,11 +513,11 @@
         AOS.init({
             duration: 1200,
         })
-        jQuery(document).ready(function() {
+        jQuery(document).ready(function () {
             jQuery('.scrollbar-inner').scrollbar();
             jQuery('.scrollbar-inner .scroll-bar').append('<div class="scroll-bar-body"></div>');
 
-            $('.btn-collapse').click(function(e) {
+            $('.btn-collapse').click(function (e) {
                 $(this).toggleClass("show-icon-close");
                 $('.menu-user-mobile').slideToggle('1000');
                 e.preventDefault();
@@ -396,12 +525,12 @@
                 icon.toggleClass("fa-times");
             });
 
-            $('.login-mobile').click(function(e) {
+            $('.login-mobile').click(function (e) {
                 $('.menu-login-mobile').slideToggle();
                 e.preventDefault();
             });
 
-            $('.user-login').click(function(e) {
+            $('.user-login').click(function (e) {
                 $('.menu-user').slideToggle();
                 e.preventDefault();
             });
@@ -414,26 +543,9 @@
             "link": false,
 
         });
-                    $('.dropdown-lang').click(function (e) {
-                $('.dropdown-menu-lang').slideToggle();
-                $(this).toggleClass("drop-lang-active");
-                e.preventDefault();
-            });
 
-            $('.btn-collapse').click(function(e) {
-                $(this).toggleClass("show-icon-close");
-                $('.menu-user-mobile').slideToggle('1000');
-                e.preventDefault();
-                icon = $(this).find("i");
-                icon.toggleClass("fa-times");
-            });
-
-            $('.login-mobile').click(function(e) {
-                $('.menu-login-mobile').slideToggle();
-                e.preventDefault();
-            });
         var viewport = $('meta[name="viewport"]');
-        window.onresize = function() {
+        window.onresize = function () {
             if (window.screen.width <= 1024 && window.screen.width >= 576) {
                 viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
             } else {
@@ -441,7 +553,7 @@
             }
         }
 
-        window.addEventListener("message", function(event) {
+        window.addEventListener("message", function (event) {
             console.log(event);
         }, false);
     </script>

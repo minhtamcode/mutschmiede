@@ -48,15 +48,9 @@ body {
     line-height: 24px;
     letter-spacing: 0.2px;
 }
-<<<<<<< HEAD
 
 #mutschmiede-nav .drop-lang-active:after {
     content: "123" !important;
-=======
-#mutschmiede-nav .drop-lang-active:after{
-    content: "\f106" !important;
-    font-family: "Font Awesome 5 Pro";
->>>>>>> f8ac99cecdb06758dc994a6ad66b885576e30830
 }
 
 .btn-collapse .icon-menu {
