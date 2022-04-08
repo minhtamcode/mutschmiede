@@ -43,7 +43,8 @@ body {
     letter-spacing: 0.2px;
 }
 #mutschmiede-nav .drop-lang-active:after{
-    content: "123" !important;
+    content: "\f106" !important;
+    font-family: "Font Awesome 5 Pro";
 }
 .btn-collapse .icon-menu {
     display: block;

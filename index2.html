@@ -32,51 +32,63 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling-->
                 <div id="mutschmiede-nav" class="navbar-right">
-                    <ul class="nav navbar-nav d-none d-lg-flex">
+                    <ul class="menu-desktop nav navbar-nav d-none d-lg-flex">
                         <li>
                             <a href="./">Problemfelder</a>
                         </li>
                         <li><a href="./expertinnen.html">Exptertinnen</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
-                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" style="margin-right: 5px;" />AT</a>
+                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" id="country-switcher-current">
+                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" />
+                                <span>AT</span>
+                            </a>
                             <ul class="dropdown-menu-lang" id="country-switcher">
                                 <li id="country-de">
-                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31" height="17.04" /> DE
+                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31"
+                                            height="17.04" /> DE
                                     </a>
                                 </li>
                                 <li id="country-eng">
-                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31" height="17.04" /> ENG
+                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31"
+                                            height="17.04" /> ENG
                                     </a>
                                 </li>
                                 <li id="country-esp">
-                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31" height="17.04" /> ESP
+                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31"
+                                            height="17.04" /> ESP
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="user-login">
-                            <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" />login</a>
+                            <a href="./login.html"><img src="./assets/images/user_login.png" /><span>login</span></a>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav d-flex d-lg-none">
+                    <!-- dropmenu mobile -->
+                    <ul class="menu-mobile nav navbar-nav d-flex d-lg-none">
                         <li class="dropdown">
-                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
-                                <img src="./assets/images/languages/AUSTRIA.png" width="26.01" height="15.66" style="margin-right: 5px;" /></a>
+                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false" id="country-switcher-current">
+                                <img src="./assets/images/languages/AUSTRIA.png" width="26.01" height="15.66"
+                                    style="margin-right: 5px;" /></a>
                             <ul class="dropdown-menu-lang" id="country-switcher">
                                 <li id="country-de">
-                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="26.01" height="15.66" /></a>
+                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="26.01"
+                                            height="15.66" /></a>
                                 </li>
                                 <li id="country-eng">
-                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="26.01" height="15.66" /></a>
+                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="26.01"
+                                            height="15.66" /></a>
                                 </li>
                                 <li id="country-esp">
-                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="26.01" height="15.66" /></a>
+                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="26.01"
+                                            height="15.66" /></a>
                                 </li>
                             </ul>
                         </li>
                         <li class="user-login">
-                            <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" /></a>
+                            <a href="./login.html"><img src="./assets/images/user_login.png"
+                                    style="margin-right: 5px;" /></a>
                         </li>
                         <li>
                             <button class="btn-collapse" type="button">
@@ -626,8 +638,9 @@
             SlickSlideHomeMobile("slick-mobile");
             SlickSlideHome("slick-slider-detect");
             // js slide slick
-            $('.dropdown-lang').click(function(e) {
+                        $('.dropdown-lang').click(function (e) {
                 $('.dropdown-menu-lang').slideToggle();
+                $(this).toggleClass("drop-lang-active");
                 e.preventDefault();
             });
 

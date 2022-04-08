@@ -230,7 +230,7 @@ header .navbar .navbar-header{
     max-width: 1640px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 !important;
+    padding: 0;
 }
 
 .container {
@@ -905,7 +905,7 @@ header .navbar .navbar-header{
 
 
 #main-content.layout-homes .coming-soon .content {
-    max-width: 1087px;
+    max-width: 1088px;
 }
 
 #main-content.layout-homes .coming-soon .text {
@@ -915,7 +915,7 @@ header .navbar .navbar-header{
 
 #main-content.layout-homes .coming-soon .text h1 {
     font-size: 40px !important;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
     font-family: "Raleway-semibold";
     letter-spacing: 1px;
 }
@@ -1498,7 +1498,7 @@ footer {
 }
 
 .site-main-expertinnen .box-action .content {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 
 .site-main-expertinnen select{
@@ -1635,7 +1635,7 @@ footer {
 
 .site-main-expertinnen .row .box,
 .site-main-expertinnen .row .box-action {
-    margin-bottom: 275px;
+    margin-bottom: 291px;
 }
 
 .site-main-expertinnen .row .box-action .contact{
@@ -1649,13 +1649,22 @@ footer {
     width: 43px;
 }
 
-.site-main-expertinnen .row .name {
+.site-main-expertinnen .row .box.onl .name {
     position: absolute;
     bottom: -110px;
 }
 
-.site-main-expertinnen .row .lang-coach {
-    bottom: -210px;
+.site-main-expertinnen .row .box .name {
+    position: absolute;
+    bottom: -97px;
+}
+
+.site-main-expertinnen .row .box.onl .lang-coach {
+    bottom: -203px;
+}
+
+.site-main-expertinnen .row .box .lang-coach {
+    bottom: -191px;
 }
 
 .site-main-expertinnen .tabControl .nav-pills .nav-link.active {
@@ -1682,6 +1691,7 @@ footer {
     font-weight: 600;
     margin-bottom: 50px;
     font-family: "Raleway-semibold";
+    line-height: 47px;
 }
 
 .site-main-expertinnen .funktioniert-die .col {
@@ -1698,6 +1708,7 @@ footer {
     font-weight: 600;
     margin-bottom: 32px;
     font-family: "Raleway-semibold";
+    line-height: 30px;
 }
 
 .site-main-expertinnen .funktioniert-die .col p {
@@ -1751,6 +1762,15 @@ footer {
     justify-content: space-between;
 }
 
+.site-main-expertinnen .row .box-action .lang-coach {
+    bottom: -204px;
+}
+
+.site-main-expertinnen .row .box-action .name {
+    position: absolute;
+    bottom: -118px;
+}
+
 .layout-homes.homes2 .section-coming-soon {
     margin-top: 500px;
 }
@@ -1799,7 +1819,7 @@ a.slick-slide {
     border: none;
     flex-direction: column !important;
     align-items: center !important;
-    margin-bottom: 208px;
+    margin-bottom: 178px;
 }
 
 .modal.coach .modal-header {
@@ -1812,9 +1832,18 @@ a.slick-slide {
 }
 
 .modal .modal-content {
-    padding: 70px 200px 104px 200px;
+    padding: 52px 328px 104px 322px;
     background-color: #EFEFEF !important;
     border-radius: 51rem !important;
+}
+
+.modal .modal-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.modal.show{
+    padding: 0 !important;
 }
 
 .modal .modal-content .content {
@@ -1835,6 +1864,8 @@ a.slick-slide {
     margin-bottom: 60px;
     margin-top: 50px;
     font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 1px;
 }
 
 .modal.coach .modal-content .content h1 {
@@ -2117,6 +2148,11 @@ a.slick-slide {
         flex-direction: column;
     }
 
+    .site-main-expertinnen .title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
     .site-main-expertinnen .row .box, .site-main-expertinnen .row .box-action {
         width: 319px !important;
         height: 319px !important;
@@ -2178,11 +2214,27 @@ a.slick-slide {
     }
 
     .site-main-expertinnen .row .lang-coach {
-        bottom: -155px;
+        bottom: -122px !important;
     }
     
     .site-main-expertinnen .row .box, .site-main-expertinnen .row .box-action {
-        margin-bottom: 180px;
+        margin-bottom: 153px;
+    }
+
+    .site-main-expertinnen .row .box .name {
+        bottom: -87px;
+    }
+
+    .site-main-expertinnen .row .box.onl .name {
+        bottom: -97px;
+    }
+
+    .site-main-expertinnen .row .box-action .name {
+        bottom: -102px;
+    }
+
+    .site-main-expertinnen .row .box-action .lang-coach {
+        bottom: -130px !important;
     }
 
     .site-footer .main-footer {
@@ -2286,7 +2338,7 @@ a.slick-slide {
     }
 
     .box.onl .lang-coach, .box-action.onl .lang-coach {
-        bottom: -55px !important;
+        bottom: -132px !important;
     }
 
     .lang-coach img {
@@ -2309,6 +2361,10 @@ a.slick-slide {
 
     .site-footer .main-footer .contact ul a:nth-child(1){
         margin-bottom: 5px;
+    }
+
+    .site-main-expertinnen .row .name {
+        bottom: -140px;
     }
 
 

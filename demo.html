@@ -349,8 +349,9 @@
             SlickSlideHome("slick-slider-detect");
             // js slide slick
 
-            $('.dropdown-lang').click(function(e) {
+                        $('.dropdown-lang').click(function (e) {
                 $('.dropdown-menu-lang').slideToggle();
+                $(this).toggleClass("drop-lang-active");
                 e.preventDefault();
             });
 
