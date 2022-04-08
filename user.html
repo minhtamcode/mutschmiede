@@ -247,6 +247,7 @@
         });
 
         $('.btn-collapse').click(function(e) {
+                $(this).toggleClass("show-icon-close");
                 $('.menu-user-mobile').slideToggle('1000');
                 e.preventDefault();
                 icon = $(this).find("i");
