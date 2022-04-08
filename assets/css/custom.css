@@ -12,6 +12,39 @@ body {
 }
 
 /* css menu */
+#mutschmiede-nav .menu-desktop .user-login{
+    margin-left: 31px;
+}
+#mutschmiede-nav .dropdown .dropdown-lang,
+#mutschmiede-nav .menu-desktop .user-login a{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+#mutschmiede-nav .menu-desktop .user-login img{
+    margin-right: 9px;
+}
+#mutschmiede-nav .dropdown-lang::after{
+    margin-left: 4px;
+}
+#mutschmiede-nav .dropdown .dropdown-lang img{
+    margin-right: 7.7px;
+}
+#mutschmiede-nav .menu-desktop li{
+    margin-left: 39px;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+}
+#mutschmiede-nav .menu-desktop li a{
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+#mutschmiede-nav .drop-lang-active:after{
+    content: "123" !important;
+}
 .btn-collapse .icon-menu {
     display: block;
     width: 19px !important;

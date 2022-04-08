@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/editor.css" />
@@ -20,7 +22,7 @@
 
 </head>
 
-<body>
+<body style="overflow: hidden;">
     <header class="site-header">
         <div class="container-fluid">
             <nav class="navbar">
@@ -32,51 +34,64 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling-->
                 <div id="mutschmiede-nav" class="navbar-right">
-                    <ul class="nav navbar-nav d-none d-lg-flex">
+
+                    <ul class="menu-desktop nav navbar-nav d-none d-lg-flex">
                         <li>
                             <a href="./">Problemfelder</a>
                         </li>
                         <li><a href="./expertinnen.html">Exptertinnen</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
-                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" style="margin-right: 5px;" />AT</a>
+                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" id="country-switcher-current">
+                                <img src="./assets/images/languages/AUSTRIA.png" width="28.31" height="17.04" />
+                                <span>AT</span>
+                            </a>
                             <ul class="dropdown-menu-lang" id="country-switcher">
                                 <li id="country-de">
-                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31" height="17.04" /> DE
+                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="28.31"
+                                            height="17.04" /> DE
                                     </a>
                                 </li>
                                 <li id="country-eng">
-                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31" height="17.04" /> ENG
+                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="28.31"
+                                            height="17.04" /> ENG
                                     </a>
                                 </li>
                                 <li id="country-esp">
-                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31" height="17.04" /> ESP
+                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="28.31"
+                                            height="17.04" /> ESP
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="user-login">
-                            <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" />login</a>
+                            <a href="./login.html"><img src="./assets/images/user_login.png" /><span>login</span></a>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav d-flex d-lg-none">
+                    <!-- dropmenu mobile -->
+                    <ul class="menu-mobile nav navbar-nav d-flex d-lg-none">
                         <li class="dropdown">
-                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="country-switcher-current">
-                                <img src="./assets/images/languages/AUSTRIA.png" width="26.01" height="15.66" style="margin-right: 5px;" /></a>
+                            <a class="dropdown-lang" href="/#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false" id="country-switcher-current">
+                                <img src="./assets/images/languages/AUSTRIA.png" width="26.01" height="15.66"
+                                    style="margin-right: 5px;" /></a>
                             <ul class="dropdown-menu-lang" id="country-switcher">
                                 <li id="country-de">
-                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="26.01" height="15.66" /></a>
+                                    <a href="?language=de"><img src="./assets/images/languages/DE.png" width="26.01"
+                                            height="15.66" /></a>
                                 </li>
                                 <li id="country-eng">
-                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="26.01" height="15.66" /></a>
+                                    <a href="?language=en"><img src="./assets/images/languages/ENG.png" width="26.01"
+                                            height="15.66" /></a>
                                 </li>
                                 <li id="country-esp">
-                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="26.01" height="15.66" /></a>
+                                    <a href="?language=es"><img src="./assets/images/languages/SPAIN.png" width="26.01"
+                                            height="15.66" /></a>
                                 </li>
                             </ul>
                         </li>
                         <li class="user-login">
-                            <a href="./login.html"><img src="./assets/images/user_login.png" style="margin-right: 5px;" /></a>
+                            <a href="./login.html"><img src="./assets/images/user_login.png"
+                                    style="margin-right: 5px;" /></a>
                         </li>
                         <li>
                             <button class="btn-collapse" type="button">
@@ -88,92 +103,97 @@
                 </div>
         </div>
         <div class="menu-user-mobile">
-          <ul>
-              <li>
-                  <a href="#">Problemfelder</a>
-              </li>
-              <li>
-                  <a href="#">Expertinnen</a>
-              </li>
-              <li class="login-mobile">
-                <span href="#"><img src="./assets/images/Group 72.png" style="margin-right: 5px;" />Login</span>
-                <div class="menu-login-mobile">
-                     <ul>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 167.png"><br>Face-2-Face Coaching</a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 169.png"><br>Kundennummern Generieren</a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 171.png"><br>Guthabenüberwachung</a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 173.png"><br>Coaches Freischalten</a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="./assets/images/Group 175.png"><br>Handbuch</a>
-                        </li>
-                      </ul>
-                </div>
-            </li>
+            <ul>
+                <li>
+                    <a href="#">Problemfelder</a>
+                </li>
+                <li>
+                    <a href="#">Expertinnen</a>
+                </li>
+                <li class="login-mobile">
+                    <span href="#"><img src="./assets/images/Group 72.png" style="margin-right: 5px;" />Login</span>
+                    <div class="menu-login-mobile">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./assets/images/Group 167.png"><br>Face-2-Face Coaching</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/images/Group 169.png"><br>Kundennummern Generieren</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/images/Group 171.png"><br>Guthabenüberwachung</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/images/Group 173.png"><br>Coaches Freischalten</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/images/Group 175.png"><br>Handbuch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
-              <li>
-                  <a href="#">Linkedin</a>
-              </li>
-              <li>
-                  <a href="#">Facebook</a>
-              </li>
-          </ul>
-      </div>
+                <li>
+                    <a href="#">Linkedin</a>
+                </li>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+            </ul>
+        </div>
         </nav>
     </header>
     <main class="site-main layout-homes" id="main-content">
         <!-- Gemeinsam zur besten Lösung -->
         <section class="lh-top position-relative w-100">
-          <img class="position-absolute top-0 left-0" src="./assets/images/shridhar-gupta-dZxQn4VEv2M-unsplash.png" alt="">
+            <img class="position-absolute top-0 left-0" src="./assets/images/shridhar-gupta-dZxQn4VEv2M-unsplash.png"
+                alt="">
 
-          <div class="lht-vertical w-100 bg-white position-absolute end-0 right-0">
-              <div class="container-fluid h-100">
-                  <div class="lht-vertical-text">
-                      <a href="">facebook</a>
-                      <a href="">Linkedin</a>
-                  </div>
-              </div>
-          </div>
-          <div class="lht-text-box position-absolute w-100">
-            <div class="content-gemeinsam-box container-fluid p-0 ">
-                <div class="text-box" data-aos="fade-up">
-                    <h1>Gemeinsam zur besten Lösung</h1>
-                    <p class="d-none d-lg-block">Die mutschmiede ist ein Netzwerk international t&auml;tiger ExpertInnen, die Beratung in&nbsp; den Bereichen privater und beruflicher Belastungen anbieten. Ziel ist es, gemeinsam&nbsp;
-                        </> mit den KundInnen L&ouml;sungen zu finden und dadurch die Lebensqualit&auml;t zu steigern.&nbsp; Telefonische Beratungsleistungen der Coaches sind vollkommen anonym und k&ouml;nnen&nbsp; bei Bedarf in den Praxen der ExpertInnen
-                        fortgesetzt werden.</p>
-                      <p class="d-block d-lg-none">Die mutschmiede ist ein 
-                          Netzwerk international tätiger 
-                          ExpertInnen, die Beratung in 
-                          den Bereichen privater und 
-                          beruflicher Belastungen an-
-                          bieten. Ziel ist es, gemeinsam 
-                          mit den KundInnen Lösungen 
-                          zu finden und dadurch die 
-                          Lebensqualität zu steigern. 
-                          Telefonische Beratungs-
-                          leistungen der Coaches sind 
-                          vollkommen anonym und 
-                          können bei Bedarf in den 
-                          Praxen der ExpertInnen 
-                          fortgesetzt werden.</p>
-                    <div class="btn-box">
-                        <div class="btn">
-                            <div class="btn-problem">Problem erkennen</div>
-                        </div>
-                        <div class="btn">
-                            <div class="btn-experten">Experten finden</div>
+            <div class="lht-vertical w-100 bg-white position-absolute end-0 right-0">
+                <div class="container-fluid h-100">
+                    <div class="lht-vertical-text">
+                        <a href="">facebook</a>
+                        <a href="">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lht-text-box position-absolute w-100">
+                <div class="content-gemeinsam-box container-fluid p-0 ">
+                    <div class="text-box" data-aos="fade-up">
+                        <h1>Gemeinsam zur besten Lösung</h1>
+                        <p class="d-none d-lg-block">Die mutschmiede ist ein Netzwerk international t&auml;tiger
+                            ExpertInnen, die Beratung in&nbsp; den Bereichen privater und beruflicher Belastungen
+                            anbieten. Ziel ist es, gemeinsam&nbsp;
+                            </> mit den KundInnen L&ouml;sungen zu finden und dadurch die Lebensqualit&auml;t zu
+                            steigern.&nbsp; Telefonische Beratungsleistungen der Coaches sind vollkommen anonym und
+                            k&ouml;nnen&nbsp; bei Bedarf in den Praxen der ExpertInnen
+                            fortgesetzt werden.</p>
+                        <p class="d-block d-lg-none">Die mutschmiede ist ein
+                            Netzwerk international tätiger
+                            ExpertInnen, die Beratung in
+                            den Bereichen privater und
+                            beruflicher Belastungen an-
+                            bieten. Ziel ist es, gemeinsam
+                            mit den KundInnen Lösungen
+                            zu finden und dadurch die
+                            Lebensqualität zu steigern.
+                            Telefonische Beratungs-
+                            leistungen der Coaches sind
+                            vollkommen anonym und
+                            können bei Bedarf in den
+                            Praxen der ExpertInnen
+                            fortgesetzt werden.</p>
+                        <div class="btn-box">
+                            <div class="btn">
+                                <div class="btn-problem">Problem erkennen</div>
+                            </div>
+                            <div class="btn">
+                                <div class="btn-experten">Experten finden</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
         </section>
         <!-- Gemeinsam zur besten Lösung -->
 
@@ -184,8 +204,12 @@
                 <div class="text" data-aos="fade-up">
                     <h1>Wie die mutschmiede funktioniert</h1>
                     <p>
-                        Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme und Ängste zu konkretisieren. Basierend auf Ihren Antworten,
-                        können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten. Wir freuen uns über Ihre Anfragen und stehen
+                        Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem
+                        unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme
+                        und Ängste zu konkretisieren. Basierend auf Ihren Antworten,
+                        können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die
+                        verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten.
+                        Wir freuen uns über Ihre Anfragen und stehen
                         Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung: +43 664 227 58 17
                     </p>
                     <div class="btn-box">
@@ -196,47 +220,52 @@
                 </div>
             </div>
             <div class="slide-1">
-              <div class="title-1">
-                <h1>1</h1>
-            </div>
-            <div class="subtitle-1">
-                <p>Problem<br>erkennen</p>
-            </div>
-            <div class="container-fluid">
-                <div class="slick-slider-detect d-none d-sm-block">
-                    <div class="slick-slider__slide bg-silver col-4 p-0">
-                        <span>Trennung</span>
-                        <img src="./assets/images/Group 25.png" width="">
-                        <p>Inzidenzzahlen, Fallzahlen Krankheitsmerkmale während oder nach einer Covid-19- Erkrankung werden… <a href="#problemModal" data-toggle="modal">mehr</a></p>
-                    </div>
-                    <div class="slick-slider__slide bg-silver col-4 p-0">
-                        <span>Trennung</span>
-                        <img src="./assets/images/Group 25.png" width="">
-                        <p>Inzidenzzahlen, Fallzahlen Krankheitsmerkmale während oder nach einer Covid-19- Erkrankung werden… <a href="#problemModal" data-toggle="modal">mehr</a></p>
-                    </div>
-                    <div class="slick-slider__slide bg-pink col-4 p-0">
-                        <img src="./assets/images/Group 29.png">
-                        <h2>auswählen</h2>
-                    </div>
-                    <div class="slick-slider__slide bg-silver col-4 p-0">
-                        <span>Trennung</span>
-                        <img src="./assets/images/Group 25.png" width="">
-                        <p>Inzidenzzahlen, Fallzahlen Krankheitsmerkmale während oder nach einer Covid-19- Erkrankung werden… <a href="#problemModal" data-toggle="modal">mehr</a></p>
-                    </div>
-                    <div class="slick-slider__slide bg-silver col-4 p-0">
-                        <span>Trennung</span>
-                        <img src="./assets/images/Group 25.png" width="">
-                        <p>Inzidenzzahlen, Fallzahlen Krankheitsmerkmale während oder nach einer Covid-19- Erkrankung werden… <a href="#problemModal" data-toggle="modal">mehr</a></p>
-                    </div>
-                    <div class="slick-slider__slide bg-silver col-4 p-0">
-                        <span>Trennung</span>
-                        <img src="./assets/images/Group 25.png" width="">
-                        <p>Inzidenzzahlen, Fallzahlen er nach einer Covid-19- Erkrankung werden…
-                            <p>Inzidenzzahlen, Fallzahlen Krank Covid-19- Erkrankung werden… <a href="#problemModal" data-toggle="modal">mehr</a></p>
-                        </p>
+                <div class="title-1">
+                    <h1>1</h1>
+                </div>
+                <div class="subtitle-1">
+                    <p>Problem<br>erkennen</p>
+                </div>
+                <div class="container-fluid">
+                    <div class="slick-slider-detect d-none d-sm-block">
+                        <div class="slick-slider__slide bg-silver col-4 p-0">
+                            <span>Trennung</span>
+                            <img src="./assets/images/Group 25.png" width="">
+                            <p>Inzidenzzahlen, Fallzahlen Krankheitsmerkmale während oder nach einer Covid-19-
+                                Erkrankung werden… <a href="#problemModal" data-toggle="modal">mehr</a></p>
+                        </div>
+                        <div class="slick-slider__slide bg-silver col-4 p-0">
+                            <span>Trennung</span>
+                            <img src="./assets/images/Group 25.png" width="">
+                            <p>Inzidenzzahlen, Fallzahlen Krankheitsmerkmale während oder nach einer Covid-19-
+                                Erkrankung werden… <a href="#problemModal" data-toggle="modal">mehr</a></p>
+                        </div>
+                        <div class="slick-slider__slide bg-pink col-4 p-0">
+                            <img src="./assets/images/Group 29.png">
+                            <h2>auswählen</h2>
+                        </div>
+                        <div class="slick-slider__slide bg-silver col-4 p-0">
+                            <span>Trennung</span>
+                            <img src="./assets/images/Group 25.png" width="">
+                            <p>Inzidenzzahlen, Fallzahlen Krankheitsmerkmale während oder nach einer Covid-19-
+                                Erkrankung werden… <a href="#problemModal" data-toggle="modal">mehr</a></p>
+                        </div>
+                        <div class="slick-slider__slide bg-silver col-4 p-0">
+                            <span>Trennung</span>
+                            <img src="./assets/images/Group 25.png" width="">
+                            <p>Inzidenzzahlen, Fallzahlen Krankheitsmerkmale während oder nach einer Covid-19-
+                                Erkrankung werden… <a href="#problemModal" data-toggle="modal">mehr</a></p>
+                        </div>
+                        <div class="slick-slider__slide bg-silver col-4 p-0">
+                            <span>Trennung</span>
+                            <img src="./assets/images/Group 25.png" width="">
+                            <p>Inzidenzzahlen, Fallzahlen er nach einer Covid-19- Erkrankung werden…
+                            <p>Inzidenzzahlen, Fallzahlen Krank Covid-19- Erkrankung werden… <a href="#problemModal"
+                                    data-toggle="modal">mehr</a></p>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </div>
             <div class="funktioniert-image">
@@ -246,15 +275,19 @@
 
         <div class="funktioniert mobile d-block d-md-none">
             <div class="funktioniert-image">
-                <img src="./assets/images/clay-banks-POzx_amnWJw-unsplash-mobile.png"/>
+                <img src="./assets/images/clay-banks-POzx_amnWJw-unsplash-mobile.png" />
             </div>
             <div class="funktioniert-content">
                 <div class="text" data-aos="fade-up">
                     <h1>Wie die mutschmiede funktioniert</h1>
                     <p>
-                        Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme und Ängste zu konkretisieren. Basierend auf Ihren Antworten,
-                        können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten. Wir freuen uns über Ihre Anfragen und stehen
-                        Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung:<br>  +43 664 227 58 17
+                        Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem
+                        unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme
+                        und Ängste zu konkretisieren. Basierend auf Ihren Antworten,
+                        können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die
+                        verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten.
+                        Wir freuen uns über Ihre Anfragen und stehen
+                        Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung:<br> +43 664 227 58 17
                     </p>
                     <div class="btn-box">
                         <div class="btn">
@@ -266,58 +299,58 @@
 
             <div class="slide-1">
                 <div class="title-1">
-                  <h1>1</h1>
-              </div>
-              <div class="subtitle-1">
-                  <p>Problem<br>erkennen</p>
-              </div>
-  
-              <div class="container-fluid">
-                <div class="slick-wrapper d-block d-sm-none">
-                    <div class="slick-mobile">
-                        <div class="box slide-item">
-                            <span>Trennung</span>
-                            <img src="./assets/images/Group 25.png" width="">
-                            <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
-                        </div>
-                        <div class="box slide-item">
-                            <span>Trennung</span>
-                            <img src="./assets/images/Group 25.png">
-                            <p><a href="#problemModal">mehr</a></p>
-                        </div>
-                        <div class="box slide-item">
-                            <span>Trennung</span>
-                            <img src="./assets/images/Group 25.png" width="">
-                            <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
-                        </div>
-                        <div class="box slide-item">
-                            <span>Trennung</span>
-                            <img src="./assets/images/Group 25.png" width="">
-                            <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
-                        </div>
-                        <div class="box slide-item">
-                            <span>Trennung</span>
-                            <img src="./assets/images/Group 25.png" width="">
-                            <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
-                        </div>
-                        <div class="box slide-item">
-                            <span>Trennung</span>
-                            <img src="./assets/images/Group 25.png" width="">
-                            <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
-                        </div>
-                        <div class="box slide-item">
-                            <span>Trennung</span>
-                            <img src="./assets/images/Group 25.png" width="">
-                            <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
-                        </div>
-                        <div class="box slide-item">
-                            <span>Trennung</span>
-                            <img src="./assets/images/Group 25.png" width="">
-                            <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
+                    <h1>1</h1>
+                </div>
+                <div class="subtitle-1">
+                    <p>Problem<br>erkennen</p>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="slick-wrapper d-block d-sm-none">
+                        <div class="slick-mobile">
+                            <div class="box slide-item">
+                                <span>Trennung</span>
+                                <img src="./assets/images/Group 25.png" width="">
+                                <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
+                            </div>
+                            <div class="box slide-item">
+                                <span>Trennung</span>
+                                <img src="./assets/images/Group 25.png">
+                                <p><a href="#problemModal">mehr</a></p>
+                            </div>
+                            <div class="box slide-item">
+                                <span>Trennung</span>
+                                <img src="./assets/images/Group 25.png" width="">
+                                <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
+                            </div>
+                            <div class="box slide-item">
+                                <span>Trennung</span>
+                                <img src="./assets/images/Group 25.png" width="">
+                                <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
+                            </div>
+                            <div class="box slide-item">
+                                <span>Trennung</span>
+                                <img src="./assets/images/Group 25.png" width="">
+                                <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
+                            </div>
+                            <div class="box slide-item">
+                                <span>Trennung</span>
+                                <img src="./assets/images/Group 25.png" width="">
+                                <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
+                            </div>
+                            <div class="box slide-item">
+                                <span>Trennung</span>
+                                <img src="./assets/images/Group 25.png" width="">
+                                <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
+                            </div>
+                            <div class="box slide-item">
+                                <span>Trennung</span>
+                                <img src="./assets/images/Group 25.png" width="">
+                                <p><a href="#problemModal" data-toggle="modal">mehr</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
         <!-- Wie die mutschmiede funktioniert -->
@@ -338,7 +371,7 @@
                             <div class="box slide-item onl">
                                 <img src="./assets/images/ben-parker-ym--mSBZ0ro-unsplash.png">
                                 <div class="lang-coach">
-                                    <img src="./assets/images/languages/coach/Asset 8.png" >
+                                    <img src="./assets/images/languages/coach/Asset 8.png">
                                 </div>
                             </div>
                         </a>
@@ -348,7 +381,7 @@
                             <div class="box slide-item onl">
                                 <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
                                 <div class="lang-coach">
-                                    <img src="./assets/images/languages/coach/Asset 8.png" >
+                                    <img src="./assets/images/languages/coach/Asset 8.png">
                                 </div>
                             </div>
                         </a>
@@ -358,7 +391,7 @@
                             <div class="box slide-item">
                                 <img src="./assets/images/ben-parker-ym--mSBZ0ro-unsplash.png">
                                 <div class="lang-coach">
-                                    <img src="./assets/images/languages/coach/Asset 8.png" >
+                                    <img src="./assets/images/languages/coach/Asset 8.png">
                                 </div>
                             </div>
                         </a>
@@ -373,7 +406,7 @@
                                 <button>Auswählen</button>
                             </div>
                             <div class="lang-coach">
-                                <img src="./assets/images/languages/coach/Asset 8.png" >
+                                <img src="./assets/images/languages/coach/Asset 8.png">
                             </div>
                         </div>
                     </div>
@@ -382,7 +415,7 @@
                             <div class="box slide-item">
                                 <img src="./assets/images/ben-parker-ym--mSBZ0ro-unsplash.png">
                                 <div class="lang-coach">
-                                    <img src="./assets/images/languages/coach/Asset 8.png" >
+                                    <img src="./assets/images/languages/coach/Asset 8.png">
                                 </div>
                             </div>
                         </a>
@@ -392,7 +425,7 @@
                             <div class="box slide-item onl">
                                 <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
                                 <div class="lang-coach">
-                                    <img src="./assets/images/languages/coach/Asset 8.png" >
+                                    <img src="./assets/images/languages/coach/Asset 8.png">
                                 </div>
                             </div>
                         </a>
@@ -404,8 +437,8 @@
                             <div class="box slide-item">
                                 <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
                                 <div class="lang-coach">
-                                    <img src="./assets/images/languages/coach/Asset 5.png" >
-                                    <img src="./assets/images/languages/coach/Asset 12.png" >
+                                    <img src="./assets/images/languages/coach/Asset 5.png">
+                                    <img src="./assets/images/languages/coach/Asset 12.png">
                                 </div>
                             </div>
                         </a>
@@ -413,51 +446,51 @@
                             <div class="box slide-item onl">
                                 <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
                                 <div class="lang-coach">
-                                    <img src="./assets/images/languages/coach/Asset 8.png" >
+                                    <img src="./assets/images/languages/coach/Asset 8.png">
                                 </div>
                             </div>
                         </a>
                         <div class="box slide-item">
                             <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
                             <div class="lang-coach">
-                                <img src="./assets/images/languages/coach/Asset 6.png" >
-                                <img src="./assets/images/languages/coach/Asset 8.png" >
+                                <img src="./assets/images/languages/coach/Asset 6.png">
+                                <img src="./assets/images/languages/coach/Asset 8.png">
                             </div>
                         </div>
                         <div class="box slide-item onl">
                             <img src="./assets/images/brooke-cagle-JBwcenOuRCg-unsplash.png">
                             <div class="lang-coach">
-                                <img src="./assets/images/languages/coach/Asset 6.png" >
-                                <img src="./assets/images/languages/coach/Asset 8.png" >
+                                <img src="./assets/images/languages/coach/Asset 6.png">
+                                <img src="./assets/images/languages/coach/Asset 8.png">
                             </div>
                         </div>
                         <a href="#coachModal" data-toggle="modal">
                             <div class="box slide-item onl">
                                 <img src="./assets/images/ben-parker-ym--mSBZ0ro-unsplash.png">
                                 <div class="lang-coach">
-                                    <img src="./assets/images/languages/coach/Asset 8.png" >
+                                    <img src="./assets/images/languages/coach/Asset 8.png">
                                 </div>
                             </div>
                         </a>
                         <div class="box slide-item onl">
                             <img src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash.png">
                             <div class="lang-coach">
-                                <img src="./assets/images/languages/coach/Asset 8.png" >
-                                <img src="./assets/images/languages/coach/Asset 11.png" >
+                                <img src="./assets/images/languages/coach/Asset 8.png">
+                                <img src="./assets/images/languages/coach/Asset 11.png">
                             </div>
                         </div>
                         <a href="#coachModal" data-toggle="modal">
                             <div class="box slide-item onl">
                                 <img src="./assets/images/ben-parker-ym--mSBZ0ro-unsplash.png">
                                 <div class="lang-coach">
-                                    <img src="./assets/images/languages/coach/Asset 8.png" >
+                                    <img src="./assets/images/languages/coach/Asset 8.png">
                                 </div>
                             </div>
                         </a>
                         <div class="box slide-item onl">
                             <img src="./assets/images/ben-parker-ym--mSBZ0ro-unsplash.png">
                             <div class="lang-coach">
-                                <img src="./assets/images/languages/coach/Asset 5.png" >
+                                <img src="./assets/images/languages/coach/Asset 5.png">
                             </div>
                         </div>
                     </div>
@@ -476,9 +509,14 @@
                     <div class="text">
                         <h1>Coming soon: mutschmiede App</h1>
                         <p>
-                            Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme und Ängste zu konkretisieren. Basierend auf Ihren Antworten,
-                            können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten. Wir freuen uns über Ihre Anfragen und
-                            stehen Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung: +43 664 227 58 17
+                            Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit
+                            einem unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre
+                            Probleme und Ängste zu konkretisieren. Basierend auf Ihren Antworten,
+                            können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die
+                            verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt
+                            treten. Wir freuen uns über Ihre Anfragen und
+                            stehen Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung: +43 664 227
+                            58 17
                         </p>
                         <div class="btn-box">
                             <div class="btn">
@@ -495,34 +533,40 @@
                 <img src="./assets/images/Mutschmiede-App-Vorschau.png" />
             </div>
             <div class="coming-soon">
-                    <div class="text">
-                        <h1>Coming soon: mutschmiede App</h1>
-                        <p>
-                            Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme und Ängste zu konkretisieren. Basierend auf Ihren Antworten,
-                            können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten. Wir freuen uns über Ihre Anfragen und
-                            stehen Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung: +43 664 227 58 17
-                        </p>
-                        <div class="btn-box">
-                            <div class="btn">
-                                <div class="btn-download">Download</div>
-                            </div>
+                <div class="text">
+                    <h1>Coming soon: mutschmiede App</h1>
+                    <p>
+                        Das mutschmiede System ist darauf ausgelegt, Sie so schnell und einfach wie möglich mit einem
+                        unserer Experten zu verbinden. Im ersten Step hilft Ihnen unser Fragebogen dabei, Ihre Probleme
+                        und Ängste zu konkretisieren. Basierend auf Ihren Antworten,
+                        können wir für Sie geeignete Coaches auswählen. Sie können sich vorab Informationen über die
+                        verschiedenen Berater*innen durchlesen und mit ihnen via Telefon oder Mail in Kontakt treten.
+                        Wir freuen uns über Ihre Anfragen und
+                        stehen Ihnen auch gerne jederzeit unter folgender Support-Nummer zur Verfügung: +43 664 227 58
+                        17
+                    </p>
+                    <div class="btn-box">
+                        <div class="btn">
+                            <div class="btn-download">Download</div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
         <!-- Coming soon -->
 
 
         <!-- Modal -->
-        <div class="modal fade" id="problemModal" tabindex="-1" role="dialog" aria-labelledby="problemModalLabel" aria-hidden="true">
+        <div class="modal fade" id="problemModal" tabindex="-1" role="dialog" aria-labelledby="problemModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <!-- <h5 class="modal-title" id="problemModalLabel">Modal title</h5> -->
                         <div>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <img src="./assets/images/Group 41.svg">
-                </button>
+                                <img src="./assets/images/Group 41.svg">
+                            </button>
                         </div>
                         <div>
                             <span>Schliessen</span>
@@ -532,17 +576,31 @@
                         <div class="content">
                             <img src="./assets/images/Group 42.png" width="420">
                             <h1>Covid-19</h1>
-                            <p>Inzidenzzahlen, Fallzahlen und Krankheitsmerkmale während oder nach einer Covid-19-Erkrankung werden derzeit umfassend kommuniziert. Was aber geschieht mit der Psyche und welche körperlichen Beschwerden bleiben, nachdem eine
-                                Erkrankung mit dem Coronavirus überstanden ist? Was sind typische Folgen einer Covid-19 Infektion?<br>
-                                <br> Zu physischen als auch psychischen Folgen nach einer scheinbar überstandenen Covid-19-Erkrankung gibt es noch wenige belastbare Studien. Viele Betroffene leiden - auch nach weniger schweren Verläufen - unter langanhaltenden
-                                Einschränkung und geringer Belastbarkeit. Oftmals bleibt der Verlust des Geruchs- und Geschmacksempfindens auch nach einem überstandenen Infekt längere Zeit an. Viele Leidtragende klagen zudem über anhaltende Schmerzen
-                                des Muskelapparates und der Gelenke. Bewegungsstörungen sind häufig begleitende Symptome. Gestörte Organfunktionen, wie beispielsweise der Nieren, können Patienten über längere Zeit beeinträchtigt. Selbst bei Patienten
-                                ohne psychische Vorerkrankungen, zeigten sich nach einer Covid-19-Infektion häufig depressive und posttraumatischer Belastungs-Symptome. Bei Personen mit bestehenden psychischen Diagnosen (vor allem Depressionen und Angststörungen)
-                                verstärken sich die Symptome deutlich. Überdies kann sich wie nach anderen Virusinfekten, nach Abklingen der Covid-19-Infektion ein sogenanntes Fatigue-Syndrom (Müdigkeits- oder Abgeschlagenheits-Syndrom) entwickeln.</p>
+                            <p>Inzidenzzahlen, Fallzahlen und Krankheitsmerkmale während oder nach einer
+                                Covid-19-Erkrankung werden derzeit umfassend kommuniziert. Was aber geschieht mit der
+                                Psyche und welche körperlichen Beschwerden bleiben, nachdem eine
+                                Erkrankung mit dem Coronavirus überstanden ist? Was sind typische Folgen einer Covid-19
+                                Infektion?<br>
+                                <br> Zu physischen als auch psychischen Folgen nach einer scheinbar überstandenen
+                                Covid-19-Erkrankung gibt es noch wenige belastbare Studien. Viele Betroffene leiden -
+                                auch nach weniger schweren Verläufen - unter langanhaltenden
+                                Einschränkung und geringer Belastbarkeit. Oftmals bleibt der Verlust des Geruchs- und
+                                Geschmacksempfindens auch nach einem überstandenen Infekt längere Zeit an. Viele
+                                Leidtragende klagen zudem über anhaltende Schmerzen
+                                des Muskelapparates und der Gelenke. Bewegungsstörungen sind häufig begleitende
+                                Symptome. Gestörte Organfunktionen, wie beispielsweise der Nieren, können Patienten über
+                                längere Zeit beeinträchtigt. Selbst bei Patienten
+                                ohne psychische Vorerkrankungen, zeigten sich nach einer Covid-19-Infektion häufig
+                                depressive und posttraumatischer Belastungs-Symptome. Bei Personen mit bestehenden
+                                psychischen Diagnosen (vor allem Depressionen und Angststörungen)
+                                verstärken sich die Symptome deutlich. Überdies kann sich wie nach anderen
+                                Virusinfekten, nach Abklingen der Covid-19-Infektion ein sogenanntes Fatigue-Syndrom
+                                (Müdigkeits- oder Abgeschlagenheits-Syndrom) entwickeln.
+                            </p>
                             <div class="box-action">
                                 <div class="content">
                                     <a href="./index2.html">Jetzt geeigneten<br>
-                          Coach finden</a>
+                                        Coach finden</a>
                                 </div>
                             </div>
                         </div>
@@ -553,15 +611,16 @@
         <!-- Modal HTML -->
 
         <!-- Modal -->
-        <div class="modal coach fade" id="coachModal" tabindex="-1" role="dialog" aria-labelledby="problemModalLabel" aria-hidden="true">
+        <div class="modal coach fade" id="coachModal" tabindex="-1" role="dialog" aria-labelledby="problemModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <!-- <h5 class="modal-title" id="problemModalLabel">Modal title</h5> -->
                         <div>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <img src="./assets/images/Group 41.svg">
-                      </button>
+                                <img src="./assets/images/Group 41.svg">
+                            </button>
                         </div>
                         <div>
                             <span>Schliessen</span>
@@ -592,13 +651,19 @@
                                 </div>
                             </div>
                             <p><strong>Willkommen bei der Mutschmiede!</strong></p>
-                            <p>Als Coach bin ich &uuml;berzeugt, dass Sie alles, was Sie f&uuml;r das Erreichen Ihrer Ziele ben&ouml;tigen bereits in sich tragen. Deshalb sehe&nbsp;</p>
-                            <p>ich es als meine Aufgabe, Sie bei Ihrer Weiterentwicklung zu begleiten und mit Ihnen gemeinsam Ihre Tr&auml;ume - W&uuml;nsche und&nbsp;</p>
-                            <p>Visionen als erreichbare Ziele zu gestalten. In meinen Coachings konzentrieren wir uns auf Ihre St&auml;rken und F&auml;higkeiten - wir&nbsp;</p>
-                            <p>entwickeln gemeinsam Ihre neuen Sicht- und Handlungsweisen. Mit mir gemeinsam st&auml;rken Sie Ihr Selbstbild und r&auml;umen&nbsp;</p>
-                            <p>damit Hindernisse aus Ihrem Weg. Damit finden Sie Klarheit und daraus resultiert Ihr Erfolg und Ihr neues Lebensgef&uuml;hl.</p>
+                            <p>Als Coach bin ich &uuml;berzeugt, dass Sie alles, was Sie f&uuml;r das Erreichen Ihrer
+                                Ziele ben&ouml;tigen bereits in sich tragen. Deshalb sehe&nbsp;</p>
+                            <p>ich es als meine Aufgabe, Sie bei Ihrer Weiterentwicklung zu begleiten und mit Ihnen
+                                gemeinsam Ihre Tr&auml;ume - W&uuml;nsche und&nbsp;</p>
+                            <p>Visionen als erreichbare Ziele zu gestalten. In meinen Coachings konzentrieren wir uns
+                                auf Ihre St&auml;rken und F&auml;higkeiten - wir&nbsp;</p>
+                            <p>entwickeln gemeinsam Ihre neuen Sicht- und Handlungsweisen. Mit mir gemeinsam
+                                st&auml;rken Sie Ihr Selbstbild und r&auml;umen&nbsp;</p>
+                            <p>damit Hindernisse aus Ihrem Weg. Damit finden Sie Klarheit und daraus resultiert Ihr
+                                Erfolg und Ihr neues Lebensgef&uuml;hl.</p>
                             <p><br></p>
-                            <p>Ich arbeite mit Ihnen l&ouml;sungsorientiert, methoden&uuml;bergreifend, individuell und pers&ouml;nlichkeitsbezogen</p>
+                            <p>Ich arbeite mit Ihnen l&ouml;sungsorientiert, methoden&uuml;bergreifend, individuell und
+                                pers&ouml;nlichkeitsbezogen</p>
                             <p><br></p>
                             <p><strong>Meine Schwerpunkte:</strong></p>
                             <p>&bull; Selbstmanagement</p>
@@ -610,22 +675,28 @@
                             <p>&bull; Ver&auml;nderungsmanagement</p>
                             <p>&bull; Teamentwicklung</p>
                             <p>&nbsp; &nbsp;</p>
-                            <p>&bdquo;Sei eine erstklassige Ausgabe Deiner selbst - keine zweitklassige von jemandem anderen.&ldquo; Judy Garland</p>
+                            <p>&bdquo;Sei eine erstklassige Ausgabe Deiner selbst - keine zweitklassige von jemandem
+                                anderen.&ldquo; Judy Garland</p>
                             <p><br></p>
-                            <p>&bdquo;Gro&szlig;e Ver&auml;nderungen in unserem Leben k&ouml;nnen eine zweite Chance sein.&ldquo; Harrison Ford</p>
+                            <p>&bdquo;Gro&szlig;e Ver&auml;nderungen in unserem Leben k&ouml;nnen eine zweite Chance
+                                sein.&ldquo; Harrison Ford</p>
                             <p><br></p>
-                            <p>&bdquo;Die Qualit&auml;t unserer Ziele bestimmt die Qualit&auml;t unserer Zukunft.&ldquo; &nbsp;Unbekannt</p>
+                            <p>&bdquo;Die Qualit&auml;t unserer Ziele bestimmt die Qualit&auml;t unserer Zukunft.&ldquo;
+                                &nbsp;Unbekannt</p>
                             <p><br></p>
-                            <p>&bdquo;Unsere W&uuml;nsche sind die Vorboten der F&auml;higkeiten, die in uns liegen.&ldquo; Goethe</p>
+                            <p>&bdquo;Unsere W&uuml;nsche sind die Vorboten der F&auml;higkeiten, die in uns
+                                liegen.&ldquo; Goethe</p>
                             <p><br></p>
                             <p>Sie Du selbst, alle anderen gibt es schon</p>
                             <p><br></p>
                             <p><br></p>
                             <a href="./expertinnen.html">
-                                <h3 class="light-orange" style="text-decoration: underline; font-weight: bold;">&Uuml;ber mich</h3>
+                                <h3 class="light-orange" style="text-decoration: underline; font-weight: bold;">
+                                    &Uuml;ber mich</h3>
                             </a>
                             <p><br></p>
-                            <p>&Uuml;ber 10 Jahre Erfahrung im Bereich Kommunikation und Pers&ouml;nlichkeit in den&nbsp;</p>
+                            <p>&Uuml;ber 10 Jahre Erfahrung im Bereich Kommunikation und Pers&ouml;nlichkeit in
+                                den&nbsp;</p>
                             <p>Bereichen Health-Care, im Finanzsektor mit Schwerpunkt Vertrieb sowie im&nbsp;</p>
                             <p>Business Development im Bereich Manufacturing,&nbsp;</p>
                         </div>
@@ -656,18 +727,21 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/editor.js"></script>
     <script src="./assets/js/wysihtml5-0.3.0.js"></script>
     <script src="./assets/js/bootstrap-wysihtml5.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(e) {
+        $(document).ready(function (e) {
 
             var viewport = $('meta[name="viewport"]');
-            window.onresize = function() {
+            window.onresize = function () {
                 if (window.screen.width <= 1024 && window.screen.width >= 576) {
                     viewport.attr("content", "width=736, initial-scale=0.55, minimum-scale=0.55, maximum-scale=0.55, user-scalable=no");
                 } else {
@@ -695,13 +769,13 @@
                             dots: false,
                             infinite: true,
                             height: 100,
-                            
+
                             speed: 300,
                             slidesToShow: 2,
                             slidesToScroll: 1,
                             nextArrow: '<button class="slick-slider-previous"><img src="./assets/images/Group 117.png" width="50"></button>',
                             prevArrow: '<button class="slick-slider-next"><img src="./assets/images/Group 118.png" width="50"></button>',
-                        },                    
+                        },
                     }]
                 });
             }
@@ -723,12 +797,13 @@
             SlickSlideHomeMobile("slick-mobile");
             SlickSlideHome("slick-slider-detect");
             // js slide slick
-            $('.dropdown-lang').click(function(e) {
+            $('.dropdown-lang').click(function (e) {
                 $('.dropdown-menu-lang').slideToggle();
+                $(this).toggleClass("drop-lang-active");
                 e.preventDefault();
             });
 
-            $('.btn-collapse').click(function(e) {
+            $('.btn-collapse').click(function (e) {
                 $(this).toggleClass("show-icon-close");
                 $('.menu-user-mobile').slideToggle('1000');
                 e.preventDefault();
@@ -736,7 +811,7 @@
                 icon.toggleClass("fa-times");
             });
 
-            $('.login-mobile').click(function(e) {
+            $('.login-mobile').click(function (e) {
                 $('.menu-login-mobile').slideToggle();
                 e.preventDefault();
             });
