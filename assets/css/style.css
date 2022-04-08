@@ -580,6 +580,7 @@ header .navbar .navbar-header{
     color: #fff;
     background-color: #FBC7B2;
     border-radius: 100px;
+    margin-top: -3px;
 }
 
 #main-content .funktioniert .funktioniert-content .text .btn-box .btn .btn-problem {
@@ -2295,7 +2296,7 @@ a.slick-slide {
     }
 
     .menu-user-mobile {
-        top: 65px !important;
+        top: 60px !important;
     }
     .layout-homes .btn-box {
         width: 260px !important;
