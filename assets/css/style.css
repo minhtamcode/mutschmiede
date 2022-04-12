@@ -413,7 +413,7 @@ header .navbar .navbar-header{
 .menu-user ul li {
     padding-top: 11px;
     padding-bottom: 11px;
-    margin: 0;
+    margin: 0 !important;
     border-bottom: 1px solid #EFEFEF;
 }
 
@@ -442,6 +442,15 @@ header .navbar .navbar-header{
     background: transparent;
     border: none;
     width: 125px;
+}
+
+
+#mutschmiede-nav .menu-desktop li a span{
+    font-family: "Raleway-medium";
+}
+
+#mutschmiede-nav .menu-desktop li.user-login a span{
+    text-decoration: underline;
 }
 
 .navbar-default .navbar-brand {
@@ -1630,7 +1639,8 @@ footer {
 }
 
 .site-main-expertinnen .row {
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0 !important;
 }
 
 .site-main-expertinnen .row .box,
@@ -2087,12 +2097,13 @@ a.slick-slide {
     #main-content .coaches {
         margin-top: 100px;
         padding-top: 75px;
+        padding-bottom: 19px;
     }
 
     #main-content .funktioniert .subtitle-1 p,
     #main-content .funktioniert .subtitle-2 p,#main-content .coaches .subtitle-coachs p{
         font-size: 25px;
-        line-height: 1;
+        line-height: 30px;
     }
 
     #main-content .funktioniert .funktioniert-content .text h1 {
@@ -2337,7 +2348,15 @@ a.slick-slide {
         bottom: -45px !important;
     }
 
+    .layout-homes .box .lang-coach,.layout-homes .box-action .lang-coach {
+        bottom: -45px !important;
+    }
+
     .box.onl .lang-coach, .box-action.onl .lang-coach {
+        bottom: -132px !important;
+    }
+
+    .layout-homes .box.onl .lang-coach,.layout-homes .box-action.onl .lang-coach {
         bottom: -132px !important;
     }
 
