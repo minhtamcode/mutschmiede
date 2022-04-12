@@ -49,7 +49,7 @@ body {
     letter-spacing: 0.2px;
 }
 
-#mutschmiede-nav .drop-lang-active:after {
+#mutschmiede-nav .menu-desktop .drop-lang-active:after {
     content: "\f106" !important;
 }
 
@@ -146,7 +146,7 @@ body {
     position: absolute;
     top: 42%;
     opacity: 1;
-    right: 0;
+    right: -13px;
 }
 
 .layout-homes .funktioniert .slick-mobile .slick-slider-previous {
@@ -154,8 +154,9 @@ body {
     background-color: unset !important;
     z-index: 99;
     position: absolute;
-    bottom: 49%;
+    bottom: 51%;
     opacity: 1;
+    left: -12px;
 }
 
 .layout-homes .slick-slider__slide {
