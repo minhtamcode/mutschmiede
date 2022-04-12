@@ -310,7 +310,7 @@ header .navbar .navbar-header{
 .menu-user-mobile ul {
     display: block;
     padding-bottom: 170px;
-    padding-top: 95px;
+    padding-top: 88px;
     padding-left: 36.5px;
     padding-right: 36.5px;
     background-color: #FBC7B2;
@@ -328,6 +328,9 @@ header .navbar .navbar-header{
     margin: 0 !important;
 }
 
+.menu-login-mobile ul li:nth-child(1){
+    border-top: 1px solid #EFEFEF;;
+}
 
 .menu-user-mobile ul li a ,.menu-user-mobile ul li span{
     color: #000;
@@ -361,6 +364,7 @@ header .navbar .navbar-header{
     width: 100%;
     height: fit-content;
     display: block;
+    margin-top: 20px;
 }
 
 .menu-login-mobile ul{
@@ -628,7 +632,7 @@ header .navbar .navbar-header{
 #main-content .coaches {
     background-color: #fff;
     position: relative;
-    margin-top: 285px;
+    margin-top: 288px;
 }
 
 #main-content .coaches .title-coachs {
@@ -720,6 +724,10 @@ header .navbar .navbar-header{
     align-items: center;
     background: transparent !important;
     padding: 0 !important;
+}
+
+.coaches .box-action .content {
+    margin-bottom: 35px;
 }
 
 .box-action .content img {
@@ -875,7 +883,7 @@ header .navbar .navbar-header{
 
 
 .layout-homes .section-coming-soon.mobile .text{
-    padding: 30px 75px 115px 67px !important;
+    padding: 30px 75px 106px  67px !important;
 }
 
 .layout-homes .section-coming-soon.mobile .coming-soon{
@@ -884,8 +892,8 @@ header .navbar .navbar-header{
 
 #main-content .coaches .subtitle-coachs {
     position: absolute;
-    top: 16px;
-    left: 138px;
+    top: 19px;
+    left: 139px;
 }
 
 #main-content .funktioniert .subtitle-1,
@@ -1832,9 +1840,25 @@ a.slick-slide {
     margin-bottom: 178px;
 }
 
-.modal.coach .modal-header {
-    margin-bottom: 119px;
+.modal .modal-header span{
+    text-transform: uppercase; 
+    font-family: 'Raleway-medium';
+    letter-spacing: 0.02rem;
 }
+
+.modal.coach .modal-header {
+    margin-bottom: 87px;
+}
+
+.modal.coach .modal-content .box{
+    width: 476px !important;
+    height: 476px;
+}
+
+.modal.coach .modal-content .box img{
+    width: 455px;
+}
+
 
 .modal-header .close {
     margin: -1rem -1rem -0.5rem -1rem !important;
@@ -1847,10 +1871,14 @@ a.slick-slide {
     border-radius: 51rem !important;
 }
 
-.modal .modal-body {
+.modal.coach .modal-content {
+    padding: 52px 328px 258px 322px;
+}
+
+/* .modal .modal-body {
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
+} */
 
 .modal.show{
     padding: 0 !important;
@@ -1870,17 +1898,21 @@ a.slick-slide {
     margin-top: 91px;
 }
 
+.modal .modal-content .content .box-action .content{
+    margin-bottom: -28px;
+}
+
 .modal .modal-content .content h1 {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     margin-top: 50px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-left: 1px;
 }
 
 .modal.coach .modal-content .content h1 {
     margin-bottom: 20px;
-    margin-top: 52px;
+    margin-top: 43px;
     font-weight: 600;
 }
 
@@ -1891,6 +1923,7 @@ a.slick-slide {
 
 .modal .modal-content .content p {
     text-align: center;
+    letter-spacing: 0.02rem;
 }
 
 .modal .modal-content img {
@@ -1901,6 +1934,17 @@ a.slick-slide {
     color: #000;
     font-size: 40px !important;
     font-family: "Raleway-semibold";
+    line-height: 40px;
+    
+}
+
+.modal.coach .modal-content .content a {
+    letter-spacing: 1px;
+    line-height: 45px !important;
+}
+
+.modal.coach .modal-content .content h3 {
+    font-size: 20px;
 }
 
 .modal.coach .modal-content .content .contact {
@@ -1908,9 +1952,19 @@ a.slick-slide {
     align-items: center;
     width: 643px;
     justify-content: space-between;
-    margin-bottom: 46px;
+    margin-bottom: 40px;
 }
 
+.modal.coach .modal-content .content .contact .phone{
+    display: flex;
+    align-items: center;
+}
+
+.modal.coach .modal-content .content .contact .phone p{
+    font-family: 'Raleway-semibold';
+    margin-left: 35px;
+    font-size: 20px;
+}
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -2057,12 +2111,12 @@ a.slick-slide {
     }
 
     #main-content .funktioniert .funktioniert-content .text {
-        padding: 30px 66px 115px 66px;
+        padding: 30px 66px 112px 66px;
         width: auto;
     }
     #main-content .funktioniert .title-1,
     #main-content .funktioniert .title-2{
-        top: -255px;
+        top: -249px;
         left: 91px;
     }
 
@@ -2095,9 +2149,10 @@ a.slick-slide {
     }
 
     #main-content .coaches {
-        margin-top: 100px;
+        margin-top: 107px;
         padding-top: 75px;
-        padding-bottom: 19px;
+        padding-bottom: 15px;
+        
     }
 
     #main-content .funktioniert .subtitle-1 p,
@@ -2272,19 +2327,25 @@ a.slick-slide {
 
 
     .modal .modal-dialog{
-        margin: auto 26px;
+        margin: 90px 26px;
     }
 
     .modal#coachModal .modal-content {
-        padding: 51px 0 155px 0;
+        padding: 33px 0 140px 0;
     }
 
     .modal .modal-content {
-        padding: 51px 0 40px 0;
+        padding: 34px 40px 22px 40px;
     }
 
     .modal .modal-content .content a {
         font-size: 25px !important;
+        line-height: 30px;
+        margin-bottom: 56px;
+    }
+
+    .modal .modal-content .content p {
+       line-height: 19px;
     }
 
     .modal .modal-content .content img {
@@ -2304,6 +2365,7 @@ a.slick-slide {
 
     .modal#problemModal .modal-content .content h1 {
         margin: 27px 0;
+        font-size: 25px;
     }
 
     .modal .modal-content .content .contact img {
@@ -2325,6 +2387,7 @@ a.slick-slide {
 
     .modal.coach .modal-content .content .contact {
         width: 260px;
+        margin-bottom: 27px;
     }
 
     .modal.coach .modal-content .content h1{
@@ -2334,10 +2397,11 @@ a.slick-slide {
     .modal.coach .modal-content .content h2{
         margin-bottom: 30px;
         font-size: 16px;
+        letter-spacing: 0.04rem;
     }
 
     .modal .modal-header {
-        margin-bottom: 55px !important;
+        margin-bottom: 25px !important;
     }
 
     .modal .modal-content .content .box-action {
@@ -2402,11 +2466,21 @@ a.slick-slide {
     }
 
     .modal .modal-dialog {
-        width: 320px;
+        width: 323px;
     }
 
     .menu-user-mobile ul li a img {
         margin-right: 0;
+    }
+
+    #main-content.layout-homes .coming-soon .text h1 {
+        margin-bottom: 20px;
+    }
+
+    .modal.coach .modal-content .content .contact .phone p{
+        font-family: 'Raleway-semibold';
+        margin-left: 10px;
+        font-size: 16px;
     }
 
 }
