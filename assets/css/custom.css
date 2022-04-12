@@ -50,7 +50,7 @@ body {
 }
 
 #mutschmiede-nav .drop-lang-active:after {
-    content: "123" !important;
+    content: "\f106" !important;
 }
 
 .btn-collapse .icon-menu {
@@ -225,7 +225,7 @@ body {
 .layout-homes .coaches .slick-slider-detect .slick-list {
     height: 100%;
     /* z-index: 9; */
-    top: 11px;
+    top: 14px;
 }
 
 .layout-homes .slick-slider-detect .slick-list .slick-track {
