@@ -2177,6 +2177,21 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         font-size: 16px;
         font-family: 'Raleway-semibold';
     }
+    .ddbuch-content .ddbuch-wrap{
+        margin-bottom: 45px;
+        padding-top: 46px !important;
+    }
+    .ddbuch-content .ddbuch-title h1{
+        font-size: 25px;
+        line-height: 30px;
+        padding: 45px 0;
+    }
+    .tab-section .tab-section-icon h5{
+        font-size: 20px;
+    }
+    .tab-section .tab-section-icon a{
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 768px) {}
