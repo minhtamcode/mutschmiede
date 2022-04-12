@@ -12,40 +12,47 @@ body {
 }
 
 /* css menu */
-#mutschmiede-nav .menu-desktop .user-login{
+#mutschmiede-nav .menu-desktop .user-login {
     margin-left: 31px;
 }
+
 #mutschmiede-nav .dropdown .dropdown-lang,
-#mutschmiede-nav .menu-desktop .user-login a{
+#mutschmiede-nav .menu-desktop .user-login a {
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
-#mutschmiede-nav .menu-desktop .user-login img{
+
+#mutschmiede-nav .menu-desktop .user-login img {
     margin-right: 9px;
 }
-#mutschmiede-nav .dropdown-lang::after{
+
+#mutschmiede-nav .dropdown-lang::after {
     margin-left: 4px;
 }
-#mutschmiede-nav .dropdown .dropdown-lang img{
+
+#mutschmiede-nav .dropdown .dropdown-lang img {
     margin-right: 7.7px;
 }
-#mutschmiede-nav .menu-desktop li{
+
+#mutschmiede-nav .menu-desktop li {
     margin-left: 39px;
     letter-spacing: 0.2px;
     margin-bottom: 8px;
 }
-#mutschmiede-nav .menu-desktop li a{
+
+#mutschmiede-nav .menu-desktop li a {
     line-height: 24px;
     letter-spacing: 0.2px;
 }
-#mutschmiede-nav .drop-lang-active:after{
-    content: "\f106" !important;
-    font-family: "Font Awesome 5 Pro";
+
+#mutschmiede-nav .drop-lang-active:after {
+    content: "123" !important;
 }
+
 .btn-collapse .icon-menu {
     display: block;
     width: 19px !important;
@@ -999,7 +1006,7 @@ body {
 }
 
 .header-table ul li:last-child {
-    margin-right: 0;
+    margin-right: 25px;
 }
 
 .site-main-coaches .form .box-name-button a {
@@ -1016,6 +1023,7 @@ body {
 .bg-pink {
     background-color: #FBC7B2;
 }
+
 .bg-pink-0 {
     background-color: #fffbf9;
 }
@@ -1046,9 +1054,10 @@ body {
     padding-right: 24px;
     margin-left: 1px;
 }
+
 .site-main-generate .table-booking .table-responsive-mobile {
     background-color: #fff;
-    
+
 }
 
 .site-main-generate .table-top .tt-item .table-responsive {
@@ -1106,6 +1115,15 @@ body {
     border-top: 1px solid #FBC7B2;
     padding: 16px 21px;
     line-height: 19px;
+}
+
+.site-main-generate .table-booking .table-responsive u,
+.site-main-face2face .table-booking .table-responsive u,
+.site-main-gutscheincodes .table-booking .table-responsive u,
+.site-main-generate .table-booking .table-responsive .table td u,
+.site-main-face2face .table-booking .table-responsive .table td u,
+.site-main-gutscheincodes .table-booking .table-responsive .table td u {
+    text-decoration: underline;
 }
 
 .site-main-generate .table-top .tt-item .table-responsive .table td {
@@ -1214,7 +1232,9 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 
 .site-main-face2face .form .subtitle h1,
 .site-main-gutscheincodes .form .subtitle h1 {
-    text-transform: capitalize;
+    text-transform: none;
+    line-height: 47px;
+    letter-spacing: 1.5px;
 }
 
 .site-main-gutscheincodes .content {
@@ -1224,19 +1244,30 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 .site-main-face2face .form .tab a,
 .site-main-gutscheincodes .form .tab a {
     line-height: 30px;
+    letter-spacing: 1px;
 }
 
 .site-main-gutscheincodes .form .tab {
-    margin-bottom: 100px !important;
+    margin-bottom: 100.5px !important;
 }
 
 .actived {
     padding-bottom: 5.5px;
 }
 
-.form-coach#main-content .content label {
+.form-coach#main-content .header-table {
     margin-bottom: 20px;
+
+}
+
+.form-coach#main-content .group-form .group-input label {
+    margin-bottom: 20px;
+}
+
+.form-coach#main-content .content label {
     font-family: 'Raleway-semibold';
+    font-size: 20px;
+    letter-spacing: 0.5px;
 }
 
 .form-coach .form .form-input {
@@ -1257,6 +1288,8 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 .form-coach#main-content .group-form .group-input label {
     width: 100%;
     font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
 }
 
 .form-coach#main-content .group-form .group-input input {
@@ -1404,9 +1437,10 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
     padding-bottom: 89px;
 }
 
-.manage-customer .table-booking table tbody tr:hover{
+.manage-customer .table-booking table tbody tr:hover {
     background-color: unset !important;
 }
+
 /* face page */
 
 @media (max-width: 576px) {
@@ -1744,6 +1778,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         margin-right: 32px;
         margin-top: 20px;
         font-family: 'Raleway-medium';
+        line-height: 19px;
     }
 
     .site-main-gutscheincodes .form .subtitle {
@@ -1753,10 +1788,18 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 
     .site-main-gutscheincodes .form .subtitle h1 {
         font-size: 25px;
-        padding-right: 83px;
+        padding-right: 57px;
         font-family: 'Raleway-semibold';
+        letter-spacing: 1.5px;
+        line-height: 30px;
     }
-
+    .site-main-gutscheincodes#main-content .group-button{
+        margin-top: 0;
+    }
+    .site-main-gutscheincodes#main-content .content label{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
     .form-coach#main-content .group-button,
     .form-coach#main-content .group-form {
         flex-direction: column;
@@ -1901,11 +1944,11 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         width: 100%;
     }
 
-    .site-main-face2face .table-booking .table-responsive,
+    /* .site-main-face2face .table-booking .table-responsive,
     .site-main-gutscheincodes .table-booking .table-responsive {
         padding-right: 0 !important;
         max-height: 329px;
-    }
+    } */
 
     .table-customer .table-booking .scroll-wrapper,
     .site-main-gutscheincodes .table-booking .scroll-wrapper {
@@ -2025,7 +2068,7 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
 
     #main-content .table-responsive-mobile {
         position: relative !important;
-        max-height: 329px;
+        max-height: 329px !important;
     }
 
     .table-responsive-mobile .top-content-table {
@@ -2043,26 +2086,32 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         padding: 14px 0 14px 20px;
         width: 114px;
     }
-    .table-responsive-mobile .top-content-table p{
+
+    .table-responsive-mobile .top-content-table p {
         font-family: 'Raleway-semibold';
         font-size: 16px;
     }
+
     .table-responsive-mobile .table-striped {
-        width:calc(100% - 114px);
+        width: calc(100% - 114px);
         float: right;
     }
-    .table-responsive-mobile .table-striped .content-table-item{
+
+    .table-responsive-mobile .table-striped .content-table-item {
         border-bottom: 1px solid #FBC7B2;
         padding: 14px 0 14px 20px;
     }
-    .table-responsive-mobile .table-striped .content-table-item p{
+
+    .table-responsive-mobile .table-striped .content-table-item p {
         line-height: 19px;
         margin-bottom: 6px;
     }
-    .table-responsive-mobile .table-striped .content-table-item p:last-child{
+
+    .table-responsive-mobile .table-striped .content-table-item p:last-child {
         margin-bottom: 0;
     }
-    .table-responsive-mobile label{
+
+    .table-responsive-mobile label {
         font-size: 16px;
         font-family: 'Raleway-semibold';
     }
