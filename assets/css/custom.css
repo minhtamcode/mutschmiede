@@ -522,18 +522,23 @@ body {
     font-family: 'Raleway-semibold';
     font-size: 20px;
 }
-.site-main-coaches .form .coach-box .coach .coach-img{
+
+.site-main-coaches .form .coach-box .coach .coach-img {
     padding-bottom: 51px !important;
 }
+
 .ddbuch-wrap-left .tab-wrapper {
     padding: 0 36px 46px 39px;
 }
-.site-main-coaches .form .coach-box .coach .coach-infor ul{
+
+.site-main-coaches .form .coach-box .coach .coach-infor ul {
     margin-bottom: 16px !important;
 }
-.site-main-coaches .form .coach-box .coach .coach-infor .description{
+
+.site-main-coaches .form .coach-box .coach .coach-infor .description {
     padding: 21px 146px 6px 20px !important;
 }
+
 .tab-content-show .tab-wrap-top {
     padding: 58px 44px 53px 41px;
     display: flex;
@@ -586,18 +591,21 @@ body {
     font-family: 'Raleway-semibold';
     margin-right: 50px;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
-.tab-section .tab-section-icon a img{
+
+.tab-section .tab-section-icon a img {
     margin-right: 7px;
 }
-.ddbuch-content .ddbuch-wrap{
+
+.ddbuch-content .ddbuch-wrap {
     margin-bottom: 89px;
 }
+
 .tab-section .tab-section-icon h5 {
     font-family: 'Raleway-semibold';
 }
@@ -1032,31 +1040,41 @@ body {
 .header-table ul li:last-child {
     margin-right: 25px;
 }
-.site-main-coaches .header-table ul li:last-child{
+
+.site-main-coaches .header-table ul li:last-child {
     margin-right: 0px;
 }
-.site-main-coaches .header-table ul li{
+
+.site-main-coaches .header-table ul li {
     margin-right: 0px;
     margin-left: 15px;
 }
-.site-main-coaches .header-table ul li a{
-   letter-spacing: 0px;
+
+.site-main-coaches .header-table ul li a {
+    letter-spacing: 0px;
 }
-.site-main-coaches .header-table ul li:first-child{
+
+.site-main-coaches .header-table ul li:first-child {
     margin-right: 10px;
 }
-.site-main-coaches .form .coach-box .coach .coach-img .action{
+
+.site-main-coaches .form .coach-box .coach .coach-img .action {
     width: unset !important;
 }
-.site-main-coaches .form .coach-box .coach .coach-img .action .status{
+
+.site-main-coaches .form .coach-box .coach .coach-img .action .status {
     margin-right: 20.5px;
 }
-.site-main-coaches .form .coach-box .coach .coach-infor h3, .site-main-coaches .form .coach-box .coach .coach-infor h1{
+
+.site-main-coaches .form .coach-box .coach .coach-infor h3,
+.site-main-coaches .form .coach-box .coach .coach-infor h1 {
     line-height: 19px;
 }
-.site-main-coaches .form .coach-box .coach .coach-infor .name h1{
+
+.site-main-coaches .form .coach-box .coach .coach-infor .name h1 {
     line-height: 35px;
 }
+
 .site-main-coaches .form .box-name-button a {
     text-transform: uppercase;
     padding: 2px 13px;
@@ -1722,25 +1740,31 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         font-family: 'Raleway-medium';
         padding-left: 19px;
         padding-right: 19px;
-       
+
     }
-    .site-main-coaches#main-content .header-table{
+
+    .site-main-coaches#main-content .header-table {
         margin-bottom: 17px;
     }
-    .site-main-coaches .header-table ul li{
+
+    .site-main-coaches .header-table ul li {
         margin-left: 0px;
         margin-right: 15px;
 
     }
-    .site-main-coaches .form .coach-box .coach .coach-img{
+
+    .site-main-coaches .form .coach-box .coach .coach-img {
         padding-bottom: 20px !important;
     }
+
     .site-main-coaches .header-table .search {
         width: 100%;
     }
-    .site-main-coaches .form .coach-box .coach .coach-infor ul{
+
+    .site-main-coaches .form .coach-box .coach .coach-infor ul {
         margin-bottom: 20px;
     }
+
     .site-main-coaches .header-table .search ul {
         display: block;
     }
@@ -1856,13 +1880,16 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         letter-spacing: 1.5px;
         line-height: 30px;
     }
-    .site-main-gutscheincodes#main-content .group-button{
+
+    .site-main-gutscheincodes#main-content .group-button {
         margin-top: 0;
     }
-    .site-main-gutscheincodes#main-content .content label{
+
+    .site-main-gutscheincodes#main-content .content label {
         font-size: 16px;
         margin-bottom: 20px;
     }
+
     .form-coach#main-content .group-button,
     .form-coach#main-content .group-form {
         flex-direction: column;
@@ -2178,20 +2205,49 @@ site-main-generate .table-striped tbody tr:nth-of-type(odd),
         font-size: 16px;
         font-family: 'Raleway-semibold';
     }
-    .ddbuch-content .ddbuch-wrap{
+
+    .ddbuch-content .ddbuch-wrap {
         margin-bottom: 45px;
         padding-top: 46px !important;
     }
-    .ddbuch-content .ddbuch-title h1{
+
+    .ddbuch-content .ddbuch-title h1 {
         font-size: 25px;
         line-height: 30px;
         padding: 45px 0;
     }
-    .tab-section .tab-section-icon h5{
+
+    .tab-section .tab-section-icon h5 {
         font-size: 20px;
     }
-    .tab-section .tab-section-icon a{
+
+    .tab-section .tab-section-icon a {
         margin-right: 0;
+    }
+
+    .tab-section .tab-section-icon {
+        padding: 29px 21px 27px 19px;
+    }
+
+    .tab-section .tab-section-content p {
+        line-height: 25px;
+    }
+
+    .tab-section .tab-button a.button-oben {
+        text-transform: uppercase;
+        margin-right: 31px;
+        font-size: 16px;
+        font-family: 'Raleway-semibold';
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .tab-section .tab-button .button-oben img {
+        margin-right: 7px;
     }
 }
 
