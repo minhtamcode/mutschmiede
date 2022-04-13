@@ -1519,7 +1519,7 @@ footer {
 }
 
 .site-main-expertinnen select{
-    width: 302px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     height: 48px;
@@ -1538,13 +1538,13 @@ footer {
 
 .site-main-expertinnen .tabControl.mobile .nav-item {
     background-color: #FBC7B2;
-    max-width: 302px !important;
+    max-width: 100% !important;
 }
 
 
 .site-main-expertinnen .tabControl .nav{
     justify-content: space-between;
-    width: 1640px;
+    width: 100%;
 }
 
 .site-main-expertinnen .tabControl.mobile .nav{
@@ -1552,7 +1552,7 @@ footer {
     display: inline-flex;
     overflow: hidden;
     border-radius: 25px;
-    width: 302px;
+    width: 100%;
 }
 
 /* .site-main-expertinnen .tabControl .nav-item:nth-child(1) {
@@ -1647,7 +1647,7 @@ footer {
 }
 
 .site-main-expertinnen .row {
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 !important;
 }
 
@@ -2132,7 +2132,7 @@ a.slick-slide {
         left: 31%;
     }
 
-    .onl {
+    .layout-homes .onl {
         border: 4px #78B476 solid;
     }
 

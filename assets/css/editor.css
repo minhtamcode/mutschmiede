@@ -14,7 +14,7 @@
 }
 
 .editparent {
-    margin-bottom: 44px !important;
+    margin-bottom: 45px !important;
 }
 
 .editparent textarea:focus {
@@ -27,6 +27,7 @@ ul.wysihtml5-toolbar {
     margin: 0;
     padding: 0;
     display: block;
+    margin-bottom: 3px;
 }
 
 ul.wysihtml5-toolbar::after {
@@ -42,9 +43,11 @@ ul.wysihtml5-toolbar>li {
     margin: 0 10px 16px 0;
 }
 ul.wysihtml5-toolbar>li .btn-border a{
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-top: 3px !important;
+    padding-bottom: 2px !important;
     line-height: 19px;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
 }
 ul.wysihtml5-toolbar>li .btn-border .btn-left-br{
     padding-right: 14px !important;

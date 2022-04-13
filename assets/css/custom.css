@@ -696,6 +696,7 @@ body {
     font-family: 'Raleway-semibold';
     font-size: 40px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .profile-main .profile-wrap {
@@ -710,7 +711,7 @@ body {
     background: #fff;
     border-radius: 10px;
     border: 1px solid #FBC7B2;
-    padding: 57px 58px 72px 55px;
+    padding: 54px 58px 72px 55px;;
 }
 
 .line-bottom {
@@ -719,6 +720,7 @@ body {
     border-bottom: 1px solid #FBC7B2;
     margin-bottom: 40px;
     font-family: 'Raleway-semibold';
+    letter-spacing: 0.5px;
 }
 
 .group-line {
@@ -747,7 +749,7 @@ body {
 }
 
 .group-all {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 }
 
 .group-all .group-label {
@@ -755,6 +757,7 @@ body {
     font-family: 'Raleway-semibold';
     font-size: 20px;
     display: block;
+    letter-spacing: 0.5px;
 }
 
 .group-all .group-input {
@@ -791,6 +794,7 @@ body {
     font-size: 30px;
     line-height: 35px;
     font-family: 'Raleway-semibold';
+    letter-spacing: 0.04rem;
 }
 
 .profile-content-top .profile-ct-right,
@@ -816,7 +820,7 @@ body {
     width: 100%;
     height: 399px;
     border-radius: 100% !important;
-    margin-bottom: 41px;
+    margin-bottom: 46px;
 }
 
 .profile-ct-right .line-bottom {
@@ -836,7 +840,7 @@ body {
 }
 
 .profile-specifications .profile-s-bottom {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .profile-specifications .profile-s-bottom span {
@@ -863,6 +867,9 @@ body {
 
 .profile-specifications-bottom p {
     font-family: 'Raleway-semibold';
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
 }
 
 .profile-content-center .editparent {
