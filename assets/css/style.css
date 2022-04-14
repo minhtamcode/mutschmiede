@@ -363,7 +363,7 @@ header .navbar .navbar-header{
 .menu-login-mobile {
     width: 100%;
     height: fit-content;
-    display: block;
+    display: none;
     margin-top: 20px;
 }
 
@@ -922,7 +922,7 @@ header .navbar .navbar-header{
 
 
 #main-content.layout-homes .coming-soon .content {
-    max-width: 1088px;
+    max-width: 1070px;
 }
 
 #main-content.layout-homes .coming-soon .text {
